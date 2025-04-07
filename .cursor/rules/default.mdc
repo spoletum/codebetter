@@ -1,0 +1,44 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Tools allowed:
+
+- Roslyn for C#
+- C# .NET
+- Neo4j
+- ILogger for logging
+
+# Programming style
+
+- Repositories must always have an interface
+
+# Code
+
+## IRepository
+
+Objective of the repository is to enable the code analyzer to perform the following tasks:
+
+- Erase all the nodes and edges in the database
+- Add a new class
+- Add a method to a class
+- Add a call relationship between two methods
+
+## Neo4jRepository
+
+The Neo4jRepository implements the IRepository interface for the Neo4j database.
+
+## CodeAnalyzer
+
+Objective of the CodeAnalyzer is to scan a solution and store the graph of dependencies between methods.
+
+At the beginning of the execution, clear the database to avoid duplicates.
+
+Next, read a solution file and, for each files in each project:
+
+- Creates a node for the class of type "class".
+- Creates a node for the method of type "method"; in the method node add the class name as part of the metadata. Also, create an edge between the class and its method.
+- Creates edges between "method".
+
+It is important that you skip .NET base types and the Microsoft and System namespaces.

@@ -1,0 +1,2032 @@
+[2025-04-07 09:04:36.919] [Information] Starting analysis of: /Users/alessandrosantini/Development/psp/bo-api-transactions/TransactionModuleAPI.sln
+[2025-04-07 09:04:36.983] [Information] Clearing existing database data
+[2025-04-07 09:04:37.410] [Error] [ERROR] Error analyzing code
+Exception: CodeBetter.Ingestor.RepositoryException: Failed to clear database
+ ---> Neo4j.Driver.ServiceUnavailableException: Failed to connect to any routing server. Please make sure that the cluster is up and can be accessed by the driver and retry.
+   at Neo4j.Driver.Internal.Routing.RoutingTableManager.UpdateRoutingTableAsync(AccessMode mode, String database, SessionConfig sessionConfig, Bookmarks bookmarks)
+   at Neo4j.Driver.Internal.Routing.RoutingTableManager.EnsureRoutingTableForModeAsync(AccessMode mode, String database, SessionConfig sessionConfig, Bookmarks bookmarks)
+   at Neo4j.Driver.Internal.Routing.LoadBalancer.AcquireConnectionAsync(AccessMode mode, String database, SessionConfig sessionConfig, Bookmarks bookmarks, Boolean forceAuth)
+   at Neo4j.Driver.Internal.Routing.LoadBalancer.AcquireAsync(AccessMode mode, String database, SessionConfig sessionConfig, Bookmarks bookmarks, Boolean forceAuth)
+   at Neo4j.Driver.Internal.AsyncSession.AcquireConnectionAndDbNameAsync(AccessMode mode, Boolean forceAuth)
+   at Neo4j.Driver.Internal.AsyncSession.<>c__DisplayClass38_0.<<RunAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Neo4j.Driver.Internal.Logging.DriverLoggerUtil.TryExecuteAsync[T](ILogger logger, Func`1 func, String message)
+   at Neo4j.Driver.Internal.AsyncSession.DiscardUnconsumedResultAsync()
+   at CodeBetter.Ingestor.Neo4jRepository.ClearDatabaseAsync() in /Users/alessandrosantini/Development/oss/codebetter/CodeBetter.Ingestor/Repository.cs:line 120
+   --- End of inner exception stack trace ---
+   at CodeBetter.Ingestor.Neo4jRepository.ClearDatabaseAsync() in /Users/alessandrosantini/Development/oss/codebetter/CodeBetter.Ingestor/Repository.cs:line 124
+   at Program.Main(String[] args) in /Users/alessandrosantini/Development/oss/codebetter/CodeBetter.Ingestor/Program.cs:line 38
+StackTrace:    at CodeBetter.Ingestor.Neo4jRepository.ClearDatabaseAsync() in /Users/alessandrosantini/Development/oss/codebetter/CodeBetter.Ingestor/Repository.cs:line 124
+   at Program.Main(String[] args) in /Users/alessandrosantini/Development/oss/codebetter/CodeBetter.Ingestor/Program.cs:line 38
+[2025-04-07 09:04:37.411] [Error] [ERROR] Inner error
+Exception: Neo4j.Driver.ServiceUnavailableException: Failed to connect to any routing server. Please make sure that the cluster is up and can be accessed by the driver and retry.
+   at Neo4j.Driver.Internal.Routing.RoutingTableManager.UpdateRoutingTableAsync(AccessMode mode, String database, SessionConfig sessionConfig, Bookmarks bookmarks)
+   at Neo4j.Driver.Internal.Routing.RoutingTableManager.EnsureRoutingTableForModeAsync(AccessMode mode, String database, SessionConfig sessionConfig, Bookmarks bookmarks)
+   at Neo4j.Driver.Internal.Routing.LoadBalancer.AcquireConnectionAsync(AccessMode mode, String database, SessionConfig sessionConfig, Bookmarks bookmarks, Boolean forceAuth)
+   at Neo4j.Driver.Internal.Routing.LoadBalancer.AcquireAsync(AccessMode mode, String database, SessionConfig sessionConfig, Bookmarks bookmarks, Boolean forceAuth)
+   at Neo4j.Driver.Internal.AsyncSession.AcquireConnectionAndDbNameAsync(AccessMode mode, Boolean forceAuth)
+   at Neo4j.Driver.Internal.AsyncSession.<>c__DisplayClass38_0.<<RunAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Neo4j.Driver.Internal.Logging.DriverLoggerUtil.TryExecuteAsync[T](ILogger logger, Func`1 func, String message)
+   at Neo4j.Driver.Internal.AsyncSession.DiscardUnconsumedResultAsync()
+   at CodeBetter.Ingestor.Neo4jRepository.ClearDatabaseAsync() in /Users/alessandrosantini/Development/oss/codebetter/CodeBetter.Ingestor/Repository.cs:line 120
+StackTrace:    at Neo4j.Driver.Internal.Routing.RoutingTableManager.UpdateRoutingTableAsync(AccessMode mode, String database, SessionConfig sessionConfig, Bookmarks bookmarks)
+   at Neo4j.Driver.Internal.Routing.RoutingTableManager.EnsureRoutingTableForModeAsync(AccessMode mode, String database, SessionConfig sessionConfig, Bookmarks bookmarks)
+   at Neo4j.Driver.Internal.Routing.LoadBalancer.AcquireConnectionAsync(AccessMode mode, String database, SessionConfig sessionConfig, Bookmarks bookmarks, Boolean forceAuth)
+   at Neo4j.Driver.Internal.Routing.LoadBalancer.AcquireAsync(AccessMode mode, String database, SessionConfig sessionConfig, Bookmarks bookmarks, Boolean forceAuth)
+   at Neo4j.Driver.Internal.AsyncSession.AcquireConnectionAndDbNameAsync(AccessMode mode, Boolean forceAuth)
+   at Neo4j.Driver.Internal.AsyncSession.<>c__DisplayClass38_0.<<RunAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Neo4j.Driver.Internal.Logging.DriverLoggerUtil.TryExecuteAsync[T](ILogger logger, Func`1 func, String message)
+   at Neo4j.Driver.Internal.AsyncSession.DiscardUnconsumedResultAsync()
+   at CodeBetter.Ingestor.Neo4jRepository.ClearDatabaseAsync() in /Users/alessandrosantini/Development/oss/codebetter/CodeBetter.Ingestor/Repository.cs:line 120
+[2025-04-07 09:04:55.842] [Information] Starting analysis of: /Users/alessandrosantini/Development/psp/bo-api-transactions/TransactionModuleAPI.sln
+[2025-04-07 09:04:55.871] [Information] Clearing existing database data
+[2025-04-07 09:04:56.652] [Information] Analyzing solution file
+[2025-04-07 09:04:57.059] [Information] Starting analysis of solution: /Users/alessandrosantini/Development/psp/bo-api-transactions/TransactionModuleAPI.sln
+[2025-04-07 09:04:58.449] [Information] Found 3 projects in the solution
+[2025-04-07 09:04:58.450] [Information] Analyzing project: TransactionModuleAPI
+[2025-04-07 09:04:59.054] [Information] Found 70 documents in project TransactionModuleAPI
+[2025-04-07 09:04:59.055] [Information] Analyzing file: ResourcePatentAuthorizeAttribute.cs
+[2025-04-07 09:04:59.067] [Information] Analyzing file: AuthenticationSchemes.cs
+[2025-04-07 09:04:59.073] [Information] Analyzing file: ConfigurationSettingKeys.cs
+[2025-04-07 09:04:59.078] [Information] Analyzing file: FeatureFlagConstants.cs
+[2025-04-07 09:04:59.088] [Information] Analyzing file: PartnerConfigParamNames.cs
+[2025-04-07 09:04:59.092] [Information] Analyzing file: RevenueOperationTypes.cs
+[2025-04-07 09:04:59.097] [Information] Analyzing file: TransactionRefundStatus.cs
+[2025-04-07 09:04:59.100] [Information] Analyzing file: TransactionStatus.cs
+[2025-04-07 09:04:59.109] [Information] Analyzing file: HealthCheckController.cs
+[2025-04-07 09:04:59.127] [Information] Analyzing file: TransactionsController.cs
+[2025-04-07 09:04:59.330] [Information] Analyzing file: BaseSqlContext.cs
+[2025-04-07 09:04:59.335] [Information] Analyzing file: DbContextEF.cs
+[2025-04-07 09:04:59.388] [Information] Processing batch of 521 method calls
+[2025-04-07 09:04:59.405] [Error] [ERROR] Failed to analyze solution
+Exception: CodeBetter.Ingestor.RepositoryException: Failed to write relationships in batch
+ ---> Neo4j.Driver.ProtocolException: Cannot understand value with type System.ValueTuple`2[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+   at Neo4j.Driver.Internal.Routing.ClusterConnection.OnErrorAsync(Exception error)
+   at Neo4j.Driver.Internal.Connector.DelegatedConnection.SendAsync()
+   at Neo4j.Driver.Internal.Protocol.BoltProtocol.RunInAutoCommitTransactionAsync(IConnection connection, AutoCommitParams autoCommitParams, INotificationsConfig notificationsConfig)
+   at Neo4j.Driver.Internal.AsyncSession.<>c__DisplayClass38_0.<<RunAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Neo4j.Driver.Internal.Logging.DriverLoggerUtil.TryExecuteAsync[T](ILogger logger, Func`1 func, String message)
+   at Neo4j.Driver.Internal.AsyncSession.DiscardUnconsumedResultAsync()
+   at CodeBetter.Ingestor.Neo4jRepository.WriteRelationshipsBatchAsync(IEnumerable`1 relationships) in /Users/alessandrosantini/Development/oss/codebetter/CodeBetter.Ingestor/Repository.cs:line 191
+   --- End of inner exception stack trace ---
+   at CodeBetter.Ingestor.Neo4jRepository.WriteRelationshipsBatchAsync(IEnumerable`1 relationships) in /Users/alessandrosantini/Development/oss/codebetter/CodeBetter.Ingestor/Repository.cs:line 195
+   at CodeBetter.Ingestor.SolutionAnalyzer.AnalyzeSolutionAsync(String solutionPath, IProgress`1 progress) in /Users/alessandrosantini/Development/oss/codebetter/CodeBetter.Ingestor/SolutionAnalyzer.cs:line 137
+StackTrace:    at CodeBetter.Ingestor.Neo4jRepository.WriteRelationshipsBatchAsync(IEnumerable`1 relationships) in /Users/alessandrosantini/Development/oss/codebetter/CodeBetter.Ingestor/Repository.cs:line 195
+   at CodeBetter.Ingestor.SolutionAnalyzer.AnalyzeSolutionAsync(String solutionPath, IProgress`1 progress) in /Users/alessandrosantini/Development/oss/codebetter/CodeBetter.Ingestor/SolutionAnalyzer.cs:line 137
+[2025-04-07 09:04:59.412] [Error] [ERROR] Error analyzing code
+Exception: System.InvalidOperationException: Failed to analyze solution: Failed to write relationships in batch
+ ---> CodeBetter.Ingestor.RepositoryException: Failed to write relationships in batch
+ ---> Neo4j.Driver.ProtocolException: Cannot understand value with type System.ValueTuple`2[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+   at Neo4j.Driver.Internal.Routing.ClusterConnection.OnErrorAsync(Exception error)
+   at Neo4j.Driver.Internal.Connector.DelegatedConnection.SendAsync()
+   at Neo4j.Driver.Internal.Protocol.BoltProtocol.RunInAutoCommitTransactionAsync(IConnection connection, AutoCommitParams autoCommitParams, INotificationsConfig notificationsConfig)
+   at Neo4j.Driver.Internal.AsyncSession.<>c__DisplayClass38_0.<<RunAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Neo4j.Driver.Internal.Logging.DriverLoggerUtil.TryExecuteAsync[T](ILogger logger, Func`1 func, String message)
+   at Neo4j.Driver.Internal.AsyncSession.DiscardUnconsumedResultAsync()
+   at CodeBetter.Ingestor.Neo4jRepository.WriteRelationshipsBatchAsync(IEnumerable`1 relationships) in /Users/alessandrosantini/Development/oss/codebetter/CodeBetter.Ingestor/Repository.cs:line 191
+   --- End of inner exception stack trace ---
+   at CodeBetter.Ingestor.Neo4jRepository.WriteRelationshipsBatchAsync(IEnumerable`1 relationships) in /Users/alessandrosantini/Development/oss/codebetter/CodeBetter.Ingestor/Repository.cs:line 195
+   at CodeBetter.Ingestor.SolutionAnalyzer.AnalyzeSolutionAsync(String solutionPath, IProgress`1 progress) in /Users/alessandrosantini/Development/oss/codebetter/CodeBetter.Ingestor/SolutionAnalyzer.cs:line 137
+   --- End of inner exception stack trace ---
+   at CodeBetter.Ingestor.SolutionAnalyzer.AnalyzeSolutionAsync(String solutionPath, IProgress`1 progress) in /Users/alessandrosantini/Development/oss/codebetter/CodeBetter.Ingestor/SolutionAnalyzer.cs:line 169
+   at Program.Main(String[] args) in /Users/alessandrosantini/Development/oss/codebetter/CodeBetter.Ingestor/Program.cs:line 50
+StackTrace:    at CodeBetter.Ingestor.SolutionAnalyzer.AnalyzeSolutionAsync(String solutionPath, IProgress`1 progress) in /Users/alessandrosantini/Development/oss/codebetter/CodeBetter.Ingestor/SolutionAnalyzer.cs:line 169
+   at Program.Main(String[] args) in /Users/alessandrosantini/Development/oss/codebetter/CodeBetter.Ingestor/Program.cs:line 50
+[2025-04-07 09:04:59.419] [Error] [ERROR] Inner error
+Exception: CodeBetter.Ingestor.RepositoryException: Failed to write relationships in batch
+ ---> Neo4j.Driver.ProtocolException: Cannot understand value with type System.ValueTuple`2[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+   at Neo4j.Driver.Internal.Routing.ClusterConnection.OnErrorAsync(Exception error)
+   at Neo4j.Driver.Internal.Connector.DelegatedConnection.SendAsync()
+   at Neo4j.Driver.Internal.Protocol.BoltProtocol.RunInAutoCommitTransactionAsync(IConnection connection, AutoCommitParams autoCommitParams, INotificationsConfig notificationsConfig)
+   at Neo4j.Driver.Internal.AsyncSession.<>c__DisplayClass38_0.<<RunAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Neo4j.Driver.Internal.Logging.DriverLoggerUtil.TryExecuteAsync[T](ILogger logger, Func`1 func, String message)
+   at Neo4j.Driver.Internal.AsyncSession.DiscardUnconsumedResultAsync()
+   at CodeBetter.Ingestor.Neo4jRepository.WriteRelationshipsBatchAsync(IEnumerable`1 relationships) in /Users/alessandrosantini/Development/oss/codebetter/CodeBetter.Ingestor/Repository.cs:line 191
+   --- End of inner exception stack trace ---
+   at CodeBetter.Ingestor.Neo4jRepository.WriteRelationshipsBatchAsync(IEnumerable`1 relationships) in /Users/alessandrosantini/Development/oss/codebetter/CodeBetter.Ingestor/Repository.cs:line 195
+   at CodeBetter.Ingestor.SolutionAnalyzer.AnalyzeSolutionAsync(String solutionPath, IProgress`1 progress) in /Users/alessandrosantini/Development/oss/codebetter/CodeBetter.Ingestor/SolutionAnalyzer.cs:line 137
+StackTrace:    at CodeBetter.Ingestor.Neo4jRepository.WriteRelationshipsBatchAsync(IEnumerable`1 relationships) in /Users/alessandrosantini/Development/oss/codebetter/CodeBetter.Ingestor/Repository.cs:line 195
+   at CodeBetter.Ingestor.SolutionAnalyzer.AnalyzeSolutionAsync(String solutionPath, IProgress`1 progress) in /Users/alessandrosantini/Development/oss/codebetter/CodeBetter.Ingestor/SolutionAnalyzer.cs:line 137
+[2025-04-07 09:06:17.442] [Information] Starting analysis of: /Users/alessandrosantini/Development/psp/bo-api-transactions/TransactionModuleAPI.sln
+[2025-04-07 09:06:17.501] [Information] Clearing existing database data
+[2025-04-07 09:06:17.977] [Information] Analyzing solution file
+[2025-04-07 09:06:18.269] [Information] Starting analysis of solution: /Users/alessandrosantini/Development/psp/bo-api-transactions/TransactionModuleAPI.sln
+[2025-04-07 09:06:19.577] [Information] Found 3 projects in the solution
+[2025-04-07 09:06:19.578] [Information] Analyzing project: TransactionModuleAPI
+[2025-04-07 09:06:20.186] [Information] Found 70 documents in project TransactionModuleAPI
+[2025-04-07 09:06:20.190] [Information] Analyzing file: ResourcePatentAuthorizeAttribute.cs
+[2025-04-07 09:06:20.196] [Information] Analyzing file: AuthenticationSchemes.cs
+[2025-04-07 09:06:20.199] [Information] Analyzing file: ConfigurationSettingKeys.cs
+[2025-04-07 09:06:20.201] [Information] Analyzing file: FeatureFlagConstants.cs
+[2025-04-07 09:06:20.203] [Information] Analyzing file: PartnerConfigParamNames.cs
+[2025-04-07 09:06:20.205] [Information] Analyzing file: RevenueOperationTypes.cs
+[2025-04-07 09:06:20.208] [Information] Analyzing file: TransactionRefundStatus.cs
+[2025-04-07 09:06:20.211] [Information] Analyzing file: TransactionStatus.cs
+[2025-04-07 09:06:20.213] [Information] Analyzing file: HealthCheckController.cs
+[2025-04-07 09:06:20.254] [Information] Analyzing file: TransactionsController.cs
+[2025-04-07 09:06:20.469] [Information] Analyzing file: BaseSqlContext.cs
+[2025-04-07 09:06:20.480] [Information] Analyzing file: DbContextEF.cs
+[2025-04-07 09:06:20.531] [Information] Processing batch of 521 method calls
+[2025-04-07 09:06:20.997] [Information] Analyzing file: LoggerContext.cs
+[2025-04-07 09:06:21.008] [Information] Analyzing file: GenericExtensions.cs
+[2025-04-07 09:06:21.053] [Information] Analyzing file: LinqExtensions.cs
+[2025-04-07 09:06:21.079] [Information] Analyzing file: StringExtensions.cs
+[2025-04-07 09:06:21.098] [Information] Analyzing file: HttpClientWrapper.cs
+[2025-04-07 09:06:21.116] [Information] Analyzing file: IHttpClient.cs
+[2025-04-07 09:06:21.126] [Information] Analyzing file: AccountBalanceRevenueRequest.cs
+[2025-04-07 09:06:21.134] [Information] Analyzing file: AccountBalanceRevenueResponse.cs
+[2025-04-07 09:06:21.141] [Information] Analyzing file: AppConfiguration.cs
+[2025-04-07 09:06:21.147] [Information] Analyzing file: DbLog.cs
+[2025-04-07 09:06:21.153] [Information] Analyzing file: EmailConfigModel.cs
+[2025-04-07 09:06:21.159] [Information] Analyzing file: EmailModel.cs
+[2025-04-07 09:06:21.170] [Information] Processing batch of 108 method calls
+[2025-04-07 09:06:21.287] [Information] Analyzing file: GdprTransactionGridV2.cs
+[2025-04-07 09:06:21.299] [Information] Analyzing file: GetTransactionRefundsResponseModel.cs
+[2025-04-07 09:06:21.308] [Information] Analyzing file: IFile.cs
+[2025-04-07 09:06:21.316] [Information] Analyzing file: PagerParameters.cs
+[2025-04-07 09:06:21.322] [Information] Analyzing file: SetupListModel.cs
+[2025-04-07 09:06:21.328] [Information] Analyzing file: TransactionDetailsModel.cs
+[2025-04-07 09:06:21.335] [Information] Analyzing file: TransactionPagerParameters.cs
+[2025-04-07 09:06:21.354] [Information] Analyzing file: Program.cs
+[2025-04-07 09:06:21.357] [Information] Analyzing file: BaseDbRepository.cs
+[2025-04-07 09:06:21.366] [Information] Analyzing file: DbLoggerRepository.cs
+[2025-04-07 09:06:21.370] [Information] Analyzing file: IDbLoggerRepository.cs
+[2025-04-07 09:06:21.372] [Information] Analyzing file: IOneReadRepository.cs
+[2025-04-07 09:06:21.375] [Information] Analyzing file: IOneWriteRepository.cs
+[2025-04-07 09:06:21.377] [Information] Analyzing file: OneReadRepository.cs
+[2025-04-07 09:06:21.449] [Information] Processing batch of 128 relationships
+[2025-04-07 09:06:21.571] [Information] Processing batch of 292 method calls
+[2025-04-07 09:06:21.707] [Information] Analyzing file: OneWriteRepository.cs
+[2025-04-07 09:06:21.725] [Information] Analyzing file: AccountBalanceService.cs
+[2025-04-07 09:06:21.746] [Information] Analyzing file: IAccountBalanceService.cs
+[2025-04-07 09:06:21.755] [Information] Analyzing file: ExportProcessorService.cs
+[2025-04-07 09:06:21.829] [Information] Processing batch of 25 classes and 103 methods
+[2025-04-07 09:06:21.945] [Information] Processing batch of 191 method calls
+[2025-04-07 09:06:22.048] [Information] Analyzing file: ExportService.cs
+[2025-04-07 09:06:22.064] [Information] Analyzing file: IExportService.cs
+[2025-04-07 09:06:22.070] [Information] Analyzing file: DbLogger.cs
+[2025-04-07 09:06:22.078] [Information] Analyzing file: IDbLogger.cs
+[2025-04-07 09:06:22.085] [Information] Analyzing file: LogToDbDaemon.cs
+[2025-04-07 09:06:22.093] [Information] Analyzing file: IPermissionService.cs
+[2025-04-07 09:06:22.099] [Information] Analyzing file: PermissionService.cs
+[2025-04-07 09:06:22.122] [Information] Analyzing file: ISessionService.cs
+[2025-04-07 09:06:22.125] [Information] Analyzing file: SessionService.cs
+[2025-04-07 09:06:22.128] [Information] Analyzing file: ConfigurationSettingService.cs
+[2025-04-07 09:06:22.135] [Information] Analyzing file: IConfigurationSettingService.cs
+[2025-04-07 09:06:22.137] [Information] Analyzing file: ITransactionService.cs
+[2025-04-07 09:06:22.141] [Information] Analyzing file: TransactionService.cs
+[2025-04-07 09:06:22.164] [Information] Analyzing file: SwaggerConfiguration.cs
+[2025-04-07 09:06:22.168] [Information] Analyzing file: CancelledTransactionHomologationErrorReason.cs
+[2025-04-07 09:06:22.171] [Information] Analyzing file: CensorGdrp.cs
+[2025-04-07 09:06:22.192] [Information] Processing batch of 107 method calls
+[2025-04-07 09:06:22.265] [Information] Analyzing file: ContextNames.cs
+[2025-04-07 09:06:22.268] [Information] Analyzing file: EmailClient.cs
+[2025-04-07 09:06:22.274] [Information] Analyzing file: Encryption.cs
+[2025-04-07 09:06:22.282] [Information] Analyzing file: ExcelExtensions.cs
+[2025-04-07 09:06:22.298] [Information] Analyzing file: ExcelWorkbook.cs
+[2025-04-07 09:06:22.301] [Information] Analyzing file: FileUtils.cs
+[2025-04-07 09:06:22.306] [Information] Analyzing file: FiltersTransactions.cs
+[2025-04-07 09:06:22.318] [Information] Processing batch of 148 method calls
+[2025-04-07 09:06:22.404] [Information] Analyzing file: IEmailClient.cs
+[2025-04-07 09:06:22.408] [Information] Analyzing file: IServiceProvider.cs
+[2025-04-07 09:06:22.412] [Information] Analyzing file: TransactionModuleAPI.GlobalUsings.g.cs
+[2025-04-07 09:06:22.414] [Information] Analyzing file: .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+[2025-04-07 09:06:22.416] [Information] Analyzing file: TransactionModuleAPI.AssemblyInfo.cs
+[2025-04-07 09:06:22.418] [Information] Analyzing project: Entities
+[2025-04-07 09:06:22.421] [Information] Found 187 documents in project Entities
+[2025-04-07 09:06:22.423] [Information] Analyzing file: AcamIndustry.cs
+[2025-04-07 09:06:22.426] [Information] Analyzing file: AcamIndustryTypeMapping.cs
+[2025-04-07 09:06:22.428] [Information] Analyzing file: Adjustment.cs
+[2025-04-07 09:06:22.431] [Information] Analyzing file: AdjustmentMovement.cs
+[2025-04-07 09:06:22.434] [Information] Analyzing file: AdjustmentType.cs
+[2025-04-07 09:06:22.436] [Information] Analyzing file: Agency.cs
+[2025-04-07 09:06:22.439] [Information] Analyzing file: BalanceType.cs
+[2025-04-07 09:06:22.441] [Information] Analyzing file: BankingInformation.cs
+[2025-04-07 09:06:22.443] [Information] Analyzing file: BanklyNotification.cs
+[2025-04-07 09:06:22.448] [Information] Analyzing file: BanklyNotificationStatusType.cs
+[2025-04-07 09:06:22.476] [Information] Analyzing file: Campaign.cs
+[2025-04-07 09:06:22.479] [Information] Analyzing file: Claim.cs
+[2025-04-07 09:06:22.481] [Information] Analyzing file: ClaimReasonType.cs
+[2025-04-07 09:06:22.484] [Information] Analyzing file: ClaimTransaction.cs
+[2025-04-07 09:06:22.487] [Information] Analyzing file: ClosingLikelihoodType.cs
+[2025-04-07 09:06:22.489] [Information] Analyzing file: CompanyInformation.cs
+[2025-04-07 09:06:22.491] [Information] Analyzing file: CompanyRisk.cs
+[2025-04-07 09:06:22.494] [Information] Analyzing file: Converter.cs
+[2025-04-07 09:06:22.496] [Information] Analyzing file: ConverterConfig.cs
+[2025-04-07 09:06:22.498] [Information] Analyzing file: Country.cs
+[2025-04-07 09:06:22.501] [Information] Analyzing file: CountryRegion.cs
+[2025-04-07 09:06:22.503] [Information] Analyzing file: Currency.cs
+[2025-04-07 09:06:22.505] [Information] Analyzing file: CurrencyConversion.cs
+[2025-04-07 09:06:22.508] [Information] Analyzing file: CustomerPayout.cs
+[2025-04-07 09:06:22.510] [Information] Analyzing file: CustomerReason.cs
+[2025-04-07 09:06:22.512] [Information] Analyzing file: DailyBalanceReportTask.cs
+[2025-04-07 09:06:22.514] [Information] Analyzing file: EntityInformation.cs
+[2025-04-07 09:06:22.516] [Information] Analyzing file: ExportAcamManual.cs
+[2025-04-07 09:06:22.518] [Information] Analyzing file: FinancialStatusType.cs
+[2025-04-07 09:06:22.525] [Information] Analyzing file: GeneralRate.cs
+[2025-04-07 09:06:22.548] [Information] Analyzing file: IndustrySubType.cs
+[2025-04-07 09:06:22.550] [Information] Analyzing file: IndustryType.cs
+[2025-04-07 09:06:22.552] [Information] Analyzing file: Merchant.cs
+[2025-04-07 09:06:22.554] [Information] Analyzing file: MerchantAddress.cs
+[2025-04-07 09:06:22.555] [Information] Analyzing file: MerchantAlert.cs
+[2025-04-07 09:06:22.557] [Information] Analyzing file: MerchantBusinessCountry.cs
+[2025-04-07 09:06:22.559] [Information] Analyzing file: MerchantCustomerBlacklist.cs
+[2025-04-07 09:06:22.560] [Information] Analyzing file: MerchantCustomerBlacklistPaymentMethod.cs
+[2025-04-07 09:06:22.562] [Information] Analyzing file: MerchantHierarchyType.cs
+[2025-04-07 09:06:22.565] [Information] Analyzing file: MerchantLowRiskTransactionalProfile.cs
+[2025-04-07 09:06:22.567] [Information] Analyzing file: MerchantPaymentType.cs
+[2025-04-07 09:06:22.569] [Information] Analyzing file: MerchantRiskEvaluation.cs
+[2025-04-07 09:06:22.571] [Information] Analyzing file: MerchantStatusType.cs
+[2025-04-07 09:06:22.572] [Information] Analyzing file: MonthlyMoneyFlow.cs
+[2025-04-07 09:06:22.574] [Information] Analyzing file: Note.cs
+[2025-04-07 09:06:22.576] [Information] Analyzing file: Partner.cs
+[2025-04-07 09:06:22.578] [Information] Analyzing file: PartnerConfig.cs
+[2025-04-07 09:06:22.579] [Information] Analyzing file: PaymentChannelType.cs
+[2025-04-07 09:06:22.581] [Information] Analyzing file: PaymentMethod.cs
+[2025-04-07 09:06:22.586] [Information] Analyzing file: PaymentMethodChild.cs
+[2025-04-07 09:06:22.608] [Information] Analyzing file: PaymentMethodTag.cs
+[2025-04-07 09:06:22.610] [Information] Analyzing file: PaymentModeType.cs
+[2025-04-07 09:06:22.612] [Information] Analyzing file: PaymentOrder.cs
+[2025-04-07 09:06:22.613] [Information] Analyzing file: PaymentOrderItem.cs
+[2025-04-07 09:06:22.615] [Information] Analyzing file: PaymentOrderStatusType.cs
+[2025-04-07 09:06:22.617] [Information] Analyzing file: Payout.cs
+[2025-04-07 09:06:22.620] [Information] Analyzing file: PayoutAccountType.cs
+[2025-04-07 09:06:22.622] [Information] Analyzing file: PayoutBatch.cs
+[2025-04-07 09:06:22.623] [Information] Analyzing file: PayoutProcessor.cs
+[2025-04-07 09:06:22.625] [Information] Analyzing file: PayoutPspReference.cs
+[2025-04-07 09:06:22.627] [Information] Analyzing file: PayoutStatusType.cs
+[2025-04-07 09:06:22.629] [Information] Analyzing file: PayRetailersConverter.cs
+[2025-04-07 09:06:22.630] [Information] Analyzing file: RateType.cs
+[2025-04-07 09:06:22.632] [Information] Analyzing file: Referral.cs
+[2025-04-07 09:06:22.634] [Information] Analyzing file: RefundRequest.cs
+[2025-04-07 09:06:22.636] [Information] Analyzing file: Region.cs
+[2025-04-07 09:06:22.638] [Information] Analyzing file: ReportFile.cs
+[2025-04-07 09:06:22.640] [Information] Analyzing file: ReportFileConfig.cs
+[2025-04-07 09:06:22.642] [Information] Analyzing file: ReportTask.cs
+[2025-04-07 09:06:22.648] [Information] Analyzing file: ReportTaskParms.cs
+[2025-04-07 09:06:22.670] [Information] Analyzing file: ReportTaskType.cs
+[2025-04-07 09:06:22.672] [Information] Analyzing file: SettledTransaction.cs
+[2025-04-07 09:06:22.673] [Information] Analyzing file: Settlement.cs
+[2025-04-07 09:06:22.675] [Information] Analyzing file: SettlementExtraItem.cs
+[2025-04-07 09:06:22.677] [Information] Analyzing file: SettlementRollingReserve.cs
+[2025-04-07 09:06:22.678] [Information] Analyzing file: Shop.cs
+[2025-04-07 09:06:22.680] [Information] Analyzing file: ShopBalance.cs
+[2025-04-07 09:06:22.682] [Information] Analyzing file: ShopBankingInformation.cs
+[2025-04-07 09:06:22.684] [Information] Analyzing file: ShopCurrentBalance.cs
+[2025-04-07 09:06:22.686] [Information] Analyzing file: ShopDailyBalance.cs
+[2025-04-07 09:06:22.688] [Information] Analyzing file: ShopGeneralRate.cs
+[2025-04-07 09:06:22.690] [Information] Analyzing file: ShopRate.cs
+[2025-04-07 09:06:22.692] [Information] Analyzing file: ShopRateCountry.cs
+[2025-04-07 09:06:22.693] [Information] Analyzing file: ShopRatePaymentMethod.cs
+[2025-04-07 09:06:22.695] [Information] Analyzing file: SSOUserMerchant.cs
+[2025-04-07 09:06:22.697] [Information] Analyzing file: SSOUserReferral.cs
+[2025-04-07 09:06:22.698] [Information] Analyzing file: Subsidiary.cs
+[2025-04-07 09:06:22.700] [Information] Analyzing file: Transaction.cs
+[2025-04-07 09:06:22.701] [Information] Analyzing file: TransactionConversion.cs
+[2025-04-07 09:06:22.704] [Information] Analyzing file: TransactionDashboardData.cs
+[2025-04-07 09:06:22.724] [Information] Analyzing file: TransactionNotificationLog.cs
+[2025-04-07 09:06:22.726] [Information] Analyzing file: TransactionPayerInfo.cs
+[2025-04-07 09:06:22.728] [Information] Analyzing file: TransactionPspReference.cs
+[2025-04-07 09:06:22.730] [Information] Analyzing file: TransactionReportData.cs
+[2025-04-07 09:06:22.732] [Information] Analyzing file: TransactionSettlement.cs
+[2025-04-07 09:06:22.733] [Information] Analyzing file: Withdrawal.cs
+[2025-04-07 09:06:22.736] [Information] Analyzing file: WithdrawalAdjustment.cs
+[2025-04-07 09:06:22.737] [Information] Analyzing file: WithdrawalTransaction.cs
+[2025-04-07 09:06:22.739] [Information] Analyzing file: AuditableAddOnlyEntity.cs
+[2025-04-07 09:06:22.741] [Information] Analyzing file: AuditableEntity.cs
+[2025-04-07 09:06:22.742] [Information] Analyzing file: AuditableEntityNotDeletion.cs
+[2025-04-07 09:06:22.744] [Information] Analyzing file: AdjustmentPagerParameters.cs
+[2025-04-07 09:06:22.745] [Information] Analyzing file: BancoPluralPagerParameters.cs
+[2025-04-07 09:06:22.747] [Information] Analyzing file: BanklyEventPagerParameters.cs
+[2025-04-07 09:06:22.749] [Information] Analyzing file: BanklyPagerParameters.cs
+[2025-04-07 09:06:22.751] [Information] Analyzing file: ClaimPagerParameters.cs
+[2025-04-07 09:06:22.753] [Information] Analyzing file: CustomerPayoutPagerParameters.cs
+[2025-04-07 09:06:22.754] [Information] Analyzing file: MerchantBalanceFilters.cs
+[2025-04-07 09:06:22.756] [Information] Analyzing file: MerchantRiskPagerParameters.cs
+[2025-04-07 09:06:22.762] [Information] Analyzing file: NotePagerParameters.cs
+[2025-04-07 09:06:22.781] [Information] Analyzing file: OnlineNotificationPagerParameters.cs
+[2025-04-07 09:06:22.783] [Information] Analyzing file: PagerParameters.cs
+[2025-04-07 09:06:22.784] [Information] Analyzing file: PaymentMethodPagerParameters.cs
+[2025-04-07 09:06:22.786] [Information] Analyzing file: PayoutFxPagerParameters.cs
+[2025-04-07 09:06:22.788] [Information] Analyzing file: PayoutPagerParameters.cs
+[2025-04-07 09:06:22.790] [Information] Analyzing file: RatePagerParameters.cs
+[2025-04-07 09:06:22.792] [Information] Analyzing file: SettledTransactionPagerParameters.cs
+[2025-04-07 09:06:22.794] [Information] Analyzing file: SettlementPagerParameters.cs
+[2025-04-07 09:06:22.795] [Information] Analyzing file: SettlementSummaryPagerParameters.cs
+[2025-04-07 09:06:22.797] [Information] Analyzing file: ShopDailyBalancePagerParameters.cs
+[2025-04-07 09:06:22.800] [Information] Analyzing file: TransactionPagerParameters.cs
+[2025-04-07 09:06:22.802] [Information] Analyzing file: TransactionUserPagerParameters.cs
+[2025-04-07 09:06:22.804] [Information] Analyzing file: TreasuryPagerParameters.cs
+[2025-04-07 09:06:22.806] [Information] Analyzing file: TreasurySettlementPagerParameters.cs
+[2025-04-07 09:06:22.807] [Information] Analyzing file: AuthPermission.cs
+[2025-04-07 09:06:22.809] [Information] Analyzing file: Patent.cs
+[2025-04-07 09:06:22.811] [Information] Analyzing file: Resource.cs
+[2025-04-07 09:06:22.813] [Information] Analyzing file: ResourcePatent.cs
+[2025-04-07 09:06:22.815] [Information] Analyzing file: Role.cs
+[2025-04-07 09:06:22.821] [Information] Analyzing file: RoleResource.cs
+[2025-04-07 09:06:22.823] [Information] Analyzing file: RoleResourcePatent.cs
+[2025-04-07 09:06:22.825] [Information] Analyzing file: Session.cs
+[2025-04-07 09:06:22.827] [Information] Analyzing file: User.cs
+[2025-04-07 09:06:22.829] [Information] Analyzing file: UserMerchant.cs
+[2025-04-07 09:06:22.830] [Information] Analyzing file: UserPartner.cs
+[2025-04-07 09:06:22.832] [Information] Analyzing file: UserPayoutProcessor.cs
+[2025-04-07 09:06:22.833] [Information] Analyzing file: IReportData.cs
+[2025-04-07 09:06:22.835] [Information] Analyzing file: AcamTransactionDto.cs
+[2025-04-07 09:06:22.836] [Information] Analyzing file: PayinAcamExportItem.cs
+[2025-04-07 09:06:22.837] [Information] Analyzing file: PayinAcamReportData.cs
+[2025-04-07 09:06:22.839] [Information] Analyzing file: TransactionExportData.cs
+[2025-04-07 09:06:22.841] [Information] Analyzing file: PayoutAcamExportItem.cs
+[2025-04-07 09:06:22.843] [Information] Analyzing file: PayoutAcamReportData.cs
+[2025-04-07 09:06:22.845] [Information] Analyzing file: PayoutExportData.cs
+[2025-04-07 09:06:22.847] [Information] Analyzing file: AppConfiguration.cs
+[2025-04-07 09:06:22.849] [Information] Analyzing file: BancoPluralNotificationGrid.cs
+[2025-04-07 09:06:22.851] [Information] Analyzing file: BanklyEventGridDTO.cs
+[2025-04-07 09:06:22.853] [Information] Analyzing file: BanklyNotificationGridDTO.cs
+[2025-04-07 09:06:22.855] [Information] Analyzing file: ClaimReportGridData.cs
+[2025-04-07 09:06:22.864] [Information] Analyzing file: ConvertApiResponse.cs
+[2025-04-07 09:06:22.866] [Information] Analyzing file: CRMZohoLeadDTO.cs
+[2025-04-07 09:06:22.868] [Information] Analyzing file: CurrencyConversionParams.cs
+[2025-04-07 09:06:22.869] [Information] Analyzing file: DashboardShop.cs
+[2025-04-07 09:06:22.871] [Information] Analyzing file: DefaultCurrencyDTO.cs
+[2025-04-07 09:06:22.873] [Information] Analyzing file: ExportBRMerchantInfo.cs
+[2025-04-07 09:06:22.875] [Information] Analyzing file: FxDTO.cs
+[2025-04-07 09:06:22.876] [Information] Analyzing file: NotificationGrid.cs
+[2025-04-07 09:06:22.878] [Information] Analyzing file: OnlineNotificationGridDTO.cs
+[2025-04-07 09:06:22.881] [Information] Analyzing file: PayoutBatchGridDTO.cs
+[2025-04-07 09:06:22.882] [Information] Analyzing file: PayoutDTO.cs
+[2025-04-07 09:06:22.884] [Information] Analyzing file: PayoutFxGrid.cs
+[2025-04-07 09:06:22.886] [Information] Analyzing file: PayoutGrid.cs
+[2025-04-07 09:06:22.888] [Information] Analyzing file: PayoutNotificationGrid.cs
+[2025-04-07 09:06:22.890] [Information] Analyzing file: RollingPayIn.cs
+[2025-04-07 09:06:22.891] [Information] Analyzing file: SettlementTransactionDTO.cs
+[2025-04-07 09:06:22.893] [Information] Analyzing file: ShopDailyBalanceDTO.cs
+[2025-04-07 09:06:22.895] [Information] Analyzing file: TransactionApprovedDTO.cs
+[2025-04-07 09:06:22.897] [Information] Analyzing file: TransactionGrid.cs
+[2025-04-07 09:06:22.900] [Information] Analyzing file: TransactionGridV2.cs
+[2025-04-07 09:06:22.904] [Information] Analyzing file: TransactionGridV2WithPspRefs.cs
+[2025-04-07 09:06:22.924] [Information] Analyzing file: TransactionRateDTO.cs
+[2025-04-07 09:06:22.926] [Information] Analyzing file: TransactionUser.cs
+[2025-04-07 09:06:22.928] [Information] Analyzing file: TreasuryGridDTO.cs
+[2025-04-07 09:06:22.929] [Information] Analyzing file: Auth.cs
+[2025-04-07 09:06:22.931] [Information] Analyzing file: ConfigurationGroup.cs
+[2025-04-07 09:06:22.933] [Information] Analyzing file: ConfigurationSetting.cs
+[2025-04-07 09:06:22.935] [Information] Analyzing file: DbAmount.cs
+[2025-04-07 09:06:22.936] [Information] Analyzing file: DbCount.cs
+[2025-04-07 09:06:22.938] [Information] Analyzing file: Email.cs
+[2025-04-07 09:06:22.939] [Information] Analyzing file: EmailAttachment.cs
+[2025-04-07 09:06:22.942] [Information] Analyzing file: EmailTemplate.cs
+[2025-04-07 09:06:22.944] [Information] Analyzing file: EventLog.cs
+[2025-04-07 09:06:22.945] [Information] Analyzing file: File.cs
+[2025-04-07 09:06:22.947] [Information] Analyzing file: FileContent.cs
+[2025-04-07 09:06:22.948] [Information] Analyzing file: Entities.GlobalUsings.g.cs
+[2025-04-07 09:06:22.950] [Information] Analyzing file: .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+[2025-04-07 09:06:22.952] [Information] Analyzing file: Entities.AssemblyInfo.cs
+[2025-04-07 09:06:22.954] [Information] Analyzing project: TransactionModuleAPI.UnitTests
+[2025-04-07 09:06:22.970] [Information] Found 12 documents in project TransactionModuleAPI.UnitTests
+[2025-04-07 09:06:22.970] [Information] Analyzing file: TransactionsControllerTests.cs
+[2025-04-07 09:06:22.999] [Information] Processing batch of 109 relationships
+[2025-04-07 09:06:23.030] [Information] Processing batch of 130 method calls
+[2025-04-07 09:06:23.106] [Information] Analyzing file: HttpClientWrapperTests.cs
+[2025-04-07 09:06:23.111] [Information] Analyzing file: ExportProcessorServiceTests.cs
+[2025-04-07 09:06:23.126] [Information] Analyzing file: ExportServiceTests.cs
+[2025-04-07 09:06:23.138] [Information] Processing batch of 120 method calls
+[2025-04-07 09:06:23.198] [Information] Analyzing file: LogToDbDaemonTests.cs
+[2025-04-07 09:06:23.209] [Information] Analyzing file: PermissionServiceTests.cs
+[2025-04-07 09:06:23.223] [Information] Analyzing file: SessionServiceTests.cs
+[2025-04-07 09:06:23.234] [Information] Analyzing file: TransactionServiceTests.cs
+[2025-04-07 09:06:23.270] [Information] Processing batch of 34 classes and 105 methods
+[2025-04-07 09:06:23.354] [Information] Processing batch of 187 method calls
+[2025-04-07 09:06:23.479] [Information] Analyzing file: CancelledTransactionHomologationErrorReasonTests.cs
+[2025-04-07 09:06:23.491] [Information] Analyzing file: TransactionModuleAPI.UnitTests.GlobalUsings.g.cs
+[2025-04-07 09:06:23.499] [Information] Analyzing file: .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+[2025-04-07 09:06:23.506] [Information] Analyzing file: TransactionModuleAPI.UnitTests.AssemblyInfo.cs
+[2025-04-07 09:06:23.513] [Information] Processing remaining 1 classes and 6 methods
+[2025-04-07 09:06:23.600] [Information] Processing remaining 36 relationships
+[2025-04-07 09:06:23.674] [Information] Processing remaining 12 method calls
+[2025-04-07 09:06:23.737] [Information] Analysis complete
+[2025-04-07 09:06:23.747] [Information] Analyzed 1816 method calls
+[2025-04-07 09:06:23.800] [Information] Analysis completed successfully
+[2025-04-07 09:30:29.629] [Information] Starting analysis of: /Users/alessandrosantini/Development/psp/bo-api-transactions/TransactionModuleAPI.sln
+[2025-04-07 09:30:29.703] [Information] Clearing existing database data
+[2025-04-07 09:30:30.195] [Information] Analyzing solution file
+[2025-04-07 09:30:30.476] [Information] Starting analysis of solution: /Users/alessandrosantini/Development/psp/bo-api-transactions/TransactionModuleAPI.sln
+[2025-04-07 09:30:31.722] [Information] Found 3 projects in the solution
+[2025-04-07 09:30:31.723] [Information] Analyzing project: TransactionModuleAPI
+[2025-04-07 09:30:32.349] [Information] Found 70 documents in project TransactionModuleAPI
+[2025-04-07 09:30:32.350] [Information] Analyzing file: ResourcePatentAuthorizeAttribute.cs
+[2025-04-07 09:30:32.363] [Information] Analyzing file: AuthenticationSchemes.cs
+[2025-04-07 09:30:32.371] [Information] Analyzing file: ConfigurationSettingKeys.cs
+[2025-04-07 09:30:32.379] [Information] Analyzing file: FeatureFlagConstants.cs
+[2025-04-07 09:30:32.386] [Information] Analyzing file: PartnerConfigParamNames.cs
+[2025-04-07 09:30:32.390] [Information] Analyzing file: RevenueOperationTypes.cs
+[2025-04-07 09:30:32.396] [Information] Analyzing file: TransactionRefundStatus.cs
+[2025-04-07 09:30:32.400] [Information] Analyzing file: TransactionStatus.cs
+[2025-04-07 09:30:32.405] [Information] Analyzing file: HealthCheckController.cs
+[2025-04-07 09:30:32.422] [Information] Analyzing file: TransactionsController.cs
+[2025-04-07 09:30:32.625] [Information] Analyzing file: BaseSqlContext.cs
+[2025-04-07 09:30:32.637] [Information] Analyzing file: DbContextEF.cs
+[2025-04-07 09:30:32.688] [Information] Processing batch of 521 method calls
+[2025-04-07 09:30:32.792] [Information] Analyzing file: LoggerContext.cs
+[2025-04-07 09:30:32.803] [Information] Analyzing file: GenericExtensions.cs
+[2025-04-07 09:30:32.860] [Information] Analyzing file: LinqExtensions.cs
+[2025-04-07 09:30:32.875] [Information] Analyzing file: StringExtensions.cs
+[2025-04-07 09:30:32.888] [Information] Analyzing file: HttpClientWrapper.cs
+[2025-04-07 09:30:32.898] [Information] Analyzing file: IHttpClient.cs
+[2025-04-07 09:30:32.902] [Information] Analyzing file: AccountBalanceRevenueRequest.cs
+[2025-04-07 09:30:32.907] [Information] Analyzing file: AccountBalanceRevenueResponse.cs
+[2025-04-07 09:30:32.911] [Information] Analyzing file: AppConfiguration.cs
+[2025-04-07 09:30:32.916] [Information] Analyzing file: DbLog.cs
+[2025-04-07 09:30:32.920] [Information] Analyzing file: EmailConfigModel.cs
+[2025-04-07 09:30:32.924] [Information] Analyzing file: EmailModel.cs
+[2025-04-07 09:30:32.934] [Information] Processing batch of 108 method calls
+[2025-04-07 09:30:32.976] [Information] Analyzing file: GdprTransactionGridV2.cs
+[2025-04-07 09:30:32.983] [Information] Analyzing file: GetTransactionRefundsResponseModel.cs
+[2025-04-07 09:30:32.989] [Information] Analyzing file: IFile.cs
+[2025-04-07 09:30:32.996] [Information] Analyzing file: PagerParameters.cs
+[2025-04-07 09:30:33.001] [Information] Analyzing file: SetupListModel.cs
+[2025-04-07 09:30:33.006] [Information] Analyzing file: TransactionDetailsModel.cs
+[2025-04-07 09:30:33.013] [Information] Analyzing file: TransactionPagerParameters.cs
+[2025-04-07 09:30:33.030] [Information] Analyzing file: Program.cs
+[2025-04-07 09:30:33.038] [Information] Analyzing file: BaseDbRepository.cs
+[2025-04-07 09:30:33.060] [Information] Analyzing file: DbLoggerRepository.cs
+[2025-04-07 09:30:33.064] [Information] Analyzing file: IDbLoggerRepository.cs
+[2025-04-07 09:30:33.068] [Information] Analyzing file: IOneReadRepository.cs
+[2025-04-07 09:30:33.071] [Information] Analyzing file: IOneWriteRepository.cs
+[2025-04-07 09:30:33.074] [Information] Analyzing file: OneReadRepository.cs
+[2025-04-07 09:30:33.130] [Information] Processing batch of 128 relationships
+[2025-04-07 09:30:33.144] [Information] Processing batch of 292 method calls
+[2025-04-07 09:30:33.241] [Information] Analyzing file: OneWriteRepository.cs
+[2025-04-07 09:30:33.261] [Information] Analyzing file: AccountBalanceService.cs
+[2025-04-07 09:30:33.275] [Information] Analyzing file: IAccountBalanceService.cs
+[2025-04-07 09:30:33.284] [Information] Analyzing file: ExportProcessorService.cs
+[2025-04-07 09:30:33.342] [Information] Processing batch of 25 classes and 103 methods
+[2025-04-07 09:30:33.404] [Information] Processing batch of 191 method calls
+[2025-04-07 09:30:33.542] [Information] Analyzing file: ExportService.cs
+[2025-04-07 09:30:33.563] [Information] Analyzing file: IExportService.cs
+[2025-04-07 09:30:33.571] [Information] Analyzing file: DbLogger.cs
+[2025-04-07 09:30:33.585] [Information] Analyzing file: IDbLogger.cs
+[2025-04-07 09:30:33.591] [Information] Analyzing file: LogToDbDaemon.cs
+[2025-04-07 09:30:33.599] [Information] Analyzing file: IPermissionService.cs
+[2025-04-07 09:30:33.605] [Information] Analyzing file: PermissionService.cs
+[2025-04-07 09:30:33.624] [Information] Analyzing file: ISessionService.cs
+[2025-04-07 09:30:33.627] [Information] Analyzing file: SessionService.cs
+[2025-04-07 09:30:33.632] [Information] Analyzing file: ConfigurationSettingService.cs
+[2025-04-07 09:30:33.640] [Information] Analyzing file: IConfigurationSettingService.cs
+[2025-04-07 09:30:33.643] [Information] Analyzing file: ITransactionService.cs
+[2025-04-07 09:30:33.645] [Information] Analyzing file: TransactionService.cs
+[2025-04-07 09:30:33.664] [Information] Analyzing file: SwaggerConfiguration.cs
+[2025-04-07 09:30:33.668] [Information] Analyzing file: CancelledTransactionHomologationErrorReason.cs
+[2025-04-07 09:30:33.672] [Information] Analyzing file: CensorGdrp.cs
+[2025-04-07 09:30:33.691] [Information] Processing batch of 107 method calls
+[2025-04-07 09:30:33.754] [Information] Analyzing file: ContextNames.cs
+[2025-04-07 09:30:33.761] [Information] Analyzing file: EmailClient.cs
+[2025-04-07 09:30:33.770] [Information] Analyzing file: Encryption.cs
+[2025-04-07 09:30:33.781] [Information] Analyzing file: ExcelExtensions.cs
+[2025-04-07 09:30:33.802] [Information] Analyzing file: ExcelWorkbook.cs
+[2025-04-07 09:30:33.808] [Information] Analyzing file: FileUtils.cs
+[2025-04-07 09:30:33.817] [Information] Analyzing file: FiltersTransactions.cs
+[2025-04-07 09:30:33.835] [Information] Processing batch of 148 method calls
+[2025-04-07 09:30:33.922] [Information] Analyzing file: IEmailClient.cs
+[2025-04-07 09:30:33.932] [Information] Analyzing file: IServiceProvider.cs
+[2025-04-07 09:30:33.961] [Information] Analyzing file: TransactionModuleAPI.GlobalUsings.g.cs
+[2025-04-07 09:30:33.964] [Information] Analyzing file: .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+[2025-04-07 09:30:33.967] [Information] Analyzing file: TransactionModuleAPI.AssemblyInfo.cs
+[2025-04-07 09:30:33.969] [Information] Analyzing project: Entities
+[2025-04-07 09:30:33.972] [Information] Found 187 documents in project Entities
+[2025-04-07 09:30:33.974] [Information] Analyzing file: AcamIndustry.cs
+[2025-04-07 09:30:33.976] [Information] Analyzing file: AcamIndustryTypeMapping.cs
+[2025-04-07 09:30:33.978] [Information] Analyzing file: Adjustment.cs
+[2025-04-07 09:30:33.979] [Information] Analyzing file: AdjustmentMovement.cs
+[2025-04-07 09:30:33.983] [Information] Analyzing file: AdjustmentType.cs
+[2025-04-07 09:30:33.984] [Information] Analyzing file: Agency.cs
+[2025-04-07 09:30:33.986] [Information] Analyzing file: BalanceType.cs
+[2025-04-07 09:30:33.988] [Information] Analyzing file: BankingInformation.cs
+[2025-04-07 09:30:33.990] [Information] Analyzing file: BanklyNotification.cs
+[2025-04-07 09:30:33.992] [Information] Analyzing file: BanklyNotificationStatusType.cs
+[2025-04-07 09:30:33.993] [Information] Analyzing file: Campaign.cs
+[2025-04-07 09:30:33.996] [Information] Analyzing file: Claim.cs
+[2025-04-07 09:30:33.999] [Information] Analyzing file: ClaimReasonType.cs
+[2025-04-07 09:30:34.000] [Information] Analyzing file: ClaimTransaction.cs
+[2025-04-07 09:30:34.002] [Information] Analyzing file: ClosingLikelihoodType.cs
+[2025-04-07 09:30:34.006] [Information] Analyzing file: CompanyInformation.cs
+[2025-04-07 09:30:34.010] [Information] Analyzing file: CompanyRisk.cs
+[2025-04-07 09:30:34.011] [Information] Analyzing file: Converter.cs
+[2025-04-07 09:30:34.013] [Information] Analyzing file: ConverterConfig.cs
+[2025-04-07 09:30:34.015] [Information] Analyzing file: Country.cs
+[2025-04-07 09:30:34.017] [Information] Analyzing file: CountryRegion.cs
+[2025-04-07 09:30:34.019] [Information] Analyzing file: Currency.cs
+[2025-04-07 09:30:34.020] [Information] Analyzing file: CurrencyConversion.cs
+[2025-04-07 09:30:34.022] [Information] Analyzing file: CustomerPayout.cs
+[2025-04-07 09:30:34.024] [Information] Analyzing file: CustomerReason.cs
+[2025-04-07 09:30:34.026] [Information] Analyzing file: DailyBalanceReportTask.cs
+[2025-04-07 09:30:34.028] [Information] Analyzing file: EntityInformation.cs
+[2025-04-07 09:30:34.030] [Information] Analyzing file: ExportAcamManual.cs
+[2025-04-07 09:30:34.032] [Information] Analyzing file: FinancialStatusType.cs
+[2025-04-07 09:30:34.034] [Information] Analyzing file: GeneralRate.cs
+[2025-04-07 09:30:34.036] [Information] Analyzing file: IndustrySubType.cs
+[2025-04-07 09:30:34.037] [Information] Analyzing file: IndustryType.cs
+[2025-04-07 09:30:34.039] [Information] Analyzing file: Merchant.cs
+[2025-04-07 09:30:34.041] [Information] Analyzing file: MerchantAddress.cs
+[2025-04-07 09:30:34.043] [Information] Analyzing file: MerchantAlert.cs
+[2025-04-07 09:30:34.046] [Information] Analyzing file: MerchantBusinessCountry.cs
+[2025-04-07 09:30:34.070] [Information] Analyzing file: MerchantCustomerBlacklist.cs
+[2025-04-07 09:30:34.071] [Information] Analyzing file: MerchantCustomerBlacklistPaymentMethod.cs
+[2025-04-07 09:30:34.073] [Information] Analyzing file: MerchantHierarchyType.cs
+[2025-04-07 09:30:34.074] [Information] Analyzing file: MerchantLowRiskTransactionalProfile.cs
+[2025-04-07 09:30:34.076] [Information] Analyzing file: MerchantPaymentType.cs
+[2025-04-07 09:30:34.078] [Information] Analyzing file: MerchantRiskEvaluation.cs
+[2025-04-07 09:30:34.080] [Information] Analyzing file: MerchantStatusType.cs
+[2025-04-07 09:30:34.081] [Information] Analyzing file: MonthlyMoneyFlow.cs
+[2025-04-07 09:30:34.083] [Information] Analyzing file: Note.cs
+[2025-04-07 09:30:34.085] [Information] Analyzing file: Partner.cs
+[2025-04-07 09:30:34.087] [Information] Analyzing file: PartnerConfig.cs
+[2025-04-07 09:30:34.088] [Information] Analyzing file: PaymentChannelType.cs
+[2025-04-07 09:30:34.090] [Information] Analyzing file: PaymentMethod.cs
+[2025-04-07 09:30:34.092] [Information] Analyzing file: PaymentMethodChild.cs
+[2025-04-07 09:30:34.093] [Information] Analyzing file: PaymentMethodTag.cs
+[2025-04-07 09:30:34.095] [Information] Analyzing file: PaymentModeType.cs
+[2025-04-07 09:30:34.097] [Information] Analyzing file: PaymentOrder.cs
+[2025-04-07 09:30:34.099] [Information] Analyzing file: PaymentOrderItem.cs
+[2025-04-07 09:30:34.102] [Information] Analyzing file: PaymentOrderStatusType.cs
+[2025-04-07 09:30:34.106] [Information] Analyzing file: Payout.cs
+[2025-04-07 09:30:34.114] [Information] Analyzing file: PayoutAccountType.cs
+[2025-04-07 09:30:34.115] [Information] Analyzing file: PayoutBatch.cs
+[2025-04-07 09:30:34.117] [Information] Analyzing file: PayoutProcessor.cs
+[2025-04-07 09:30:34.120] [Information] Analyzing file: PayoutPspReference.cs
+[2025-04-07 09:30:34.122] [Information] Analyzing file: PayoutStatusType.cs
+[2025-04-07 09:30:34.125] [Information] Analyzing file: PayRetailersConverter.cs
+[2025-04-07 09:30:34.128] [Information] Analyzing file: RateType.cs
+[2025-04-07 09:30:34.131] [Information] Analyzing file: Referral.cs
+[2025-04-07 09:30:34.133] [Information] Analyzing file: RefundRequest.cs
+[2025-04-07 09:30:34.135] [Information] Analyzing file: Region.cs
+[2025-04-07 09:30:34.138] [Information] Analyzing file: ReportFile.cs
+[2025-04-07 09:30:34.141] [Information] Analyzing file: ReportFileConfig.cs
+[2025-04-07 09:30:34.143] [Information] Analyzing file: ReportTask.cs
+[2025-04-07 09:30:34.146] [Information] Analyzing file: ReportTaskParms.cs
+[2025-04-07 09:30:34.149] [Information] Analyzing file: ReportTaskType.cs
+[2025-04-07 09:30:34.152] [Information] Analyzing file: SettledTransaction.cs
+[2025-04-07 09:30:34.154] [Information] Analyzing file: Settlement.cs
+[2025-04-07 09:30:34.156] [Information] Analyzing file: SettlementExtraItem.cs
+[2025-04-07 09:30:34.158] [Information] Analyzing file: SettlementRollingReserve.cs
+[2025-04-07 09:30:34.160] [Information] Analyzing file: Shop.cs
+[2025-04-07 09:30:34.163] [Information] Analyzing file: ShopBalance.cs
+[2025-04-07 09:30:34.165] [Information] Analyzing file: ShopBankingInformation.cs
+[2025-04-07 09:30:34.167] [Information] Analyzing file: ShopCurrentBalance.cs
+[2025-04-07 09:30:34.169] [Information] Analyzing file: ShopDailyBalance.cs
+[2025-04-07 09:30:34.173] [Information] Analyzing file: ShopGeneralRate.cs
+[2025-04-07 09:30:34.175] [Information] Analyzing file: ShopRate.cs
+[2025-04-07 09:30:34.195] [Information] Analyzing file: ShopRateCountry.cs
+[2025-04-07 09:30:34.197] [Information] Analyzing file: ShopRatePaymentMethod.cs
+[2025-04-07 09:30:34.198] [Information] Analyzing file: SSOUserMerchant.cs
+[2025-04-07 09:30:34.199] [Information] Analyzing file: SSOUserReferral.cs
+[2025-04-07 09:30:34.201] [Information] Analyzing file: Subsidiary.cs
+[2025-04-07 09:30:34.202] [Information] Analyzing file: Transaction.cs
+[2025-04-07 09:30:34.203] [Information] Analyzing file: TransactionConversion.cs
+[2025-04-07 09:30:34.208] [Information] Analyzing file: TransactionDashboardData.cs
+[2025-04-07 09:30:34.227] [Information] Analyzing file: TransactionNotificationLog.cs
+[2025-04-07 09:30:34.228] [Information] Analyzing file: TransactionPayerInfo.cs
+[2025-04-07 09:30:34.230] [Information] Analyzing file: TransactionPspReference.cs
+[2025-04-07 09:30:34.231] [Information] Analyzing file: TransactionReportData.cs
+[2025-04-07 09:30:34.233] [Information] Analyzing file: TransactionSettlement.cs
+[2025-04-07 09:30:34.234] [Information] Analyzing file: Withdrawal.cs
+[2025-04-07 09:30:34.235] [Information] Analyzing file: WithdrawalAdjustment.cs
+[2025-04-07 09:30:34.237] [Information] Analyzing file: WithdrawalTransaction.cs
+[2025-04-07 09:30:34.239] [Information] Analyzing file: AuditableAddOnlyEntity.cs
+[2025-04-07 09:30:34.240] [Information] Analyzing file: AuditableEntity.cs
+[2025-04-07 09:30:34.242] [Information] Analyzing file: AuditableEntityNotDeletion.cs
+[2025-04-07 09:30:34.243] [Information] Analyzing file: AdjustmentPagerParameters.cs
+[2025-04-07 09:30:34.245] [Information] Analyzing file: BancoPluralPagerParameters.cs
+[2025-04-07 09:30:34.247] [Information] Analyzing file: BanklyEventPagerParameters.cs
+[2025-04-07 09:30:34.248] [Information] Analyzing file: BanklyPagerParameters.cs
+[2025-04-07 09:30:34.250] [Information] Analyzing file: ClaimPagerParameters.cs
+[2025-04-07 09:30:34.251] [Information] Analyzing file: CustomerPayoutPagerParameters.cs
+[2025-04-07 09:30:34.252] [Information] Analyzing file: MerchantBalanceFilters.cs
+[2025-04-07 09:30:34.254] [Information] Analyzing file: MerchantRiskPagerParameters.cs
+[2025-04-07 09:30:34.257] [Information] Analyzing file: NotePagerParameters.cs
+[2025-04-07 09:30:34.276] [Information] Analyzing file: OnlineNotificationPagerParameters.cs
+[2025-04-07 09:30:34.278] [Information] Analyzing file: PagerParameters.cs
+[2025-04-07 09:30:34.279] [Information] Analyzing file: PaymentMethodPagerParameters.cs
+[2025-04-07 09:30:34.280] [Information] Analyzing file: PayoutFxPagerParameters.cs
+[2025-04-07 09:30:34.282] [Information] Analyzing file: PayoutPagerParameters.cs
+[2025-04-07 09:30:34.283] [Information] Analyzing file: RatePagerParameters.cs
+[2025-04-07 09:30:34.285] [Information] Analyzing file: SettledTransactionPagerParameters.cs
+[2025-04-07 09:30:34.286] [Information] Analyzing file: SettlementPagerParameters.cs
+[2025-04-07 09:30:34.288] [Information] Analyzing file: SettlementSummaryPagerParameters.cs
+[2025-04-07 09:30:34.289] [Information] Analyzing file: ShopDailyBalancePagerParameters.cs
+[2025-04-07 09:30:34.297] [Information] Analyzing file: TransactionPagerParameters.cs
+[2025-04-07 09:30:34.300] [Information] Analyzing file: TransactionUserPagerParameters.cs
+[2025-04-07 09:30:34.302] [Information] Analyzing file: TreasuryPagerParameters.cs
+[2025-04-07 09:30:34.304] [Information] Analyzing file: TreasurySettlementPagerParameters.cs
+[2025-04-07 09:30:34.305] [Information] Analyzing file: AuthPermission.cs
+[2025-04-07 09:30:34.307] [Information] Analyzing file: Patent.cs
+[2025-04-07 09:30:34.309] [Information] Analyzing file: Resource.cs
+[2025-04-07 09:30:34.310] [Information] Analyzing file: ResourcePatent.cs
+[2025-04-07 09:30:34.312] [Information] Analyzing file: Role.cs
+[2025-04-07 09:30:34.317] [Information] Analyzing file: RoleResource.cs
+[2025-04-07 09:30:34.337] [Information] Analyzing file: RoleResourcePatent.cs
+[2025-04-07 09:30:34.339] [Information] Analyzing file: Session.cs
+[2025-04-07 09:30:34.341] [Information] Analyzing file: User.cs
+[2025-04-07 09:30:34.343] [Information] Analyzing file: UserMerchant.cs
+[2025-04-07 09:30:34.344] [Information] Analyzing file: UserPartner.cs
+[2025-04-07 09:30:34.347] [Information] Analyzing file: UserPayoutProcessor.cs
+[2025-04-07 09:30:34.349] [Information] Analyzing file: IReportData.cs
+[2025-04-07 09:30:34.350] [Information] Analyzing file: AcamTransactionDto.cs
+[2025-04-07 09:30:34.352] [Information] Analyzing file: PayinAcamExportItem.cs
+[2025-04-07 09:30:34.353] [Information] Analyzing file: PayinAcamReportData.cs
+[2025-04-07 09:30:34.356] [Information] Analyzing file: TransactionExportData.cs
+[2025-04-07 09:30:34.358] [Information] Analyzing file: PayoutAcamExportItem.cs
+[2025-04-07 09:30:34.360] [Information] Analyzing file: PayoutAcamReportData.cs
+[2025-04-07 09:30:34.361] [Information] Analyzing file: PayoutExportData.cs
+[2025-04-07 09:30:34.364] [Information] Analyzing file: AppConfiguration.cs
+[2025-04-07 09:30:34.366] [Information] Analyzing file: BancoPluralNotificationGrid.cs
+[2025-04-07 09:30:34.368] [Information] Analyzing file: BanklyEventGridDTO.cs
+[2025-04-07 09:30:34.369] [Information] Analyzing file: BanklyNotificationGridDTO.cs
+[2025-04-07 09:30:34.371] [Information] Analyzing file: ClaimReportGridData.cs
+[2025-04-07 09:30:34.378] [Information] Analyzing file: ConvertApiResponse.cs
+[2025-04-07 09:30:34.380] [Information] Analyzing file: CRMZohoLeadDTO.cs
+[2025-04-07 09:30:34.382] [Information] Analyzing file: CurrencyConversionParams.cs
+[2025-04-07 09:30:34.383] [Information] Analyzing file: DashboardShop.cs
+[2025-04-07 09:30:34.385] [Information] Analyzing file: DefaultCurrencyDTO.cs
+[2025-04-07 09:30:34.386] [Information] Analyzing file: ExportBRMerchantInfo.cs
+[2025-04-07 09:30:34.388] [Information] Analyzing file: FxDTO.cs
+[2025-04-07 09:30:34.390] [Information] Analyzing file: NotificationGrid.cs
+[2025-04-07 09:30:34.392] [Information] Analyzing file: OnlineNotificationGridDTO.cs
+[2025-04-07 09:30:34.393] [Information] Analyzing file: PayoutBatchGridDTO.cs
+[2025-04-07 09:30:34.395] [Information] Analyzing file: PayoutDTO.cs
+[2025-04-07 09:30:34.396] [Information] Analyzing file: PayoutFxGrid.cs
+[2025-04-07 09:30:34.398] [Information] Analyzing file: PayoutGrid.cs
+[2025-04-07 09:30:34.400] [Information] Analyzing file: PayoutNotificationGrid.cs
+[2025-04-07 09:30:34.402] [Information] Analyzing file: RollingPayIn.cs
+[2025-04-07 09:30:34.403] [Information] Analyzing file: SettlementTransactionDTO.cs
+[2025-04-07 09:30:34.405] [Information] Analyzing file: ShopDailyBalanceDTO.cs
+[2025-04-07 09:30:34.407] [Information] Analyzing file: TransactionApprovedDTO.cs
+[2025-04-07 09:30:34.408] [Information] Analyzing file: TransactionGrid.cs
+[2025-04-07 09:30:34.411] [Information] Analyzing file: TransactionGridV2.cs
+[2025-04-07 09:30:34.414] [Information] Analyzing file: TransactionGridV2WithPspRefs.cs
+[2025-04-07 09:30:34.434] [Information] Analyzing file: TransactionRateDTO.cs
+[2025-04-07 09:30:34.436] [Information] Analyzing file: TransactionUser.cs
+[2025-04-07 09:30:34.438] [Information] Analyzing file: TreasuryGridDTO.cs
+[2025-04-07 09:30:34.440] [Information] Analyzing file: Auth.cs
+[2025-04-07 09:30:34.441] [Information] Analyzing file: ConfigurationGroup.cs
+[2025-04-07 09:30:34.443] [Information] Analyzing file: ConfigurationSetting.cs
+[2025-04-07 09:30:34.444] [Information] Analyzing file: DbAmount.cs
+[2025-04-07 09:30:34.446] [Information] Analyzing file: DbCount.cs
+[2025-04-07 09:30:34.448] [Information] Analyzing file: Email.cs
+[2025-04-07 09:30:34.449] [Information] Analyzing file: EmailAttachment.cs
+[2025-04-07 09:30:34.451] [Information] Analyzing file: EmailTemplate.cs
+[2025-04-07 09:30:34.452] [Information] Analyzing file: EventLog.cs
+[2025-04-07 09:30:34.454] [Information] Analyzing file: File.cs
+[2025-04-07 09:30:34.456] [Information] Analyzing file: FileContent.cs
+[2025-04-07 09:30:34.458] [Information] Analyzing file: Entities.GlobalUsings.g.cs
+[2025-04-07 09:30:34.460] [Information] Analyzing file: .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+[2025-04-07 09:30:34.461] [Information] Analyzing file: Entities.AssemblyInfo.cs
+[2025-04-07 09:30:34.463] [Information] Analyzing project: TransactionModuleAPI.UnitTests
+[2025-04-07 09:30:34.479] [Information] Found 12 documents in project TransactionModuleAPI.UnitTests
+[2025-04-07 09:30:34.479] [Information] Analyzing file: TransactionsControllerTests.cs
+[2025-04-07 09:30:34.499] [Information] Processing batch of 109 relationships
+[2025-04-07 09:30:34.525] [Information] Processing batch of 130 method calls
+[2025-04-07 09:30:34.624] [Information] Analyzing file: HttpClientWrapperTests.cs
+[2025-04-07 09:30:34.630] [Information] Analyzing file: ExportProcessorServiceTests.cs
+[2025-04-07 09:30:34.644] [Information] Analyzing file: ExportServiceTests.cs
+[2025-04-07 09:30:34.654] [Information] Processing batch of 120 method calls
+[2025-04-07 09:30:34.724] [Information] Analyzing file: LogToDbDaemonTests.cs
+[2025-04-07 09:30:34.736] [Information] Analyzing file: PermissionServiceTests.cs
+[2025-04-07 09:30:34.746] [Information] Analyzing file: SessionServiceTests.cs
+[2025-04-07 09:30:34.760] [Information] Analyzing file: TransactionServiceTests.cs
+[2025-04-07 09:30:34.790] [Information] Processing batch of 34 classes and 105 methods
+[2025-04-07 09:30:34.851] [Information] Processing batch of 187 method calls
+[2025-04-07 09:30:35.005] [Information] Analyzing file: CancelledTransactionHomologationErrorReasonTests.cs
+[2025-04-07 09:30:35.017] [Information] Analyzing file: TransactionModuleAPI.UnitTests.GlobalUsings.g.cs
+[2025-04-07 09:30:35.023] [Information] Analyzing file: .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+[2025-04-07 09:30:35.032] [Information] Analyzing file: TransactionModuleAPI.UnitTests.AssemblyInfo.cs
+[2025-04-07 09:30:35.039] [Information] Processing remaining 1 classes and 6 methods
+[2025-04-07 09:30:35.056] [Information] Processing remaining 36 relationships
+[2025-04-07 09:30:35.079] [Information] Processing remaining 12 method calls
+[2025-04-07 09:30:35.096] [Information] Analysis complete
+[2025-04-07 09:30:35.105] [Information] Analyzed 1816 method calls
+[2025-04-07 09:30:35.139] [Information] Analysis completed successfully
+[2025-04-07 09:35:00.912] [Information] Starting analysis of: /Users/alessandrosantini/Development/psp/bo-api-transactions/TransactionModuleAPI.sln
+[2025-04-07 09:35:00.961] [Information] Clearing existing database data
+[2025-04-07 09:35:01.077] [Information] Analyzing solution file
+[2025-04-07 09:35:01.268] [Information] Starting analysis of solution: /Users/alessandrosantini/Development/psp/bo-api-transactions/TransactionModuleAPI.sln
+[2025-04-07 09:35:02.235] [Information] Found 3 projects in the solution
+[2025-04-07 09:35:02.235] [Information] Analyzing project: TransactionModuleAPI
+[2025-04-07 09:35:02.692] [Information] Found 70 documents in project TransactionModuleAPI
+[2025-04-07 09:35:02.704] [Information] Analyzing file: ResourcePatentAuthorizeAttribute.cs
+[2025-04-07 09:35:02.714] [Information] Analyzing file: AuthenticationSchemes.cs
+[2025-04-07 09:35:02.721] [Information] Analyzing file: ConfigurationSettingKeys.cs
+[2025-04-07 09:35:02.726] [Information] Analyzing file: FeatureFlagConstants.cs
+[2025-04-07 09:35:02.730] [Information] Analyzing file: PartnerConfigParamNames.cs
+[2025-04-07 09:35:02.733] [Information] Analyzing file: RevenueOperationTypes.cs
+[2025-04-07 09:35:02.737] [Information] Analyzing file: TransactionRefundStatus.cs
+[2025-04-07 09:35:02.739] [Information] Analyzing file: TransactionStatus.cs
+[2025-04-07 09:35:02.743] [Information] Analyzing file: HealthCheckController.cs
+[2025-04-07 09:35:02.759] [Information] Analyzing file: TransactionsController.cs
+[2025-04-07 09:35:03.005] [Information] Analyzing file: BaseSqlContext.cs
+[2025-04-07 09:35:03.012] [Information] Analyzing file: DbContextEF.cs
+[2025-04-07 09:35:03.067] [Information] Processing batch of 521 method calls
+[2025-04-07 09:35:03.155] [Information] Analyzing file: LoggerContext.cs
+[2025-04-07 09:35:03.165] [Information] Analyzing file: GenericExtensions.cs
+[2025-04-07 09:35:03.209] [Information] Analyzing file: LinqExtensions.cs
+[2025-04-07 09:35:03.230] [Information] Analyzing file: StringExtensions.cs
+[2025-04-07 09:35:03.263] [Information] Analyzing file: HttpClientWrapper.cs
+[2025-04-07 09:35:03.273] [Information] Analyzing file: IHttpClient.cs
+[2025-04-07 09:35:03.276] [Information] Analyzing file: AccountBalanceRevenueRequest.cs
+[2025-04-07 09:35:03.278] [Information] Analyzing file: AccountBalanceRevenueResponse.cs
+[2025-04-07 09:35:03.280] [Information] Analyzing file: AppConfiguration.cs
+[2025-04-07 09:35:03.282] [Information] Analyzing file: DbLog.cs
+[2025-04-07 09:35:03.284] [Information] Analyzing file: EmailConfigModel.cs
+[2025-04-07 09:35:03.287] [Information] Analyzing file: EmailModel.cs
+[2025-04-07 09:35:03.293] [Information] Processing batch of 108 method calls
+[2025-04-07 09:35:03.329] [Information] Analyzing file: GdprTransactionGridV2.cs
+[2025-04-07 09:35:03.332] [Information] Analyzing file: GetTransactionRefundsResponseModel.cs
+[2025-04-07 09:35:03.334] [Information] Analyzing file: IFile.cs
+[2025-04-07 09:35:03.336] [Information] Analyzing file: PagerParameters.cs
+[2025-04-07 09:35:03.339] [Information] Analyzing file: SetupListModel.cs
+[2025-04-07 09:35:03.341] [Information] Analyzing file: TransactionDetailsModel.cs
+[2025-04-07 09:35:03.344] [Information] Analyzing file: TransactionPagerParameters.cs
+[2025-04-07 09:35:03.358] [Information] Analyzing file: Program.cs
+[2025-04-07 09:35:03.364] [Information] Analyzing file: BaseDbRepository.cs
+[2025-04-07 09:35:03.375] [Information] Analyzing file: DbLoggerRepository.cs
+[2025-04-07 09:35:03.382] [Information] Analyzing file: IDbLoggerRepository.cs
+[2025-04-07 09:35:03.392] [Information] Analyzing file: IOneReadRepository.cs
+[2025-04-07 09:35:03.425] [Information] Analyzing file: IOneWriteRepository.cs
+[2025-04-07 09:35:03.427] [Information] Analyzing file: OneReadRepository.cs
+[2025-04-07 09:35:03.491] [Information] Processing batch of 128 relationships
+[2025-04-07 09:35:03.512] [Information] Processing batch of 292 method calls
+[2025-04-07 09:35:03.608] [Information] Analyzing file: OneWriteRepository.cs
+[2025-04-07 09:35:03.624] [Information] Analyzing file: AccountBalanceService.cs
+[2025-04-07 09:35:03.636] [Information] Analyzing file: IAccountBalanceService.cs
+[2025-04-07 09:35:03.644] [Information] Analyzing file: ExportProcessorService.cs
+[2025-04-07 09:35:03.711] [Information] Processing batch of 25 classes and 103 methods
+[2025-04-07 09:35:03.877] [Error] [ERROR] Failed to analyze solution
+Exception: CodeBetter.Ingestor.RepositoryException: Failed to add nodes in batch
+ ---> Neo4j.Driver.ClientException: Unknown function 'methodName.Split' (line 1, column 81 (offset: 80))
+"UNWIND $methodNames as methodName MERGE (m:Method {name: methodName, className: methodName.Split('.')[0]})"
+                                                                                 ^
+ ---> Neo4j.Driver.DatabaseException: 42N48: The function methodName.Split() was not found. Verify that the spelling is correct.
+   --- End of inner exception stack trace ---
+   at Neo4j.Driver.Internal.MessageHandling.ResponsePipelineError.EnsureThrown()
+   at Neo4j.Driver.Internal.Result.ResultCursorBuilder.ConsumeAsync()
+   at Neo4j.Driver.Internal.AsyncSession.DiscardUnconsumedResultAsync()
+   at Neo4j.Driver.Internal.AsyncSession.DisposeSessionResultAsync()
+   at Neo4j.Driver.Internal.AsyncSession.DisposeSessionResultAsync()
+   at Neo4j.Driver.Internal.AsyncSession.<CloseAsync>b__59_0()
+   at Neo4j.Driver.Internal.Logging.DriverLoggerUtil.TryExecuteAsync(ILogger logger, Func`1 func, String message)
+   at Neo4j.Driver.Internal.AsyncSession.DisposeAsyncCore()
+   at Neo4j.Driver.Internal.AsyncQueryRunner.DisposeAsync()
+   at CodeBetter.Ingestor.Neo4jRepository.AddNodesBatchAsync(IEnumerable`1 classNames, IEnumerable`1 methodNames) in /Users/alessandrosantini/Development/oss/codebetter/CodeBetter.Ingestor/Repository.cs:line 145
+   --- End of inner exception stack trace ---
+   at CodeBetter.Ingestor.Neo4jRepository.AddNodesBatchAsync(IEnumerable`1 classNames, IEnumerable`1 methodNames) in /Users/alessandrosantini/Development/oss/codebetter/CodeBetter.Ingestor/Repository.cs:line 149
+   at CodeBetter.Ingestor.SolutionAnalyzer.AnalyzeSolutionAsync(String solutionPath, IProgress`1 progress) in /Users/alessandrosantini/Development/oss/codebetter/CodeBetter.Ingestor/SolutionAnalyzer.cs:line 122
+StackTrace:    at CodeBetter.Ingestor.Neo4jRepository.AddNodesBatchAsync(IEnumerable`1 classNames, IEnumerable`1 methodNames) in /Users/alessandrosantini/Development/oss/codebetter/CodeBetter.Ingestor/Repository.cs:line 149
+   at CodeBetter.Ingestor.SolutionAnalyzer.AnalyzeSolutionAsync(String solutionPath, IProgress`1 progress) in /Users/alessandrosantini/Development/oss/codebetter/CodeBetter.Ingestor/SolutionAnalyzer.cs:line 122
+[2025-04-07 09:35:03.891] [Error] [ERROR] Error analyzing code
+Exception: System.InvalidOperationException: Failed to analyze solution: Failed to add nodes in batch
+ ---> CodeBetter.Ingestor.RepositoryException: Failed to add nodes in batch
+ ---> Neo4j.Driver.ClientException: Unknown function 'methodName.Split' (line 1, column 81 (offset: 80))
+"UNWIND $methodNames as methodName MERGE (m:Method {name: methodName, className: methodName.Split('.')[0]})"
+                                                                                 ^
+ ---> Neo4j.Driver.DatabaseException: 42N48: The function methodName.Split() was not found. Verify that the spelling is correct.
+   --- End of inner exception stack trace ---
+   at Neo4j.Driver.Internal.MessageHandling.ResponsePipelineError.EnsureThrown()
+   at Neo4j.Driver.Internal.Result.ResultCursorBuilder.ConsumeAsync()
+   at Neo4j.Driver.Internal.AsyncSession.DiscardUnconsumedResultAsync()
+   at Neo4j.Driver.Internal.AsyncSession.DisposeSessionResultAsync()
+   at Neo4j.Driver.Internal.AsyncSession.DisposeSessionResultAsync()
+   at Neo4j.Driver.Internal.AsyncSession.<CloseAsync>b__59_0()
+   at Neo4j.Driver.Internal.Logging.DriverLoggerUtil.TryExecuteAsync(ILogger logger, Func`1 func, String message)
+   at Neo4j.Driver.Internal.AsyncSession.DisposeAsyncCore()
+   at Neo4j.Driver.Internal.AsyncQueryRunner.DisposeAsync()
+   at CodeBetter.Ingestor.Neo4jRepository.AddNodesBatchAsync(IEnumerable`1 classNames, IEnumerable`1 methodNames) in /Users/alessandrosantini/Development/oss/codebetter/CodeBetter.Ingestor/Repository.cs:line 145
+   --- End of inner exception stack trace ---
+   at CodeBetter.Ingestor.Neo4jRepository.AddNodesBatchAsync(IEnumerable`1 classNames, IEnumerable`1 methodNames) in /Users/alessandrosantini/Development/oss/codebetter/CodeBetter.Ingestor/Repository.cs:line 149
+   at CodeBetter.Ingestor.SolutionAnalyzer.AnalyzeSolutionAsync(String solutionPath, IProgress`1 progress) in /Users/alessandrosantini/Development/oss/codebetter/CodeBetter.Ingestor/SolutionAnalyzer.cs:line 122
+   --- End of inner exception stack trace ---
+   at CodeBetter.Ingestor.SolutionAnalyzer.AnalyzeSolutionAsync(String solutionPath, IProgress`1 progress) in /Users/alessandrosantini/Development/oss/codebetter/CodeBetter.Ingestor/SolutionAnalyzer.cs:line 169
+   at Program.Main(String[] args) in /Users/alessandrosantini/Development/oss/codebetter/CodeBetter.Ingestor/Program.cs:line 50
+StackTrace:    at CodeBetter.Ingestor.SolutionAnalyzer.AnalyzeSolutionAsync(String solutionPath, IProgress`1 progress) in /Users/alessandrosantini/Development/oss/codebetter/CodeBetter.Ingestor/SolutionAnalyzer.cs:line 169
+   at Program.Main(String[] args) in /Users/alessandrosantini/Development/oss/codebetter/CodeBetter.Ingestor/Program.cs:line 50
+[2025-04-07 09:35:03.900] [Error] [ERROR] Inner error
+Exception: CodeBetter.Ingestor.RepositoryException: Failed to add nodes in batch
+ ---> Neo4j.Driver.ClientException: Unknown function 'methodName.Split' (line 1, column 81 (offset: 80))
+"UNWIND $methodNames as methodName MERGE (m:Method {name: methodName, className: methodName.Split('.')[0]})"
+                                                                                 ^
+ ---> Neo4j.Driver.DatabaseException: 42N48: The function methodName.Split() was not found. Verify that the spelling is correct.
+   --- End of inner exception stack trace ---
+   at Neo4j.Driver.Internal.MessageHandling.ResponsePipelineError.EnsureThrown()
+   at Neo4j.Driver.Internal.Result.ResultCursorBuilder.ConsumeAsync()
+   at Neo4j.Driver.Internal.AsyncSession.DiscardUnconsumedResultAsync()
+   at Neo4j.Driver.Internal.AsyncSession.DisposeSessionResultAsync()
+   at Neo4j.Driver.Internal.AsyncSession.DisposeSessionResultAsync()
+   at Neo4j.Driver.Internal.AsyncSession.<CloseAsync>b__59_0()
+   at Neo4j.Driver.Internal.Logging.DriverLoggerUtil.TryExecuteAsync(ILogger logger, Func`1 func, String message)
+   at Neo4j.Driver.Internal.AsyncSession.DisposeAsyncCore()
+   at Neo4j.Driver.Internal.AsyncQueryRunner.DisposeAsync()
+   at CodeBetter.Ingestor.Neo4jRepository.AddNodesBatchAsync(IEnumerable`1 classNames, IEnumerable`1 methodNames) in /Users/alessandrosantini/Development/oss/codebetter/CodeBetter.Ingestor/Repository.cs:line 145
+   --- End of inner exception stack trace ---
+   at CodeBetter.Ingestor.Neo4jRepository.AddNodesBatchAsync(IEnumerable`1 classNames, IEnumerable`1 methodNames) in /Users/alessandrosantini/Development/oss/codebetter/CodeBetter.Ingestor/Repository.cs:line 149
+   at CodeBetter.Ingestor.SolutionAnalyzer.AnalyzeSolutionAsync(String solutionPath, IProgress`1 progress) in /Users/alessandrosantini/Development/oss/codebetter/CodeBetter.Ingestor/SolutionAnalyzer.cs:line 122
+StackTrace:    at CodeBetter.Ingestor.Neo4jRepository.AddNodesBatchAsync(IEnumerable`1 classNames, IEnumerable`1 methodNames) in /Users/alessandrosantini/Development/oss/codebetter/CodeBetter.Ingestor/Repository.cs:line 149
+   at CodeBetter.Ingestor.SolutionAnalyzer.AnalyzeSolutionAsync(String solutionPath, IProgress`1 progress) in /Users/alessandrosantini/Development/oss/codebetter/CodeBetter.Ingestor/SolutionAnalyzer.cs:line 122
+[2025-04-07 09:35:57.789] [Information] Starting analysis of: /Users/alessandrosantini/Development/psp/bo-api-transactions/TransactionModuleAPI.sln
+[2025-04-07 09:35:57.842] [Information] Clearing existing database data
+[2025-04-07 09:35:57.946] [Information] Analyzing solution file
+[2025-04-07 09:35:58.105] [Information] Starting analysis of solution: /Users/alessandrosantini/Development/psp/bo-api-transactions/TransactionModuleAPI.sln
+[2025-04-07 09:35:59.052] [Information] Found 3 projects in the solution
+[2025-04-07 09:35:59.053] [Information] Analyzing project: TransactionModuleAPI
+[2025-04-07 09:35:59.522] [Information] Found 70 documents in project TransactionModuleAPI
+[2025-04-07 09:35:59.525] [Information] Analyzing file: ResourcePatentAuthorizeAttribute.cs
+[2025-04-07 09:35:59.530] [Information] Analyzing file: AuthenticationSchemes.cs
+[2025-04-07 09:35:59.532] [Information] Analyzing file: ConfigurationSettingKeys.cs
+[2025-04-07 09:35:59.534] [Information] Analyzing file: FeatureFlagConstants.cs
+[2025-04-07 09:35:59.536] [Information] Analyzing file: PartnerConfigParamNames.cs
+[2025-04-07 09:35:59.538] [Information] Analyzing file: RevenueOperationTypes.cs
+[2025-04-07 09:35:59.540] [Information] Analyzing file: TransactionRefundStatus.cs
+[2025-04-07 09:35:59.542] [Information] Analyzing file: TransactionStatus.cs
+[2025-04-07 09:35:59.543] [Information] Analyzing file: HealthCheckController.cs
+[2025-04-07 09:35:59.559] [Information] Analyzing file: TransactionsController.cs
+[2025-04-07 09:35:59.785] [Information] Analyzing file: BaseSqlContext.cs
+[2025-04-07 09:35:59.786] [Information] Analyzing file: DbContextEF.cs
+[2025-04-07 09:35:59.849] [Information] Processing batch of 521 method calls
+[2025-04-07 09:35:59.915] [Information] Analyzing file: LoggerContext.cs
+[2025-04-07 09:35:59.925] [Information] Analyzing file: GenericExtensions.cs
+[2025-04-07 09:35:59.966] [Information] Analyzing file: LinqExtensions.cs
+[2025-04-07 09:35:59.989] [Information] Analyzing file: StringExtensions.cs
+[2025-04-07 09:36:00.008] [Information] Analyzing file: HttpClientWrapper.cs
+[2025-04-07 09:36:00.026] [Information] Analyzing file: IHttpClient.cs
+[2025-04-07 09:36:00.034] [Information] Analyzing file: AccountBalanceRevenueRequest.cs
+[2025-04-07 09:36:00.040] [Information] Analyzing file: AccountBalanceRevenueResponse.cs
+[2025-04-07 09:36:00.076] [Information] Analyzing file: AppConfiguration.cs
+[2025-04-07 09:36:00.079] [Information] Analyzing file: DbLog.cs
+[2025-04-07 09:36:00.081] [Information] Analyzing file: EmailConfigModel.cs
+[2025-04-07 09:36:00.084] [Information] Analyzing file: EmailModel.cs
+[2025-04-07 09:36:00.092] [Information] Processing batch of 108 method calls
+[2025-04-07 09:36:00.131] [Information] Analyzing file: GdprTransactionGridV2.cs
+[2025-04-07 09:36:00.138] [Information] Analyzing file: GetTransactionRefundsResponseModel.cs
+[2025-04-07 09:36:00.142] [Information] Analyzing file: IFile.cs
+[2025-04-07 09:36:00.147] [Information] Analyzing file: PagerParameters.cs
+[2025-04-07 09:36:00.151] [Information] Analyzing file: SetupListModel.cs
+[2025-04-07 09:36:00.156] [Information] Analyzing file: TransactionDetailsModel.cs
+[2025-04-07 09:36:00.161] [Information] Analyzing file: TransactionPagerParameters.cs
+[2025-04-07 09:36:00.181] [Information] Analyzing file: Program.cs
+[2025-04-07 09:36:00.187] [Information] Analyzing file: BaseDbRepository.cs
+[2025-04-07 09:36:00.202] [Information] Analyzing file: DbLoggerRepository.cs
+[2025-04-07 09:36:00.210] [Information] Analyzing file: IDbLoggerRepository.cs
+[2025-04-07 09:36:00.213] [Information] Analyzing file: IOneReadRepository.cs
+[2025-04-07 09:36:00.218] [Information] Analyzing file: IOneWriteRepository.cs
+[2025-04-07 09:36:00.221] [Information] Analyzing file: OneReadRepository.cs
+[2025-04-07 09:36:00.288] [Information] Processing batch of 128 relationships
+[2025-04-07 09:36:00.302] [Information] Processing batch of 292 method calls
+[2025-04-07 09:36:00.409] [Information] Analyzing file: OneWriteRepository.cs
+[2025-04-07 09:36:00.422] [Information] Analyzing file: AccountBalanceService.cs
+[2025-04-07 09:36:00.434] [Information] Analyzing file: IAccountBalanceService.cs
+[2025-04-07 09:36:00.441] [Information] Analyzing file: ExportProcessorService.cs
+[2025-04-07 09:36:00.504] [Information] Processing batch of 25 classes and 103 methods
+[2025-04-07 09:36:00.566] [Information] Processing batch of 191 method calls
+[2025-04-07 09:36:00.673] [Information] Analyzing file: ExportService.cs
+[2025-04-07 09:36:00.710] [Information] Analyzing file: IExportService.cs
+[2025-04-07 09:36:00.714] [Information] Analyzing file: DbLogger.cs
+[2025-04-07 09:36:00.719] [Information] Analyzing file: IDbLogger.cs
+[2025-04-07 09:36:00.723] [Information] Analyzing file: LogToDbDaemon.cs
+[2025-04-07 09:36:00.726] [Information] Analyzing file: IPermissionService.cs
+[2025-04-07 09:36:00.729] [Information] Analyzing file: PermissionService.cs
+[2025-04-07 09:36:00.736] [Information] Analyzing file: ISessionService.cs
+[2025-04-07 09:36:00.742] [Information] Analyzing file: SessionService.cs
+[2025-04-07 09:36:00.762] [Information] Analyzing file: ConfigurationSettingService.cs
+[2025-04-07 09:36:00.769] [Information] Analyzing file: IConfigurationSettingService.cs
+[2025-04-07 09:36:00.773] [Information] Analyzing file: ITransactionService.cs
+[2025-04-07 09:36:00.776] [Information] Analyzing file: TransactionService.cs
+[2025-04-07 09:36:00.796] [Information] Analyzing file: SwaggerConfiguration.cs
+[2025-04-07 09:36:00.799] [Information] Analyzing file: CancelledTransactionHomologationErrorReason.cs
+[2025-04-07 09:36:00.802] [Information] Analyzing file: CensorGdrp.cs
+[2025-04-07 09:36:00.822] [Information] Processing batch of 107 method calls
+[2025-04-07 09:36:00.875] [Information] Analyzing file: ContextNames.cs
+[2025-04-07 09:36:00.880] [Information] Analyzing file: EmailClient.cs
+[2025-04-07 09:36:00.893] [Information] Analyzing file: Encryption.cs
+[2025-04-07 09:36:00.903] [Information] Analyzing file: ExcelExtensions.cs
+[2025-04-07 09:36:00.917] [Information] Analyzing file: ExcelWorkbook.cs
+[2025-04-07 09:36:00.922] [Information] Analyzing file: FileUtils.cs
+[2025-04-07 09:36:00.931] [Information] Analyzing file: FiltersTransactions.cs
+[2025-04-07 09:36:00.950] [Information] Processing batch of 148 method calls
+[2025-04-07 09:36:01.028] [Information] Analyzing file: IEmailClient.cs
+[2025-04-07 09:36:01.037] [Information] Analyzing file: IServiceProvider.cs
+[2025-04-07 09:36:01.047] [Information] Analyzing file: TransactionModuleAPI.GlobalUsings.g.cs
+[2025-04-07 09:36:01.054] [Information] Analyzing file: .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+[2025-04-07 09:36:01.058] [Information] Analyzing file: TransactionModuleAPI.AssemblyInfo.cs
+[2025-04-07 09:36:01.065] [Information] Analyzing project: Entities
+[2025-04-07 09:36:01.070] [Information] Found 187 documents in project Entities
+[2025-04-07 09:36:01.074] [Information] Analyzing file: AcamIndustry.cs
+[2025-04-07 09:36:01.080] [Information] Analyzing file: AcamIndustryTypeMapping.cs
+[2025-04-07 09:36:01.083] [Information] Analyzing file: Adjustment.cs
+[2025-04-07 09:36:01.088] [Information] Analyzing file: AdjustmentMovement.cs
+[2025-04-07 09:36:01.092] [Information] Analyzing file: AdjustmentType.cs
+[2025-04-07 09:36:01.097] [Information] Analyzing file: Agency.cs
+[2025-04-07 09:36:01.101] [Information] Analyzing file: BalanceType.cs
+[2025-04-07 09:36:01.106] [Information] Analyzing file: BankingInformation.cs
+[2025-04-07 09:36:01.110] [Information] Analyzing file: BanklyNotification.cs
+[2025-04-07 09:36:01.115] [Information] Analyzing file: BanklyNotificationStatusType.cs
+[2025-04-07 09:36:01.119] [Information] Analyzing file: Campaign.cs
+[2025-04-07 09:36:01.122] [Information] Analyzing file: Claim.cs
+[2025-04-07 09:36:01.125] [Information] Analyzing file: ClaimReasonType.cs
+[2025-04-07 09:36:01.128] [Information] Analyzing file: ClaimTransaction.cs
+[2025-04-07 09:36:01.153] [Information] Analyzing file: ClosingLikelihoodType.cs
+[2025-04-07 09:36:01.155] [Information] Analyzing file: CompanyInformation.cs
+[2025-04-07 09:36:01.158] [Information] Analyzing file: CompanyRisk.cs
+[2025-04-07 09:36:01.160] [Information] Analyzing file: Converter.cs
+[2025-04-07 09:36:01.163] [Information] Analyzing file: ConverterConfig.cs
+[2025-04-07 09:36:01.165] [Information] Analyzing file: Country.cs
+[2025-04-07 09:36:01.167] [Information] Analyzing file: CountryRegion.cs
+[2025-04-07 09:36:01.169] [Information] Analyzing file: Currency.cs
+[2025-04-07 09:36:01.171] [Information] Analyzing file: CurrencyConversion.cs
+[2025-04-07 09:36:01.173] [Information] Analyzing file: CustomerPayout.cs
+[2025-04-07 09:36:01.175] [Information] Analyzing file: CustomerReason.cs
+[2025-04-07 09:36:01.176] [Information] Analyzing file: DailyBalanceReportTask.cs
+[2025-04-07 09:36:01.178] [Information] Analyzing file: EntityInformation.cs
+[2025-04-07 09:36:01.180] [Information] Analyzing file: ExportAcamManual.cs
+[2025-04-07 09:36:01.182] [Information] Analyzing file: FinancialStatusType.cs
+[2025-04-07 09:36:01.186] [Information] Analyzing file: GeneralRate.cs
+[2025-04-07 09:36:01.188] [Information] Analyzing file: IndustrySubType.cs
+[2025-04-07 09:36:01.191] [Information] Analyzing file: IndustryType.cs
+[2025-04-07 09:36:01.193] [Information] Analyzing file: Merchant.cs
+[2025-04-07 09:36:01.195] [Information] Analyzing file: MerchantAddress.cs
+[2025-04-07 09:36:01.224] [Information] Analyzing file: MerchantAlert.cs
+[2025-04-07 09:36:01.226] [Information] Analyzing file: MerchantBusinessCountry.cs
+[2025-04-07 09:36:01.228] [Information] Analyzing file: MerchantCustomerBlacklist.cs
+[2025-04-07 09:36:01.229] [Information] Analyzing file: MerchantCustomerBlacklistPaymentMethod.cs
+[2025-04-07 09:36:01.232] [Information] Analyzing file: MerchantHierarchyType.cs
+[2025-04-07 09:36:01.234] [Information] Analyzing file: MerchantLowRiskTransactionalProfile.cs
+[2025-04-07 09:36:01.235] [Information] Analyzing file: MerchantPaymentType.cs
+[2025-04-07 09:36:01.237] [Information] Analyzing file: MerchantRiskEvaluation.cs
+[2025-04-07 09:36:01.238] [Information] Analyzing file: MerchantStatusType.cs
+[2025-04-07 09:36:01.240] [Information] Analyzing file: MonthlyMoneyFlow.cs
+[2025-04-07 09:36:01.242] [Information] Analyzing file: Note.cs
+[2025-04-07 09:36:01.252] [Information] Analyzing file: Partner.cs
+[2025-04-07 09:36:01.254] [Information] Analyzing file: PartnerConfig.cs
+[2025-04-07 09:36:01.255] [Information] Analyzing file: PaymentChannelType.cs
+[2025-04-07 09:36:01.257] [Information] Analyzing file: PaymentMethod.cs
+[2025-04-07 09:36:01.260] [Information] Analyzing file: PaymentMethodChild.cs
+[2025-04-07 09:36:01.261] [Information] Analyzing file: PaymentMethodTag.cs
+[2025-04-07 09:36:01.263] [Information] Analyzing file: PaymentModeType.cs
+[2025-04-07 09:36:01.264] [Information] Analyzing file: PaymentOrder.cs
+[2025-04-07 09:36:01.267] [Information] Analyzing file: PaymentOrderItem.cs
+[2025-04-07 09:36:01.270] [Information] Analyzing file: PaymentOrderStatusType.cs
+[2025-04-07 09:36:01.271] [Information] Analyzing file: Payout.cs
+[2025-04-07 09:36:01.273] [Information] Analyzing file: PayoutAccountType.cs
+[2025-04-07 09:36:01.275] [Information] Analyzing file: PayoutBatch.cs
+[2025-04-07 09:36:01.277] [Information] Analyzing file: PayoutProcessor.cs
+[2025-04-07 09:36:01.278] [Information] Analyzing file: PayoutPspReference.cs
+[2025-04-07 09:36:01.280] [Information] Analyzing file: PayoutStatusType.cs
+[2025-04-07 09:36:01.282] [Information] Analyzing file: PayRetailersConverter.cs
+[2025-04-07 09:36:01.284] [Information] Analyzing file: RateType.cs
+[2025-04-07 09:36:01.285] [Information] Analyzing file: Referral.cs
+[2025-04-07 09:36:01.286] [Information] Analyzing file: RefundRequest.cs
+[2025-04-07 09:36:01.288] [Information] Analyzing file: Region.cs
+[2025-04-07 09:36:01.289] [Information] Analyzing file: ReportFile.cs
+[2025-04-07 09:36:01.290] [Information] Analyzing file: ReportFileConfig.cs
+[2025-04-07 09:36:01.292] [Information] Analyzing file: ReportTask.cs
+[2025-04-07 09:36:01.293] [Information] Analyzing file: ReportTaskParms.cs
+[2025-04-07 09:36:01.294] [Information] Analyzing file: ReportTaskType.cs
+[2025-04-07 09:36:01.296] [Information] Analyzing file: SettledTransaction.cs
+[2025-04-07 09:36:01.297] [Information] Analyzing file: Settlement.cs
+[2025-04-07 09:36:01.299] [Information] Analyzing file: SettlementExtraItem.cs
+[2025-04-07 09:36:01.306] [Information] Analyzing file: SettlementRollingReserve.cs
+[2025-04-07 09:36:01.308] [Information] Analyzing file: Shop.cs
+[2025-04-07 09:36:01.310] [Information] Analyzing file: ShopBalance.cs
+[2025-04-07 09:36:01.316] [Information] Analyzing file: ShopBankingInformation.cs
+[2025-04-07 09:36:01.318] [Information] Analyzing file: ShopCurrentBalance.cs
+[2025-04-07 09:36:01.320] [Information] Analyzing file: ShopDailyBalance.cs
+[2025-04-07 09:36:01.323] [Information] Analyzing file: ShopGeneralRate.cs
+[2025-04-07 09:36:01.325] [Information] Analyzing file: ShopRate.cs
+[2025-04-07 09:36:01.326] [Information] Analyzing file: ShopRateCountry.cs
+[2025-04-07 09:36:01.328] [Information] Analyzing file: ShopRatePaymentMethod.cs
+[2025-04-07 09:36:01.330] [Information] Analyzing file: SSOUserMerchant.cs
+[2025-04-07 09:36:01.333] [Information] Analyzing file: SSOUserReferral.cs
+[2025-04-07 09:36:01.335] [Information] Analyzing file: Subsidiary.cs
+[2025-04-07 09:36:01.337] [Information] Analyzing file: Transaction.cs
+[2025-04-07 09:36:01.338] [Information] Analyzing file: TransactionConversion.cs
+[2025-04-07 09:36:01.340] [Information] Analyzing file: TransactionDashboardData.cs
+[2025-04-07 09:36:01.342] [Information] Analyzing file: TransactionNotificationLog.cs
+[2025-04-07 09:36:01.345] [Information] Analyzing file: TransactionPayerInfo.cs
+[2025-04-07 09:36:01.347] [Information] Analyzing file: TransactionPspReference.cs
+[2025-04-07 09:36:01.348] [Information] Analyzing file: TransactionReportData.cs
+[2025-04-07 09:36:01.350] [Information] Analyzing file: TransactionSettlement.cs
+[2025-04-07 09:36:01.351] [Information] Analyzing file: Withdrawal.cs
+[2025-04-07 09:36:01.353] [Information] Analyzing file: WithdrawalAdjustment.cs
+[2025-04-07 09:36:01.355] [Information] Analyzing file: WithdrawalTransaction.cs
+[2025-04-07 09:36:01.357] [Information] Analyzing file: AuditableAddOnlyEntity.cs
+[2025-04-07 09:36:01.359] [Information] Analyzing file: AuditableEntity.cs
+[2025-04-07 09:36:01.360] [Information] Analyzing file: AuditableEntityNotDeletion.cs
+[2025-04-07 09:36:01.362] [Information] Analyzing file: AdjustmentPagerParameters.cs
+[2025-04-07 09:36:01.363] [Information] Analyzing file: BancoPluralPagerParameters.cs
+[2025-04-07 09:36:01.365] [Information] Analyzing file: BanklyEventPagerParameters.cs
+[2025-04-07 09:36:01.367] [Information] Analyzing file: BanklyPagerParameters.cs
+[2025-04-07 09:36:01.368] [Information] Analyzing file: ClaimPagerParameters.cs
+[2025-04-07 09:36:01.370] [Information] Analyzing file: CustomerPayoutPagerParameters.cs
+[2025-04-07 09:36:01.371] [Information] Analyzing file: MerchantBalanceFilters.cs
+[2025-04-07 09:36:01.372] [Information] Analyzing file: MerchantRiskPagerParameters.cs
+[2025-04-07 09:36:01.374] [Information] Analyzing file: NotePagerParameters.cs
+[2025-04-07 09:36:01.375] [Information] Analyzing file: OnlineNotificationPagerParameters.cs
+[2025-04-07 09:36:01.380] [Information] Analyzing file: PagerParameters.cs
+[2025-04-07 09:36:01.399] [Information] Analyzing file: PaymentMethodPagerParameters.cs
+[2025-04-07 09:36:01.401] [Information] Analyzing file: PayoutFxPagerParameters.cs
+[2025-04-07 09:36:01.402] [Information] Analyzing file: PayoutPagerParameters.cs
+[2025-04-07 09:36:01.404] [Information] Analyzing file: RatePagerParameters.cs
+[2025-04-07 09:36:01.405] [Information] Analyzing file: SettledTransactionPagerParameters.cs
+[2025-04-07 09:36:01.407] [Information] Analyzing file: SettlementPagerParameters.cs
+[2025-04-07 09:36:01.408] [Information] Analyzing file: SettlementSummaryPagerParameters.cs
+[2025-04-07 09:36:01.410] [Information] Analyzing file: ShopDailyBalancePagerParameters.cs
+[2025-04-07 09:36:01.412] [Information] Analyzing file: TransactionPagerParameters.cs
+[2025-04-07 09:36:01.413] [Information] Analyzing file: TransactionUserPagerParameters.cs
+[2025-04-07 09:36:01.415] [Information] Analyzing file: TreasuryPagerParameters.cs
+[2025-04-07 09:36:01.417] [Information] Analyzing file: TreasurySettlementPagerParameters.cs
+[2025-04-07 09:36:01.419] [Information] Analyzing file: AuthPermission.cs
+[2025-04-07 09:36:01.420] [Information] Analyzing file: Patent.cs
+[2025-04-07 09:36:01.421] [Information] Analyzing file: Resource.cs
+[2025-04-07 09:36:01.423] [Information] Analyzing file: ResourcePatent.cs
+[2025-04-07 09:36:01.425] [Information] Analyzing file: Role.cs
+[2025-04-07 09:36:01.426] [Information] Analyzing file: RoleResource.cs
+[2025-04-07 09:36:01.428] [Information] Analyzing file: RoleResourcePatent.cs
+[2025-04-07 09:36:01.431] [Information] Analyzing file: Session.cs
+[2025-04-07 09:36:01.450] [Information] Analyzing file: User.cs
+[2025-04-07 09:36:01.452] [Information] Analyzing file: UserMerchant.cs
+[2025-04-07 09:36:01.453] [Information] Analyzing file: UserPartner.cs
+[2025-04-07 09:36:01.455] [Information] Analyzing file: UserPayoutProcessor.cs
+[2025-04-07 09:36:01.458] [Information] Analyzing file: IReportData.cs
+[2025-04-07 09:36:01.465] [Information] Analyzing file: AcamTransactionDto.cs
+[2025-04-07 09:36:01.468] [Information] Analyzing file: PayinAcamExportItem.cs
+[2025-04-07 09:36:01.471] [Information] Analyzing file: PayinAcamReportData.cs
+[2025-04-07 09:36:01.473] [Information] Analyzing file: TransactionExportData.cs
+[2025-04-07 09:36:01.476] [Information] Analyzing file: PayoutAcamExportItem.cs
+[2025-04-07 09:36:01.480] [Information] Analyzing file: PayoutAcamReportData.cs
+[2025-04-07 09:36:01.483] [Information] Analyzing file: PayoutExportData.cs
+[2025-04-07 09:36:01.486] [Information] Analyzing file: AppConfiguration.cs
+[2025-04-07 09:36:01.489] [Information] Analyzing file: BancoPluralNotificationGrid.cs
+[2025-04-07 09:36:01.493] [Information] Analyzing file: BanklyEventGridDTO.cs
+[2025-04-07 09:36:01.496] [Information] Analyzing file: BanklyNotificationGridDTO.cs
+[2025-04-07 09:36:01.499] [Information] Analyzing file: ClaimReportGridData.cs
+[2025-04-07 09:36:01.501] [Information] Analyzing file: ConvertApiResponse.cs
+[2025-04-07 09:36:01.504] [Information] Analyzing file: CRMZohoLeadDTO.cs
+[2025-04-07 09:36:01.506] [Information] Analyzing file: CurrencyConversionParams.cs
+[2025-04-07 09:36:01.508] [Information] Analyzing file: DashboardShop.cs
+[2025-04-07 09:36:01.511] [Information] Analyzing file: DefaultCurrencyDTO.cs
+[2025-04-07 09:36:01.513] [Information] Analyzing file: ExportBRMerchantInfo.cs
+[2025-04-07 09:36:01.515] [Information] Analyzing file: FxDTO.cs
+[2025-04-07 09:36:01.517] [Information] Analyzing file: NotificationGrid.cs
+[2025-04-07 09:36:01.519] [Information] Analyzing file: OnlineNotificationGridDTO.cs
+[2025-04-07 09:36:01.529] [Information] Analyzing file: PayoutBatchGridDTO.cs
+[2025-04-07 09:36:01.531] [Information] Analyzing file: PayoutDTO.cs
+[2025-04-07 09:36:01.532] [Information] Analyzing file: PayoutFxGrid.cs
+[2025-04-07 09:36:01.534] [Information] Analyzing file: PayoutGrid.cs
+[2025-04-07 09:36:01.536] [Information] Analyzing file: PayoutNotificationGrid.cs
+[2025-04-07 09:36:01.537] [Information] Analyzing file: RollingPayIn.cs
+[2025-04-07 09:36:01.540] [Information] Analyzing file: SettlementTransactionDTO.cs
+[2025-04-07 09:36:01.561] [Information] Analyzing file: ShopDailyBalanceDTO.cs
+[2025-04-07 09:36:01.562] [Information] Analyzing file: TransactionApprovedDTO.cs
+[2025-04-07 09:36:01.564] [Information] Analyzing file: TransactionGrid.cs
+[2025-04-07 09:36:01.566] [Information] Analyzing file: TransactionGridV2.cs
+[2025-04-07 09:36:01.568] [Information] Analyzing file: TransactionGridV2WithPspRefs.cs
+[2025-04-07 09:36:01.569] [Information] Analyzing file: TransactionRateDTO.cs
+[2025-04-07 09:36:01.571] [Information] Analyzing file: TransactionUser.cs
+[2025-04-07 09:36:01.572] [Information] Analyzing file: TreasuryGridDTO.cs
+[2025-04-07 09:36:01.574] [Information] Analyzing file: Auth.cs
+[2025-04-07 09:36:01.575] [Information] Analyzing file: ConfigurationGroup.cs
+[2025-04-07 09:36:01.576] [Information] Analyzing file: ConfigurationSetting.cs
+[2025-04-07 09:36:01.578] [Information] Analyzing file: DbAmount.cs
+[2025-04-07 09:36:01.579] [Information] Analyzing file: DbCount.cs
+[2025-04-07 09:36:01.580] [Information] Analyzing file: Email.cs
+[2025-04-07 09:36:01.582] [Information] Analyzing file: EmailAttachment.cs
+[2025-04-07 09:36:01.584] [Information] Analyzing file: EmailTemplate.cs
+[2025-04-07 09:36:01.586] [Information] Analyzing file: EventLog.cs
+[2025-04-07 09:36:01.587] [Information] Analyzing file: File.cs
+[2025-04-07 09:36:01.589] [Information] Analyzing file: FileContent.cs
+[2025-04-07 09:36:01.609] [Information] Analyzing file: Entities.GlobalUsings.g.cs
+[2025-04-07 09:36:01.610] [Information] Analyzing file: .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+[2025-04-07 09:36:01.612] [Information] Analyzing file: Entities.AssemblyInfo.cs
+[2025-04-07 09:36:01.613] [Information] Analyzing project: TransactionModuleAPI.UnitTests
+[2025-04-07 09:36:01.629] [Information] Found 12 documents in project TransactionModuleAPI.UnitTests
+[2025-04-07 09:36:01.631] [Information] Analyzing file: TransactionsControllerTests.cs
+[2025-04-07 09:36:01.652] [Information] Processing batch of 109 relationships
+[2025-04-07 09:36:01.678] [Information] Processing batch of 130 method calls
+[2025-04-07 09:36:01.761] [Information] Analyzing file: HttpClientWrapperTests.cs
+[2025-04-07 09:36:01.766] [Information] Analyzing file: ExportProcessorServiceTests.cs
+[2025-04-07 09:36:01.777] [Information] Analyzing file: ExportServiceTests.cs
+[2025-04-07 09:36:01.786] [Information] Processing batch of 120 method calls
+[2025-04-07 09:36:01.858] [Information] Analyzing file: LogToDbDaemonTests.cs
+[2025-04-07 09:36:01.861] [Information] Analyzing file: PermissionServiceTests.cs
+[2025-04-07 09:36:01.869] [Information] Analyzing file: SessionServiceTests.cs
+[2025-04-07 09:36:01.876] [Information] Analyzing file: TransactionServiceTests.cs
+[2025-04-07 09:36:01.905] [Information] Processing batch of 34 classes and 105 methods
+[2025-04-07 09:36:01.946] [Information] Processing batch of 187 method calls
+[2025-04-07 09:36:02.063] [Information] Analyzing file: CancelledTransactionHomologationErrorReasonTests.cs
+[2025-04-07 09:36:02.076] [Information] Analyzing file: TransactionModuleAPI.UnitTests.GlobalUsings.g.cs
+[2025-04-07 09:36:02.083] [Information] Analyzing file: .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+[2025-04-07 09:36:02.090] [Information] Analyzing file: TransactionModuleAPI.UnitTests.AssemblyInfo.cs
+[2025-04-07 09:36:02.097] [Information] Processing remaining 1 classes and 6 methods
+[2025-04-07 09:36:02.128] [Information] Processing remaining 36 relationships
+[2025-04-07 09:36:02.156] [Information] Processing remaining 12 method calls
+[2025-04-07 09:36:02.175] [Information] Analysis complete
+[2025-04-07 09:36:02.184] [Information] Analyzed 1816 method calls
+[2025-04-07 09:36:02.245] [Information] Analysis completed successfully
+[2025-04-07 09:36:45.750] [Information] Starting analysis of: /Users/alessandrosantini/Development/psp/bo-api-transactions/TransactionModuleAPI.sln
+[2025-04-07 09:36:45.959] [Information] Clearing existing database data
+[2025-04-07 09:36:46.389] [Information] Analyzing solution file
+[2025-04-07 09:36:46.643] [Information] Starting analysis of solution: /Users/alessandrosantini/Development/psp/bo-api-transactions/TransactionModuleAPI.sln
+[2025-04-07 09:36:48.062] [Information] Found 3 projects in the solution
+[2025-04-07 09:36:48.062] [Information] Analyzing project: TransactionModuleAPI
+[2025-04-07 09:36:48.697] [Information] Found 70 documents in project TransactionModuleAPI
+[2025-04-07 09:36:48.705] [Information] Analyzing file: ResourcePatentAuthorizeAttribute.cs
+[2025-04-07 09:36:48.715] [Information] Analyzing file: AuthenticationSchemes.cs
+[2025-04-07 09:36:48.722] [Information] Analyzing file: ConfigurationSettingKeys.cs
+[2025-04-07 09:36:48.730] [Information] Analyzing file: FeatureFlagConstants.cs
+[2025-04-07 09:36:48.736] [Information] Analyzing file: PartnerConfigParamNames.cs
+[2025-04-07 09:36:48.743] [Information] Analyzing file: RevenueOperationTypes.cs
+[2025-04-07 09:36:48.750] [Information] Analyzing file: TransactionRefundStatus.cs
+[2025-04-07 09:36:48.754] [Information] Analyzing file: TransactionStatus.cs
+[2025-04-07 09:36:48.758] [Information] Analyzing file: HealthCheckController.cs
+[2025-04-07 09:36:48.776] [Information] Analyzing file: TransactionsController.cs
+[2025-04-07 09:36:48.987] [Information] Analyzing file: BaseSqlContext.cs
+[2025-04-07 09:36:48.988] [Information] Analyzing file: DbContextEF.cs
+[2025-04-07 09:36:49.039] [Information] Processing batch of 521 method calls
+[2025-04-07 09:36:49.117] [Information] Analyzing file: LoggerContext.cs
+[2025-04-07 09:36:49.126] [Information] Analyzing file: GenericExtensions.cs
+[2025-04-07 09:36:49.168] [Information] Analyzing file: LinqExtensions.cs
+[2025-04-07 09:36:49.192] [Information] Analyzing file: StringExtensions.cs
+[2025-04-07 09:36:49.211] [Information] Analyzing file: HttpClientWrapper.cs
+[2025-04-07 09:36:49.228] [Information] Analyzing file: IHttpClient.cs
+[2025-04-07 09:36:49.237] [Information] Analyzing file: AccountBalanceRevenueRequest.cs
+[2025-04-07 09:36:49.246] [Information] Analyzing file: AccountBalanceRevenueResponse.cs
+[2025-04-07 09:36:49.252] [Information] Analyzing file: AppConfiguration.cs
+[2025-04-07 09:36:49.258] [Information] Analyzing file: DbLog.cs
+[2025-04-07 09:36:49.265] [Information] Analyzing file: EmailConfigModel.cs
+[2025-04-07 09:36:49.271] [Information] Analyzing file: EmailModel.cs
+[2025-04-07 09:36:49.281] [Information] Processing batch of 108 method calls
+[2025-04-07 09:36:49.345] [Information] Analyzing file: GdprTransactionGridV2.cs
+[2025-04-07 09:36:49.355] [Information] Analyzing file: GetTransactionRefundsResponseModel.cs
+[2025-04-07 09:36:49.365] [Information] Analyzing file: IFile.cs
+[2025-04-07 09:36:49.371] [Information] Analyzing file: PagerParameters.cs
+[2025-04-07 09:36:49.376] [Information] Analyzing file: SetupListModel.cs
+[2025-04-07 09:36:49.383] [Information] Analyzing file: TransactionDetailsModel.cs
+[2025-04-07 09:36:49.391] [Information] Analyzing file: TransactionPagerParameters.cs
+[2025-04-07 09:36:49.412] [Information] Analyzing file: Program.cs
+[2025-04-07 09:36:49.414] [Information] Analyzing file: BaseDbRepository.cs
+[2025-04-07 09:36:49.423] [Information] Analyzing file: DbLoggerRepository.cs
+[2025-04-07 09:36:49.427] [Information] Analyzing file: IDbLoggerRepository.cs
+[2025-04-07 09:36:49.429] [Information] Analyzing file: IOneReadRepository.cs
+[2025-04-07 09:36:49.432] [Information] Analyzing file: IOneWriteRepository.cs
+[2025-04-07 09:36:49.434] [Information] Analyzing file: OneReadRepository.cs
+[2025-04-07 09:36:49.492] [Information] Processing batch of 128 relationships
+[2025-04-07 09:36:49.502] [Information] Processing batch of 292 method calls
+[2025-04-07 09:36:49.587] [Information] Analyzing file: OneWriteRepository.cs
+[2025-04-07 09:36:49.601] [Information] Analyzing file: AccountBalanceService.cs
+[2025-04-07 09:36:49.618] [Information] Analyzing file: IAccountBalanceService.cs
+[2025-04-07 09:36:49.627] [Information] Analyzing file: ExportProcessorService.cs
+[2025-04-07 09:36:49.685] [Information] Processing batch of 25 classes and 103 methods
+[2025-04-07 09:36:49.720] [Information] Processing batch of 191 method calls
+[2025-04-07 09:36:49.810] [Information] Analyzing file: ExportService.cs
+[2025-04-07 09:36:49.824] [Information] Analyzing file: IExportService.cs
+[2025-04-07 09:36:49.834] [Information] Analyzing file: DbLogger.cs
+[2025-04-07 09:36:49.842] [Information] Analyzing file: IDbLogger.cs
+[2025-04-07 09:36:49.850] [Information] Analyzing file: LogToDbDaemon.cs
+[2025-04-07 09:36:49.859] [Information] Analyzing file: IPermissionService.cs
+[2025-04-07 09:36:49.905] [Information] Analyzing file: PermissionService.cs
+[2025-04-07 09:36:49.916] [Information] Analyzing file: ISessionService.cs
+[2025-04-07 09:36:49.919] [Information] Analyzing file: SessionService.cs
+[2025-04-07 09:36:49.924] [Information] Analyzing file: ConfigurationSettingService.cs
+[2025-04-07 09:36:49.933] [Information] Analyzing file: IConfigurationSettingService.cs
+[2025-04-07 09:36:49.937] [Information] Analyzing file: ITransactionService.cs
+[2025-04-07 09:36:49.940] [Information] Analyzing file: TransactionService.cs
+[2025-04-07 09:36:49.961] [Information] Analyzing file: SwaggerConfiguration.cs
+[2025-04-07 09:36:49.966] [Information] Analyzing file: CancelledTransactionHomologationErrorReason.cs
+[2025-04-07 09:36:49.969] [Information] Analyzing file: CensorGdrp.cs
+[2025-04-07 09:36:49.990] [Information] Processing batch of 107 method calls
+[2025-04-07 09:36:50.063] [Information] Analyzing file: ContextNames.cs
+[2025-04-07 09:36:50.075] [Information] Analyzing file: EmailClient.cs
+[2025-04-07 09:36:50.089] [Information] Analyzing file: Encryption.cs
+[2025-04-07 09:36:50.101] [Information] Analyzing file: ExcelExtensions.cs
+[2025-04-07 09:36:50.124] [Information] Analyzing file: ExcelWorkbook.cs
+[2025-04-07 09:36:50.133] [Information] Analyzing file: FileUtils.cs
+[2025-04-07 09:36:50.144] [Information] Analyzing file: FiltersTransactions.cs
+[2025-04-07 09:36:50.160] [Information] Processing batch of 148 method calls
+[2025-04-07 09:36:50.298] [Information] Analyzing file: IEmailClient.cs
+[2025-04-07 09:36:50.298] [Information] Analyzing file: IServiceProvider.cs
+[2025-04-07 09:36:50.302] [Information] Analyzing file: TransactionModuleAPI.GlobalUsings.g.cs
+[2025-04-07 09:36:50.306] [Information] Analyzing file: .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+[2025-04-07 09:36:50.308] [Information] Analyzing file: TransactionModuleAPI.AssemblyInfo.cs
+[2025-04-07 09:36:50.309] [Information] Analyzing project: Entities
+[2025-04-07 09:36:50.311] [Information] Found 187 documents in project Entities
+[2025-04-07 09:36:50.314] [Information] Analyzing file: AcamIndustry.cs
+[2025-04-07 09:36:50.316] [Information] Analyzing file: AcamIndustryTypeMapping.cs
+[2025-04-07 09:36:50.318] [Information] Analyzing file: Adjustment.cs
+[2025-04-07 09:36:50.319] [Information] Analyzing file: AdjustmentMovement.cs
+[2025-04-07 09:36:50.321] [Information] Analyzing file: AdjustmentType.cs
+[2025-04-07 09:36:50.323] [Information] Analyzing file: Agency.cs
+[2025-04-07 09:36:50.324] [Information] Analyzing file: BalanceType.cs
+[2025-04-07 09:36:50.326] [Information] Analyzing file: BankingInformation.cs
+[2025-04-07 09:36:50.327] [Information] Analyzing file: BanklyNotification.cs
+[2025-04-07 09:36:50.329] [Information] Analyzing file: BanklyNotificationStatusType.cs
+[2025-04-07 09:36:50.330] [Information] Analyzing file: Campaign.cs
+[2025-04-07 09:36:50.333] [Information] Analyzing file: Claim.cs
+[2025-04-07 09:36:50.335] [Information] Analyzing file: ClaimReasonType.cs
+[2025-04-07 09:36:50.337] [Information] Analyzing file: ClaimTransaction.cs
+[2025-04-07 09:36:50.338] [Information] Analyzing file: ClosingLikelihoodType.cs
+[2025-04-07 09:36:50.340] [Information] Analyzing file: CompanyInformation.cs
+[2025-04-07 09:36:50.342] [Information] Analyzing file: CompanyRisk.cs
+[2025-04-07 09:36:50.344] [Information] Analyzing file: Converter.cs
+[2025-04-07 09:36:50.346] [Information] Analyzing file: ConverterConfig.cs
+[2025-04-07 09:36:50.347] [Information] Analyzing file: Country.cs
+[2025-04-07 09:36:50.349] [Information] Analyzing file: CountryRegion.cs
+[2025-04-07 09:36:50.350] [Information] Analyzing file: Currency.cs
+[2025-04-07 09:36:50.352] [Information] Analyzing file: CurrencyConversion.cs
+[2025-04-07 09:36:50.353] [Information] Analyzing file: CustomerPayout.cs
+[2025-04-07 09:36:50.355] [Information] Analyzing file: CustomerReason.cs
+[2025-04-07 09:36:50.356] [Information] Analyzing file: DailyBalanceReportTask.cs
+[2025-04-07 09:36:50.358] [Information] Analyzing file: EntityInformation.cs
+[2025-04-07 09:36:50.359] [Information] Analyzing file: ExportAcamManual.cs
+[2025-04-07 09:36:50.361] [Information] Analyzing file: FinancialStatusType.cs
+[2025-04-07 09:36:50.362] [Information] Analyzing file: GeneralRate.cs
+[2025-04-07 09:36:50.364] [Information] Analyzing file: IndustrySubType.cs
+[2025-04-07 09:36:50.366] [Information] Analyzing file: IndustryType.cs
+[2025-04-07 09:36:50.367] [Information] Analyzing file: Merchant.cs
+[2025-04-07 09:36:50.369] [Information] Analyzing file: MerchantAddress.cs
+[2025-04-07 09:36:50.371] [Information] Analyzing file: MerchantAlert.cs
+[2025-04-07 09:36:50.372] [Information] Analyzing file: MerchantBusinessCountry.cs
+[2025-04-07 09:36:50.374] [Information] Analyzing file: MerchantCustomerBlacklist.cs
+[2025-04-07 09:36:50.375] [Information] Analyzing file: MerchantCustomerBlacklistPaymentMethod.cs
+[2025-04-07 09:36:50.377] [Information] Analyzing file: MerchantHierarchyType.cs
+[2025-04-07 09:36:50.378] [Information] Analyzing file: MerchantLowRiskTransactionalProfile.cs
+[2025-04-07 09:36:50.381] [Information] Analyzing file: MerchantPaymentType.cs
+[2025-04-07 09:36:50.383] [Information] Analyzing file: MerchantRiskEvaluation.cs
+[2025-04-07 09:36:50.384] [Information] Analyzing file: MerchantStatusType.cs
+[2025-04-07 09:36:50.387] [Information] Analyzing file: MonthlyMoneyFlow.cs
+[2025-04-07 09:36:50.389] [Information] Analyzing file: Note.cs
+[2025-04-07 09:36:50.392] [Information] Analyzing file: Partner.cs
+[2025-04-07 09:36:50.407] [Information] Analyzing file: PartnerConfig.cs
+[2025-04-07 09:36:50.408] [Information] Analyzing file: PaymentChannelType.cs
+[2025-04-07 09:36:50.428] [Information] Analyzing file: PaymentMethod.cs
+[2025-04-07 09:36:50.430] [Information] Analyzing file: PaymentMethodChild.cs
+[2025-04-07 09:36:50.432] [Information] Analyzing file: PaymentMethodTag.cs
+[2025-04-07 09:36:50.434] [Information] Analyzing file: PaymentModeType.cs
+[2025-04-07 09:36:50.435] [Information] Analyzing file: PaymentOrder.cs
+[2025-04-07 09:36:50.437] [Information] Analyzing file: PaymentOrderItem.cs
+[2025-04-07 09:36:50.438] [Information] Analyzing file: PaymentOrderStatusType.cs
+[2025-04-07 09:36:50.439] [Information] Analyzing file: Payout.cs
+[2025-04-07 09:36:50.441] [Information] Analyzing file: PayoutAccountType.cs
+[2025-04-07 09:36:50.443] [Information] Analyzing file: PayoutBatch.cs
+[2025-04-07 09:36:50.444] [Information] Analyzing file: PayoutProcessor.cs
+[2025-04-07 09:36:50.446] [Information] Analyzing file: PayoutPspReference.cs
+[2025-04-07 09:36:50.447] [Information] Analyzing file: PayoutStatusType.cs
+[2025-04-07 09:36:50.449] [Information] Analyzing file: PayRetailersConverter.cs
+[2025-04-07 09:36:50.450] [Information] Analyzing file: RateType.cs
+[2025-04-07 09:36:50.452] [Information] Analyzing file: Referral.cs
+[2025-04-07 09:36:50.453] [Information] Analyzing file: RefundRequest.cs
+[2025-04-07 09:36:50.454] [Information] Analyzing file: Region.cs
+[2025-04-07 09:36:50.456] [Information] Analyzing file: ReportFile.cs
+[2025-04-07 09:36:50.458] [Information] Analyzing file: ReportFileConfig.cs
+[2025-04-07 09:36:50.481] [Information] Analyzing file: ReportTask.cs
+[2025-04-07 09:36:50.483] [Information] Analyzing file: ReportTaskParms.cs
+[2025-04-07 09:36:50.485] [Information] Analyzing file: ReportTaskType.cs
+[2025-04-07 09:36:50.486] [Information] Analyzing file: SettledTransaction.cs
+[2025-04-07 09:36:50.488] [Information] Analyzing file: Settlement.cs
+[2025-04-07 09:36:50.490] [Information] Analyzing file: SettlementExtraItem.cs
+[2025-04-07 09:36:50.492] [Information] Analyzing file: SettlementRollingReserve.cs
+[2025-04-07 09:36:50.493] [Information] Analyzing file: Shop.cs
+[2025-04-07 09:36:50.495] [Information] Analyzing file: ShopBalance.cs
+[2025-04-07 09:36:50.497] [Information] Analyzing file: ShopBankingInformation.cs
+[2025-04-07 09:36:50.498] [Information] Analyzing file: ShopCurrentBalance.cs
+[2025-04-07 09:36:50.500] [Information] Analyzing file: ShopDailyBalance.cs
+[2025-04-07 09:36:50.502] [Information] Analyzing file: ShopGeneralRate.cs
+[2025-04-07 09:36:50.504] [Information] Analyzing file: ShopRate.cs
+[2025-04-07 09:36:50.506] [Information] Analyzing file: ShopRateCountry.cs
+[2025-04-07 09:36:50.507] [Information] Analyzing file: ShopRatePaymentMethod.cs
+[2025-04-07 09:36:50.509] [Information] Analyzing file: SSOUserMerchant.cs
+[2025-04-07 09:36:50.510] [Information] Analyzing file: SSOUserReferral.cs
+[2025-04-07 09:36:50.512] [Information] Analyzing file: Subsidiary.cs
+[2025-04-07 09:36:50.513] [Information] Analyzing file: Transaction.cs
+[2025-04-07 09:36:50.528] [Information] Analyzing file: TransactionConversion.cs
+[2025-04-07 09:36:50.530] [Information] Analyzing file: TransactionDashboardData.cs
+[2025-04-07 09:36:50.531] [Information] Analyzing file: TransactionNotificationLog.cs
+[2025-04-07 09:36:50.533] [Information] Analyzing file: TransactionPayerInfo.cs
+[2025-04-07 09:36:50.534] [Information] Analyzing file: TransactionPspReference.cs
+[2025-04-07 09:36:50.536] [Information] Analyzing file: TransactionReportData.cs
+[2025-04-07 09:36:50.537] [Information] Analyzing file: TransactionSettlement.cs
+[2025-04-07 09:36:50.538] [Information] Analyzing file: Withdrawal.cs
+[2025-04-07 09:36:50.540] [Information] Analyzing file: WithdrawalAdjustment.cs
+[2025-04-07 09:36:50.541] [Information] Analyzing file: WithdrawalTransaction.cs
+[2025-04-07 09:36:50.543] [Information] Analyzing file: AuditableAddOnlyEntity.cs
+[2025-04-07 09:36:50.545] [Information] Analyzing file: AuditableEntity.cs
+[2025-04-07 09:36:50.546] [Information] Analyzing file: AuditableEntityNotDeletion.cs
+[2025-04-07 09:36:50.547] [Information] Analyzing file: AdjustmentPagerParameters.cs
+[2025-04-07 09:36:50.549] [Information] Analyzing file: BancoPluralPagerParameters.cs
+[2025-04-07 09:36:50.550] [Information] Analyzing file: BanklyEventPagerParameters.cs
+[2025-04-07 09:36:50.551] [Information] Analyzing file: BanklyPagerParameters.cs
+[2025-04-07 09:36:50.553] [Information] Analyzing file: ClaimPagerParameters.cs
+[2025-04-07 09:36:50.554] [Information] Analyzing file: CustomerPayoutPagerParameters.cs
+[2025-04-07 09:36:50.555] [Information] Analyzing file: MerchantBalanceFilters.cs
+[2025-04-07 09:36:50.564] [Information] Analyzing file: MerchantRiskPagerParameters.cs
+[2025-04-07 09:36:50.566] [Information] Analyzing file: NotePagerParameters.cs
+[2025-04-07 09:36:50.567] [Information] Analyzing file: OnlineNotificationPagerParameters.cs
+[2025-04-07 09:36:50.569] [Information] Analyzing file: PagerParameters.cs
+[2025-04-07 09:36:50.570] [Information] Analyzing file: PaymentMethodPagerParameters.cs
+[2025-04-07 09:36:50.572] [Information] Analyzing file: PayoutFxPagerParameters.cs
+[2025-04-07 09:36:50.573] [Information] Analyzing file: PayoutPagerParameters.cs
+[2025-04-07 09:36:50.575] [Information] Analyzing file: RatePagerParameters.cs
+[2025-04-07 09:36:50.577] [Information] Analyzing file: SettledTransactionPagerParameters.cs
+[2025-04-07 09:36:50.578] [Information] Analyzing file: SettlementPagerParameters.cs
+[2025-04-07 09:36:50.579] [Information] Analyzing file: SettlementSummaryPagerParameters.cs
+[2025-04-07 09:36:50.581] [Information] Analyzing file: ShopDailyBalancePagerParameters.cs
+[2025-04-07 09:36:50.583] [Information] Analyzing file: TransactionPagerParameters.cs
+[2025-04-07 09:36:50.585] [Information] Analyzing file: TransactionUserPagerParameters.cs
+[2025-04-07 09:36:50.586] [Information] Analyzing file: TreasuryPagerParameters.cs
+[2025-04-07 09:36:50.588] [Information] Analyzing file: TreasurySettlementPagerParameters.cs
+[2025-04-07 09:36:50.589] [Information] Analyzing file: AuthPermission.cs
+[2025-04-07 09:36:50.591] [Information] Analyzing file: Patent.cs
+[2025-04-07 09:36:50.593] [Information] Analyzing file: Resource.cs
+[2025-04-07 09:36:50.595] [Information] Analyzing file: ResourcePatent.cs
+[2025-04-07 09:36:50.604] [Information] Analyzing file: Role.cs
+[2025-04-07 09:36:50.605] [Information] Analyzing file: RoleResource.cs
+[2025-04-07 09:36:50.607] [Information] Analyzing file: RoleResourcePatent.cs
+[2025-04-07 09:36:50.608] [Information] Analyzing file: Session.cs
+[2025-04-07 09:36:50.610] [Information] Analyzing file: User.cs
+[2025-04-07 09:36:50.612] [Information] Analyzing file: UserMerchant.cs
+[2025-04-07 09:36:50.613] [Information] Analyzing file: UserPartner.cs
+[2025-04-07 09:36:50.615] [Information] Analyzing file: UserPayoutProcessor.cs
+[2025-04-07 09:36:50.616] [Information] Analyzing file: IReportData.cs
+[2025-04-07 09:36:50.618] [Information] Analyzing file: AcamTransactionDto.cs
+[2025-04-07 09:36:50.619] [Information] Analyzing file: PayinAcamExportItem.cs
+[2025-04-07 09:36:50.620] [Information] Analyzing file: PayinAcamReportData.cs
+[2025-04-07 09:36:50.622] [Information] Analyzing file: TransactionExportData.cs
+[2025-04-07 09:36:50.624] [Information] Analyzing file: PayoutAcamExportItem.cs
+[2025-04-07 09:36:50.631] [Information] Analyzing file: PayoutAcamReportData.cs
+[2025-04-07 09:36:50.634] [Information] Analyzing file: PayoutExportData.cs
+[2025-04-07 09:36:50.637] [Information] Analyzing file: AppConfiguration.cs
+[2025-04-07 09:36:50.638] [Information] Analyzing file: BancoPluralNotificationGrid.cs
+[2025-04-07 09:36:50.640] [Information] Analyzing file: BanklyEventGridDTO.cs
+[2025-04-07 09:36:50.642] [Information] Analyzing file: BanklyNotificationGridDTO.cs
+[2025-04-07 09:36:50.664] [Information] Analyzing file: ClaimReportGridData.cs
+[2025-04-07 09:36:50.666] [Information] Analyzing file: ConvertApiResponse.cs
+[2025-04-07 09:36:50.667] [Information] Analyzing file: CRMZohoLeadDTO.cs
+[2025-04-07 09:36:50.669] [Information] Analyzing file: CurrencyConversionParams.cs
+[2025-04-07 09:36:50.670] [Information] Analyzing file: DashboardShop.cs
+[2025-04-07 09:36:50.672] [Information] Analyzing file: DefaultCurrencyDTO.cs
+[2025-04-07 09:36:50.673] [Information] Analyzing file: ExportBRMerchantInfo.cs
+[2025-04-07 09:36:50.674] [Information] Analyzing file: FxDTO.cs
+[2025-04-07 09:36:50.676] [Information] Analyzing file: NotificationGrid.cs
+[2025-04-07 09:36:50.678] [Information] Analyzing file: OnlineNotificationGridDTO.cs
+[2025-04-07 09:36:50.679] [Information] Analyzing file: PayoutBatchGridDTO.cs
+[2025-04-07 09:36:50.680] [Information] Analyzing file: PayoutDTO.cs
+[2025-04-07 09:36:50.682] [Information] Analyzing file: PayoutFxGrid.cs
+[2025-04-07 09:36:50.683] [Information] Analyzing file: PayoutGrid.cs
+[2025-04-07 09:36:50.685] [Information] Analyzing file: PayoutNotificationGrid.cs
+[2025-04-07 09:36:50.687] [Information] Analyzing file: RollingPayIn.cs
+[2025-04-07 09:36:50.688] [Information] Analyzing file: SettlementTransactionDTO.cs
+[2025-04-07 09:36:50.689] [Information] Analyzing file: ShopDailyBalanceDTO.cs
+[2025-04-07 09:36:50.691] [Information] Analyzing file: TransactionApprovedDTO.cs
+[2025-04-07 09:36:50.693] [Information] Analyzing file: TransactionGrid.cs
+[2025-04-07 09:36:50.714] [Information] Analyzing file: TransactionGridV2.cs
+[2025-04-07 09:36:50.716] [Information] Analyzing file: TransactionGridV2WithPspRefs.cs
+[2025-04-07 09:36:50.718] [Information] Analyzing file: TransactionRateDTO.cs
+[2025-04-07 09:36:50.719] [Information] Analyzing file: TransactionUser.cs
+[2025-04-07 09:36:50.721] [Information] Analyzing file: TreasuryGridDTO.cs
+[2025-04-07 09:36:50.722] [Information] Analyzing file: Auth.cs
+[2025-04-07 09:36:50.724] [Information] Analyzing file: ConfigurationGroup.cs
+[2025-04-07 09:36:50.725] [Information] Analyzing file: ConfigurationSetting.cs
+[2025-04-07 09:36:50.728] [Information] Analyzing file: DbAmount.cs
+[2025-04-07 09:36:50.730] [Information] Analyzing file: DbCount.cs
+[2025-04-07 09:36:50.731] [Information] Analyzing file: Email.cs
+[2025-04-07 09:36:50.733] [Information] Analyzing file: EmailAttachment.cs
+[2025-04-07 09:36:50.735] [Information] Analyzing file: EmailTemplate.cs
+[2025-04-07 09:36:50.737] [Information] Analyzing file: EventLog.cs
+[2025-04-07 09:36:50.739] [Information] Analyzing file: File.cs
+[2025-04-07 09:36:50.741] [Information] Analyzing file: FileContent.cs
+[2025-04-07 09:36:50.743] [Information] Analyzing file: Entities.GlobalUsings.g.cs
+[2025-04-07 09:36:50.744] [Information] Analyzing file: .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+[2025-04-07 09:36:50.746] [Information] Analyzing file: Entities.AssemblyInfo.cs
+[2025-04-07 09:36:50.749] [Information] Analyzing project: TransactionModuleAPI.UnitTests
+[2025-04-07 09:36:50.777] [Information] Found 12 documents in project TransactionModuleAPI.UnitTests
+[2025-04-07 09:36:50.780] [Information] Analyzing file: TransactionsControllerTests.cs
+[2025-04-07 09:36:50.804] [Information] Processing batch of 109 relationships
+[2025-04-07 09:36:50.830] [Information] Processing batch of 130 method calls
+[2025-04-07 09:36:50.911] [Information] Analyzing file: HttpClientWrapperTests.cs
+[2025-04-07 09:36:50.916] [Information] Analyzing file: ExportProcessorServiceTests.cs
+[2025-04-07 09:36:50.927] [Information] Analyzing file: ExportServiceTests.cs
+[2025-04-07 09:36:50.936] [Information] Processing batch of 120 method calls
+[2025-04-07 09:36:50.999] [Information] Analyzing file: LogToDbDaemonTests.cs
+[2025-04-07 09:36:51.013] [Information] Analyzing file: PermissionServiceTests.cs
+[2025-04-07 09:36:51.028] [Information] Analyzing file: SessionServiceTests.cs
+[2025-04-07 09:36:51.054] [Information] Analyzing file: TransactionServiceTests.cs
+[2025-04-07 09:36:51.089] [Information] Processing batch of 34 classes and 105 methods
+[2025-04-07 09:36:51.143] [Information] Processing batch of 187 method calls
+[2025-04-07 09:36:51.277] [Information] Analyzing file: CancelledTransactionHomologationErrorReasonTests.cs
+[2025-04-07 09:36:51.300] [Information] Analyzing file: TransactionModuleAPI.UnitTests.GlobalUsings.g.cs
+[2025-04-07 09:36:51.309] [Information] Analyzing file: .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+[2025-04-07 09:36:51.318] [Information] Analyzing file: TransactionModuleAPI.UnitTests.AssemblyInfo.cs
+[2025-04-07 09:36:51.325] [Information] Processing remaining 1 classes and 6 methods
+[2025-04-07 09:36:51.345] [Information] Processing remaining 36 relationships
+[2025-04-07 09:36:51.370] [Information] Processing remaining 12 method calls
+[2025-04-07 09:36:51.391] [Information] Analysis complete
+[2025-04-07 09:36:51.402] [Information] Analyzed 1816 method calls
+[2025-04-07 09:36:51.433] [Information] Analysis completed successfully
+[2025-04-07 09:41:00.296] [Information] Starting analysis of: /Users/alessandrosantini/Development/psp/bo-api-transactions/TransactionModuleAPI.sln
+[2025-04-07 09:41:00.345] [Information] Clearing existing database data
+[2025-04-07 09:41:00.435] [Information] Analyzing solution file
+[2025-04-07 09:41:00.613] [Information] Starting analysis of solution: /Users/alessandrosantini/Development/psp/bo-api-transactions/TransactionModuleAPI.sln
+[2025-04-07 09:41:01.572] [Information] Found 3 projects in the solution
+[2025-04-07 09:41:01.573] [Information] Analyzing project: TransactionModuleAPI
+[2025-04-07 09:41:02.026] [Information] Found 70 documents in project TransactionModuleAPI
+[2025-04-07 09:41:02.027] [Information] Analyzing file: ResourcePatentAuthorizeAttribute.cs
+[2025-04-07 09:41:02.039] [Information] Analyzing file: AuthenticationSchemes.cs
+[2025-04-07 09:41:02.049] [Information] Analyzing file: ConfigurationSettingKeys.cs
+[2025-04-07 09:41:02.057] [Information] Analyzing file: FeatureFlagConstants.cs
+[2025-04-07 09:41:02.063] [Information] Analyzing file: PartnerConfigParamNames.cs
+[2025-04-07 09:41:02.069] [Information] Analyzing file: RevenueOperationTypes.cs
+[2025-04-07 09:41:02.074] [Information] Analyzing file: TransactionRefundStatus.cs
+[2025-04-07 09:41:02.080] [Information] Analyzing file: TransactionStatus.cs
+[2025-04-07 09:41:02.084] [Information] Analyzing file: HealthCheckController.cs
+[2025-04-07 09:41:02.102] [Information] Analyzing file: TransactionsController.cs
+[2025-04-07 09:41:02.336] [Information] Analyzing file: BaseSqlContext.cs
+[2025-04-07 09:41:02.345] [Information] Analyzing file: DbContextEF.cs
+[2025-04-07 09:41:02.424] [Information] Processing batch of 521 method calls
+[2025-04-07 09:41:02.459] [Information] Analyzing file: LoggerContext.cs
+[2025-04-07 09:41:02.464] [Information] Analyzing file: GenericExtensions.cs
+[2025-04-07 09:41:02.500] [Information] Analyzing file: LinqExtensions.cs
+[2025-04-07 09:41:02.520] [Information] Analyzing file: StringExtensions.cs
+[2025-04-07 09:41:02.539] [Information] Analyzing file: HttpClientWrapper.cs
+[2025-04-07 09:41:02.554] [Information] Analyzing file: IHttpClient.cs
+[2025-04-07 09:41:02.562] [Information] Analyzing file: AccountBalanceRevenueRequest.cs
+[2025-04-07 09:41:02.569] [Information] Analyzing file: AccountBalanceRevenueResponse.cs
+[2025-04-07 09:41:02.575] [Information] Analyzing file: AppConfiguration.cs
+[2025-04-07 09:41:02.581] [Information] Analyzing file: DbLog.cs
+[2025-04-07 09:41:02.586] [Information] Analyzing file: EmailConfigModel.cs
+[2025-04-07 09:41:02.591] [Information] Analyzing file: EmailModel.cs
+[2025-04-07 09:41:02.601] [Information] Processing batch of 108 method calls
+[2025-04-07 09:41:02.661] [Information] Analyzing file: GdprTransactionGridV2.cs
+[2025-04-07 09:41:02.671] [Information] Analyzing file: GetTransactionRefundsResponseModel.cs
+[2025-04-07 09:41:02.679] [Information] Analyzing file: IFile.cs
+[2025-04-07 09:41:02.684] [Information] Analyzing file: PagerParameters.cs
+[2025-04-07 09:41:02.705] [Information] Analyzing file: SetupListModel.cs
+[2025-04-07 09:41:02.708] [Information] Analyzing file: TransactionDetailsModel.cs
+[2025-04-07 09:41:02.712] [Information] Analyzing file: TransactionPagerParameters.cs
+[2025-04-07 09:41:02.727] [Information] Analyzing file: Program.cs
+[2025-04-07 09:41:02.730] [Information] Analyzing file: BaseDbRepository.cs
+[2025-04-07 09:41:02.738] [Information] Analyzing file: DbLoggerRepository.cs
+[2025-04-07 09:41:02.743] [Information] Analyzing file: IDbLoggerRepository.cs
+[2025-04-07 09:41:02.745] [Information] Analyzing file: IOneReadRepository.cs
+[2025-04-07 09:41:02.748] [Information] Analyzing file: IOneWriteRepository.cs
+[2025-04-07 09:41:02.750] [Information] Analyzing file: OneReadRepository.cs
+[2025-04-07 09:41:02.815] [Information] Processing batch of 128 relationships
+[2025-04-07 09:41:02.827] [Information] Processing batch of 292 method calls
+[2025-04-07 09:41:02.926] [Information] Analyzing file: OneWriteRepository.cs
+[2025-04-07 09:41:02.939] [Information] Analyzing file: AccountBalanceService.cs
+[2025-04-07 09:41:02.952] [Information] Analyzing file: IAccountBalanceService.cs
+[2025-04-07 09:41:02.960] [Information] Analyzing file: ExportProcessorService.cs
+[2025-04-07 09:41:03.019] [Information] Processing batch of 25 classes and 103 methods
+[2025-04-07 09:41:03.054] [Information] Processing batch of 191 method calls
+[2025-04-07 09:41:03.141] [Information] Analyzing file: ExportService.cs
+[2025-04-07 09:41:03.159] [Information] Analyzing file: IExportService.cs
+[2025-04-07 09:41:03.200] [Information] Analyzing file: DbLogger.cs
+[2025-04-07 09:41:03.206] [Information] Analyzing file: IDbLogger.cs
+[2025-04-07 09:41:03.209] [Information] Analyzing file: LogToDbDaemon.cs
+[2025-04-07 09:41:03.214] [Information] Analyzing file: IPermissionService.cs
+[2025-04-07 09:41:03.218] [Information] Analyzing file: PermissionService.cs
+[2025-04-07 09:41:03.228] [Information] Analyzing file: ISessionService.cs
+[2025-04-07 09:41:03.231] [Information] Analyzing file: SessionService.cs
+[2025-04-07 09:41:03.236] [Information] Analyzing file: ConfigurationSettingService.cs
+[2025-04-07 09:41:03.244] [Information] Analyzing file: IConfigurationSettingService.cs
+[2025-04-07 09:41:03.247] [Information] Analyzing file: ITransactionService.cs
+[2025-04-07 09:41:03.249] [Information] Analyzing file: TransactionService.cs
+[2025-04-07 09:41:03.267] [Information] Analyzing file: SwaggerConfiguration.cs
+[2025-04-07 09:41:03.418] [Information] Analyzing file: CancelledTransactionHomologationErrorReason.cs
+[2025-04-07 09:41:03.422] [Information] Analyzing file: CensorGdrp.cs
+[2025-04-07 09:41:03.445] [Information] Processing batch of 107 method calls
+[2025-04-07 09:41:03.528] [Information] Analyzing file: ContextNames.cs
+[2025-04-07 09:41:03.536] [Information] Analyzing file: EmailClient.cs
+[2025-04-07 09:41:03.551] [Information] Analyzing file: Encryption.cs
+[2025-04-07 09:41:03.569] [Information] Analyzing file: ExcelExtensions.cs
+[2025-04-07 09:41:03.592] [Information] Analyzing file: ExcelWorkbook.cs
+[2025-04-07 09:41:03.595] [Information] Analyzing file: FileUtils.cs
+[2025-04-07 09:41:03.601] [Information] Analyzing file: FiltersTransactions.cs
+[2025-04-07 09:41:03.615] [Information] Processing batch of 148 method calls
+[2025-04-07 09:41:03.720] [Information] Analyzing file: IEmailClient.cs
+[2025-04-07 09:41:03.732] [Information] Analyzing file: IServiceProvider.cs
+[2025-04-07 09:41:03.742] [Information] Analyzing file: TransactionModuleAPI.GlobalUsings.g.cs
+[2025-04-07 09:41:03.750] [Information] Analyzing file: .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+[2025-04-07 09:41:03.757] [Information] Analyzing file: TransactionModuleAPI.AssemblyInfo.cs
+[2025-04-07 09:41:03.763] [Information] Analyzing project: Entities
+[2025-04-07 09:41:03.768] [Information] Found 187 documents in project Entities
+[2025-04-07 09:41:03.773] [Information] Analyzing file: AcamIndustry.cs
+[2025-04-07 09:41:03.777] [Information] Analyzing file: AcamIndustryTypeMapping.cs
+[2025-04-07 09:41:03.782] [Information] Analyzing file: Adjustment.cs
+[2025-04-07 09:41:03.793] [Information] Analyzing file: AdjustmentMovement.cs
+[2025-04-07 09:41:03.799] [Information] Analyzing file: AdjustmentType.cs
+[2025-04-07 09:41:03.803] [Information] Analyzing file: Agency.cs
+[2025-04-07 09:41:03.807] [Information] Analyzing file: BalanceType.cs
+[2025-04-07 09:41:03.811] [Information] Analyzing file: BankingInformation.cs
+[2025-04-07 09:41:03.814] [Information] Analyzing file: BanklyNotification.cs
+[2025-04-07 09:41:03.842] [Information] Analyzing file: BanklyNotificationStatusType.cs
+[2025-04-07 09:41:03.844] [Information] Analyzing file: Campaign.cs
+[2025-04-07 09:41:03.846] [Information] Analyzing file: Claim.cs
+[2025-04-07 09:41:03.848] [Information] Analyzing file: ClaimReasonType.cs
+[2025-04-07 09:41:03.850] [Information] Analyzing file: ClaimTransaction.cs
+[2025-04-07 09:41:03.852] [Information] Analyzing file: ClosingLikelihoodType.cs
+[2025-04-07 09:41:03.854] [Information] Analyzing file: CompanyInformation.cs
+[2025-04-07 09:41:03.856] [Information] Analyzing file: CompanyRisk.cs
+[2025-04-07 09:41:03.858] [Information] Analyzing file: Converter.cs
+[2025-04-07 09:41:03.860] [Information] Analyzing file: ConverterConfig.cs
+[2025-04-07 09:41:03.861] [Information] Analyzing file: Country.cs
+[2025-04-07 09:41:03.863] [Information] Analyzing file: CountryRegion.cs
+[2025-04-07 09:41:03.865] [Information] Analyzing file: Currency.cs
+[2025-04-07 09:41:03.867] [Information] Analyzing file: CurrencyConversion.cs
+[2025-04-07 09:41:03.868] [Information] Analyzing file: CustomerPayout.cs
+[2025-04-07 09:41:03.870] [Information] Analyzing file: CustomerReason.cs
+[2025-04-07 09:41:03.872] [Information] Analyzing file: DailyBalanceReportTask.cs
+[2025-04-07 09:41:03.874] [Information] Analyzing file: EntityInformation.cs
+[2025-04-07 09:41:03.875] [Information] Analyzing file: ExportAcamManual.cs
+[2025-04-07 09:41:03.877] [Information] Analyzing file: FinancialStatusType.cs
+[2025-04-07 09:41:03.913] [Information] Analyzing file: GeneralRate.cs
+[2025-04-07 09:41:03.915] [Information] Analyzing file: IndustrySubType.cs
+[2025-04-07 09:41:03.917] [Information] Analyzing file: IndustryType.cs
+[2025-04-07 09:41:03.919] [Information] Analyzing file: Merchant.cs
+[2025-04-07 09:41:03.925] [Information] Analyzing file: MerchantAddress.cs
+[2025-04-07 09:41:03.929] [Information] Analyzing file: MerchantAlert.cs
+[2025-04-07 09:41:03.932] [Information] Analyzing file: MerchantBusinessCountry.cs
+[2025-04-07 09:41:03.934] [Information] Analyzing file: MerchantCustomerBlacklist.cs
+[2025-04-07 09:41:03.936] [Information] Analyzing file: MerchantCustomerBlacklistPaymentMethod.cs
+[2025-04-07 09:41:03.938] [Information] Analyzing file: MerchantHierarchyType.cs
+[2025-04-07 09:41:03.940] [Information] Analyzing file: MerchantLowRiskTransactionalProfile.cs
+[2025-04-07 09:41:03.941] [Information] Analyzing file: MerchantPaymentType.cs
+[2025-04-07 09:41:03.943] [Information] Analyzing file: MerchantRiskEvaluation.cs
+[2025-04-07 09:41:03.945] [Information] Analyzing file: MerchantStatusType.cs
+[2025-04-07 09:41:03.947] [Information] Analyzing file: MonthlyMoneyFlow.cs
+[2025-04-07 09:41:03.949] [Information] Analyzing file: Note.cs
+[2025-04-07 09:41:03.951] [Information] Analyzing file: Partner.cs
+[2025-04-07 09:41:03.953] [Information] Analyzing file: PartnerConfig.cs
+[2025-04-07 09:41:03.954] [Information] Analyzing file: PaymentChannelType.cs
+[2025-04-07 09:41:03.956] [Information] Analyzing file: PaymentMethod.cs
+[2025-04-07 09:41:03.966] [Information] Analyzing file: PaymentMethodChild.cs
+[2025-04-07 09:41:03.968] [Information] Analyzing file: PaymentMethodTag.cs
+[2025-04-07 09:41:03.969] [Information] Analyzing file: PaymentModeType.cs
+[2025-04-07 09:41:03.971] [Information] Analyzing file: PaymentOrder.cs
+[2025-04-07 09:41:03.972] [Information] Analyzing file: PaymentOrderItem.cs
+[2025-04-07 09:41:03.974] [Information] Analyzing file: PaymentOrderStatusType.cs
+[2025-04-07 09:41:03.976] [Information] Analyzing file: Payout.cs
+[2025-04-07 09:41:03.978] [Information] Analyzing file: PayoutAccountType.cs
+[2025-04-07 09:41:03.979] [Information] Analyzing file: PayoutBatch.cs
+[2025-04-07 09:41:03.981] [Information] Analyzing file: PayoutProcessor.cs
+[2025-04-07 09:41:03.983] [Information] Analyzing file: PayoutPspReference.cs
+[2025-04-07 09:41:03.985] [Information] Analyzing file: PayoutStatusType.cs
+[2025-04-07 09:41:03.986] [Information] Analyzing file: PayRetailersConverter.cs
+[2025-04-07 09:41:03.988] [Information] Analyzing file: RateType.cs
+[2025-04-07 09:41:03.989] [Information] Analyzing file: Referral.cs
+[2025-04-07 09:41:03.991] [Information] Analyzing file: RefundRequest.cs
+[2025-04-07 09:41:03.993] [Information] Analyzing file: Region.cs
+[2025-04-07 09:41:03.994] [Information] Analyzing file: ReportFile.cs
+[2025-04-07 09:41:03.996] [Information] Analyzing file: ReportFileConfig.cs
+[2025-04-07 09:41:03.997] [Information] Analyzing file: ReportTask.cs
+[2025-04-07 09:41:04.014] [Information] Analyzing file: ReportTaskParms.cs
+[2025-04-07 09:41:04.016] [Information] Analyzing file: ReportTaskType.cs
+[2025-04-07 09:41:04.017] [Information] Analyzing file: SettledTransaction.cs
+[2025-04-07 09:41:04.019] [Information] Analyzing file: Settlement.cs
+[2025-04-07 09:41:04.020] [Information] Analyzing file: SettlementExtraItem.cs
+[2025-04-07 09:41:04.022] [Information] Analyzing file: SettlementRollingReserve.cs
+[2025-04-07 09:41:04.023] [Information] Analyzing file: Shop.cs
+[2025-04-07 09:41:04.025] [Information] Analyzing file: ShopBalance.cs
+[2025-04-07 09:41:04.026] [Information] Analyzing file: ShopBankingInformation.cs
+[2025-04-07 09:41:04.028] [Information] Analyzing file: ShopCurrentBalance.cs
+[2025-04-07 09:41:04.029] [Information] Analyzing file: ShopDailyBalance.cs
+[2025-04-07 09:41:04.032] [Information] Analyzing file: ShopGeneralRate.cs
+[2025-04-07 09:41:04.033] [Information] Analyzing file: ShopRate.cs
+[2025-04-07 09:41:04.035] [Information] Analyzing file: ShopRateCountry.cs
+[2025-04-07 09:41:04.036] [Information] Analyzing file: ShopRatePaymentMethod.cs
+[2025-04-07 09:41:04.038] [Information] Analyzing file: SSOUserMerchant.cs
+[2025-04-07 09:41:04.039] [Information] Analyzing file: SSOUserReferral.cs
+[2025-04-07 09:41:04.041] [Information] Analyzing file: Subsidiary.cs
+[2025-04-07 09:41:04.043] [Information] Analyzing file: Transaction.cs
+[2025-04-07 09:41:04.044] [Information] Analyzing file: TransactionConversion.cs
+[2025-04-07 09:41:04.063] [Information] Analyzing file: TransactionDashboardData.cs
+[2025-04-07 09:41:04.064] [Information] Analyzing file: TransactionNotificationLog.cs
+[2025-04-07 09:41:04.066] [Information] Analyzing file: TransactionPayerInfo.cs
+[2025-04-07 09:41:04.067] [Information] Analyzing file: TransactionPspReference.cs
+[2025-04-07 09:41:04.069] [Information] Analyzing file: TransactionReportData.cs
+[2025-04-07 09:41:04.070] [Information] Analyzing file: TransactionSettlement.cs
+[2025-04-07 09:41:04.072] [Information] Analyzing file: Withdrawal.cs
+[2025-04-07 09:41:04.073] [Information] Analyzing file: WithdrawalAdjustment.cs
+[2025-04-07 09:41:04.075] [Information] Analyzing file: WithdrawalTransaction.cs
+[2025-04-07 09:41:04.076] [Information] Analyzing file: AuditableAddOnlyEntity.cs
+[2025-04-07 09:41:04.078] [Information] Analyzing file: AuditableEntity.cs
+[2025-04-07 09:41:04.079] [Information] Analyzing file: AuditableEntityNotDeletion.cs
+[2025-04-07 09:41:04.080] [Information] Analyzing file: AdjustmentPagerParameters.cs
+[2025-04-07 09:41:04.082] [Information] Analyzing file: BancoPluralPagerParameters.cs
+[2025-04-07 09:41:04.083] [Information] Analyzing file: BanklyEventPagerParameters.cs
+[2025-04-07 09:41:04.085] [Information] Analyzing file: BanklyPagerParameters.cs
+[2025-04-07 09:41:04.086] [Information] Analyzing file: ClaimPagerParameters.cs
+[2025-04-07 09:41:04.088] [Information] Analyzing file: CustomerPayoutPagerParameters.cs
+[2025-04-07 09:41:04.089] [Information] Analyzing file: MerchantBalanceFilters.cs
+[2025-04-07 09:41:04.091] [Information] Analyzing file: MerchantRiskPagerParameters.cs
+[2025-04-07 09:41:04.098] [Information] Analyzing file: NotePagerParameters.cs
+[2025-04-07 09:41:04.099] [Information] Analyzing file: OnlineNotificationPagerParameters.cs
+[2025-04-07 09:41:04.101] [Information] Analyzing file: PagerParameters.cs
+[2025-04-07 09:41:04.102] [Information] Analyzing file: PaymentMethodPagerParameters.cs
+[2025-04-07 09:41:04.104] [Information] Analyzing file: PayoutFxPagerParameters.cs
+[2025-04-07 09:41:04.105] [Information] Analyzing file: PayoutPagerParameters.cs
+[2025-04-07 09:41:04.106] [Information] Analyzing file: RatePagerParameters.cs
+[2025-04-07 09:41:04.108] [Information] Analyzing file: SettledTransactionPagerParameters.cs
+[2025-04-07 09:41:04.110] [Information] Analyzing file: SettlementPagerParameters.cs
+[2025-04-07 09:41:04.111] [Information] Analyzing file: SettlementSummaryPagerParameters.cs
+[2025-04-07 09:41:04.113] [Information] Analyzing file: ShopDailyBalancePagerParameters.cs
+[2025-04-07 09:41:04.114] [Information] Analyzing file: TransactionPagerParameters.cs
+[2025-04-07 09:41:04.116] [Information] Analyzing file: TransactionUserPagerParameters.cs
+[2025-04-07 09:41:04.117] [Information] Analyzing file: TreasuryPagerParameters.cs
+[2025-04-07 09:41:04.118] [Information] Analyzing file: TreasurySettlementPagerParameters.cs
+[2025-04-07 09:41:04.120] [Information] Analyzing file: AuthPermission.cs
+[2025-04-07 09:41:04.121] [Information] Analyzing file: Patent.cs
+[2025-04-07 09:41:04.123] [Information] Analyzing file: Resource.cs
+[2025-04-07 09:41:04.124] [Information] Analyzing file: ResourcePatent.cs
+[2025-04-07 09:41:04.126] [Information] Analyzing file: Role.cs
+[2025-04-07 09:41:04.136] [Information] Analyzing file: RoleResource.cs
+[2025-04-07 09:41:04.137] [Information] Analyzing file: RoleResourcePatent.cs
+[2025-04-07 09:41:04.139] [Information] Analyzing file: Session.cs
+[2025-04-07 09:41:04.140] [Information] Analyzing file: User.cs
+[2025-04-07 09:41:04.142] [Information] Analyzing file: UserMerchant.cs
+[2025-04-07 09:41:04.144] [Information] Analyzing file: UserPartner.cs
+[2025-04-07 09:41:04.145] [Information] Analyzing file: UserPayoutProcessor.cs
+[2025-04-07 09:41:04.147] [Information] Analyzing file: IReportData.cs
+[2025-04-07 09:41:04.148] [Information] Analyzing file: AcamTransactionDto.cs
+[2025-04-07 09:41:04.150] [Information] Analyzing file: PayinAcamExportItem.cs
+[2025-04-07 09:41:04.151] [Information] Analyzing file: PayinAcamReportData.cs
+[2025-04-07 09:41:04.152] [Information] Analyzing file: TransactionExportData.cs
+[2025-04-07 09:41:04.154] [Information] Analyzing file: PayoutAcamExportItem.cs
+[2025-04-07 09:41:04.155] [Information] Analyzing file: PayoutAcamReportData.cs
+[2025-04-07 09:41:04.157] [Information] Analyzing file: PayoutExportData.cs
+[2025-04-07 09:41:04.158] [Information] Analyzing file: AppConfiguration.cs
+[2025-04-07 09:41:04.160] [Information] Analyzing file: BancoPluralNotificationGrid.cs
+[2025-04-07 09:41:04.162] [Information] Analyzing file: BanklyEventGridDTO.cs
+[2025-04-07 09:41:04.163] [Information] Analyzing file: BanklyNotificationGridDTO.cs
+[2025-04-07 09:41:04.165] [Information] Analyzing file: ClaimReportGridData.cs
+[2025-04-07 09:41:04.182] [Information] Analyzing file: ConvertApiResponse.cs
+[2025-04-07 09:41:04.184] [Information] Analyzing file: CRMZohoLeadDTO.cs
+[2025-04-07 09:41:04.185] [Information] Analyzing file: CurrencyConversionParams.cs
+[2025-04-07 09:41:04.187] [Information] Analyzing file: DashboardShop.cs
+[2025-04-07 09:41:04.188] [Information] Analyzing file: DefaultCurrencyDTO.cs
+[2025-04-07 09:41:04.190] [Information] Analyzing file: ExportBRMerchantInfo.cs
+[2025-04-07 09:41:04.191] [Information] Analyzing file: FxDTO.cs
+[2025-04-07 09:41:04.193] [Information] Analyzing file: NotificationGrid.cs
+[2025-04-07 09:41:04.194] [Information] Analyzing file: OnlineNotificationGridDTO.cs
+[2025-04-07 09:41:04.196] [Information] Analyzing file: PayoutBatchGridDTO.cs
+[2025-04-07 09:41:04.197] [Information] Analyzing file: PayoutDTO.cs
+[2025-04-07 09:41:04.199] [Information] Analyzing file: PayoutFxGrid.cs
+[2025-04-07 09:41:04.200] [Information] Analyzing file: PayoutGrid.cs
+[2025-04-07 09:41:04.202] [Information] Analyzing file: PayoutNotificationGrid.cs
+[2025-04-07 09:41:04.203] [Information] Analyzing file: RollingPayIn.cs
+[2025-04-07 09:41:04.205] [Information] Analyzing file: SettlementTransactionDTO.cs
+[2025-04-07 09:41:04.207] [Information] Analyzing file: ShopDailyBalanceDTO.cs
+[2025-04-07 09:41:04.208] [Information] Analyzing file: TransactionApprovedDTO.cs
+[2025-04-07 09:41:04.210] [Information] Analyzing file: TransactionGrid.cs
+[2025-04-07 09:41:04.212] [Information] Analyzing file: TransactionGridV2.cs
+[2025-04-07 09:41:04.230] [Information] Analyzing file: TransactionGridV2WithPspRefs.cs
+[2025-04-07 09:41:04.232] [Information] Analyzing file: TransactionRateDTO.cs
+[2025-04-07 09:41:04.234] [Information] Analyzing file: TransactionUser.cs
+[2025-04-07 09:41:04.235] [Information] Analyzing file: TreasuryGridDTO.cs
+[2025-04-07 09:41:04.237] [Information] Analyzing file: Auth.cs
+[2025-04-07 09:41:04.238] [Information] Analyzing file: ConfigurationGroup.cs
+[2025-04-07 09:41:04.240] [Information] Analyzing file: ConfigurationSetting.cs
+[2025-04-07 09:41:04.241] [Information] Analyzing file: DbAmount.cs
+[2025-04-07 09:41:04.242] [Information] Analyzing file: DbCount.cs
+[2025-04-07 09:41:04.244] [Information] Analyzing file: Email.cs
+[2025-04-07 09:41:04.245] [Information] Analyzing file: EmailAttachment.cs
+[2025-04-07 09:41:04.246] [Information] Analyzing file: EmailTemplate.cs
+[2025-04-07 09:41:04.248] [Information] Analyzing file: EventLog.cs
+[2025-04-07 09:41:04.250] [Information] Analyzing file: File.cs
+[2025-04-07 09:41:04.251] [Information] Analyzing file: FileContent.cs
+[2025-04-07 09:41:04.253] [Information] Analyzing file: Entities.GlobalUsings.g.cs
+[2025-04-07 09:41:04.254] [Information] Analyzing file: .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+[2025-04-07 09:41:04.255] [Information] Analyzing file: Entities.AssemblyInfo.cs
+[2025-04-07 09:41:04.257] [Information] Analyzing project: TransactionModuleAPI.UnitTests
+[2025-04-07 09:41:04.268] [Information] Found 12 documents in project TransactionModuleAPI.UnitTests
+[2025-04-07 09:41:04.270] [Information] Analyzing file: TransactionsControllerTests.cs
+[2025-04-07 09:41:04.291] [Information] Processing batch of 109 relationships
+[2025-04-07 09:41:04.322] [Information] Processing batch of 130 method calls
+[2025-04-07 09:41:04.411] [Information] Analyzing file: HttpClientWrapperTests.cs
+[2025-04-07 09:41:04.415] [Information] Analyzing file: ExportProcessorServiceTests.cs
+[2025-04-07 09:41:04.426] [Information] Analyzing file: ExportServiceTests.cs
+[2025-04-07 09:41:04.435] [Information] Processing batch of 120 method calls
+[2025-04-07 09:41:04.512] [Information] Analyzing file: LogToDbDaemonTests.cs
+[2025-04-07 09:41:04.526] [Information] Analyzing file: PermissionServiceTests.cs
+[2025-04-07 09:41:04.536] [Information] Analyzing file: SessionServiceTests.cs
+[2025-04-07 09:41:04.546] [Information] Analyzing file: TransactionServiceTests.cs
+[2025-04-07 09:41:04.572] [Information] Processing batch of 34 classes and 105 methods
+[2025-04-07 09:41:04.628] [Information] Processing batch of 187 method calls
+[2025-04-07 09:41:04.766] [Information] Analyzing file: CancelledTransactionHomologationErrorReasonTests.cs
+[2025-04-07 09:41:04.778] [Information] Analyzing file: TransactionModuleAPI.UnitTests.GlobalUsings.g.cs
+[2025-04-07 09:41:04.789] [Information] Analyzing file: .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+[2025-04-07 09:41:04.796] [Information] Analyzing file: TransactionModuleAPI.UnitTests.AssemblyInfo.cs
+[2025-04-07 09:41:04.802] [Information] Processing remaining 1 classes and 6 methods
+[2025-04-07 09:41:04.817] [Information] Processing remaining 36 relationships
+[2025-04-07 09:41:04.848] [Information] Processing remaining 12 method calls
+[2025-04-07 09:41:04.872] [Information] Analysis complete
+[2025-04-07 09:41:04.883] [Information] Analyzed 1816 method calls
+[2025-04-07 09:41:04.952] [Information] Analysis completed successfully
+[2025-04-07 09:41:42.726] [Information] Starting analysis of: /Users/alessandrosantini/Development/psp/bo-api-transactions/TransactionModuleAPI.sln
+[2025-04-07 09:41:42.779] [Information] Clearing existing database data
+[2025-04-07 09:41:42.885] [Information] Analyzing solution file
+[2025-04-07 09:41:43.027] [Information] Starting analysis of solution: /Users/alessandrosantini/Development/psp/bo-api-transactions/TransactionModuleAPI.sln
+[2025-04-07 09:41:43.942] [Information] Found 3 projects in the solution
+[2025-04-07 09:41:43.942] [Information] Analyzing project: TransactionModuleAPI
+[2025-04-07 09:41:44.383] [Information] Found 70 documents in project TransactionModuleAPI
+[2025-04-07 09:41:44.394] [Information] Analyzing file: ResourcePatentAuthorizeAttribute.cs
+[2025-04-07 09:41:44.405] [Information] Analyzing file: AuthenticationSchemes.cs
+[2025-04-07 09:41:44.412] [Information] Analyzing file: ConfigurationSettingKeys.cs
+[2025-04-07 09:41:44.419] [Information] Analyzing file: FeatureFlagConstants.cs
+[2025-04-07 09:41:44.425] [Information] Analyzing file: PartnerConfigParamNames.cs
+[2025-04-07 09:41:44.430] [Information] Analyzing file: RevenueOperationTypes.cs
+[2025-04-07 09:41:44.436] [Information] Analyzing file: TransactionRefundStatus.cs
+[2025-04-07 09:41:44.442] [Information] Analyzing file: TransactionStatus.cs
+[2025-04-07 09:41:44.447] [Information] Analyzing file: HealthCheckController.cs
+[2025-04-07 09:41:44.465] [Information] Analyzing file: TransactionsController.cs
+[2025-04-07 09:41:44.678] [Information] Analyzing file: BaseSqlContext.cs
+[2025-04-07 09:41:44.688] [Information] Analyzing file: DbContextEF.cs
+[2025-04-07 09:41:44.739] [Information] Processing batch of 521 method calls
+[2025-04-07 09:41:44.807] [Information] Analyzing file: LoggerContext.cs
+[2025-04-07 09:41:44.839] [Information] Analyzing file: GenericExtensions.cs
+[2025-04-07 09:41:44.874] [Information] Analyzing file: LinqExtensions.cs
+[2025-04-07 09:41:44.891] [Information] Analyzing file: StringExtensions.cs
+[2025-04-07 09:41:44.906] [Information] Analyzing file: HttpClientWrapper.cs
+[2025-04-07 09:41:44.921] [Information] Analyzing file: IHttpClient.cs
+[2025-04-07 09:41:44.928] [Information] Analyzing file: AccountBalanceRevenueRequest.cs
+[2025-04-07 09:41:44.933] [Information] Analyzing file: AccountBalanceRevenueResponse.cs
+[2025-04-07 09:41:44.937] [Information] Analyzing file: AppConfiguration.cs
+[2025-04-07 09:41:44.942] [Information] Analyzing file: DbLog.cs
+[2025-04-07 09:41:44.948] [Information] Analyzing file: EmailConfigModel.cs
+[2025-04-07 09:41:44.954] [Information] Analyzing file: EmailModel.cs
+[2025-04-07 09:41:44.965] [Information] Processing batch of 108 method calls
+[2025-04-07 09:41:45.010] [Information] Analyzing file: GdprTransactionGridV2.cs
+[2025-04-07 09:41:45.020] [Information] Analyzing file: GetTransactionRefundsResponseModel.cs
+[2025-04-07 09:41:45.028] [Information] Analyzing file: IFile.cs
+[2025-04-07 09:41:45.047] [Information] Analyzing file: PagerParameters.cs
+[2025-04-07 09:41:45.050] [Information] Analyzing file: SetupListModel.cs
+[2025-04-07 09:41:45.052] [Information] Analyzing file: TransactionDetailsModel.cs
+[2025-04-07 09:41:45.055] [Information] Analyzing file: TransactionPagerParameters.cs
+[2025-04-07 09:41:45.069] [Information] Analyzing file: Program.cs
+[2025-04-07 09:41:45.073] [Information] Analyzing file: BaseDbRepository.cs
+[2025-04-07 09:41:45.081] [Information] Analyzing file: DbLoggerRepository.cs
+[2025-04-07 09:41:45.085] [Information] Analyzing file: IDbLoggerRepository.cs
+[2025-04-07 09:41:45.087] [Information] Analyzing file: IOneReadRepository.cs
+[2025-04-07 09:41:45.090] [Information] Analyzing file: IOneWriteRepository.cs
+[2025-04-07 09:41:45.092] [Information] Analyzing file: OneReadRepository.cs
+[2025-04-07 09:41:45.149] [Information] Processing batch of 128 relationships
+[2025-04-07 09:41:45.168] [Information] Processing batch of 292 method calls
+[2025-04-07 09:41:45.264] [Information] Analyzing file: OneWriteRepository.cs
+[2025-04-07 09:41:45.279] [Information] Analyzing file: AccountBalanceService.cs
+[2025-04-07 09:41:45.301] [Information] Analyzing file: IAccountBalanceService.cs
+[2025-04-07 09:41:45.311] [Information] Analyzing file: ExportProcessorService.cs
+[2025-04-07 09:41:45.384] [Information] Processing batch of 25 classes and 103 methods
+[2025-04-07 09:41:45.427] [Information] Processing batch of 191 method calls
+[2025-04-07 09:41:45.506] [Information] Analyzing file: ExportService.cs
+[2025-04-07 09:41:45.521] [Information] Analyzing file: IExportService.cs
+[2025-04-07 09:41:45.526] [Information] Analyzing file: DbLogger.cs
+[2025-04-07 09:41:45.534] [Information] Analyzing file: IDbLogger.cs
+[2025-04-07 09:41:45.540] [Information] Analyzing file: LogToDbDaemon.cs
+[2025-04-07 09:41:45.547] [Information] Analyzing file: IPermissionService.cs
+[2025-04-07 09:41:45.553] [Information] Analyzing file: PermissionService.cs
+[2025-04-07 09:41:45.562] [Information] Analyzing file: ISessionService.cs
+[2025-04-07 09:41:45.568] [Information] Analyzing file: SessionService.cs
+[2025-04-07 09:41:45.575] [Information] Analyzing file: ConfigurationSettingService.cs
+[2025-04-07 09:41:45.585] [Information] Analyzing file: IConfigurationSettingService.cs
+[2025-04-07 09:41:45.592] [Information] Analyzing file: ITransactionService.cs
+[2025-04-07 09:41:45.598] [Information] Analyzing file: TransactionService.cs
+[2025-04-07 09:41:45.620] [Information] Analyzing file: SwaggerConfiguration.cs
+[2025-04-07 09:41:45.628] [Information] Analyzing file: CancelledTransactionHomologationErrorReason.cs
+[2025-04-07 09:41:45.634] [Information] Analyzing file: CensorGdrp.cs
+[2025-04-07 09:41:45.656] [Information] Processing batch of 107 method calls
+[2025-04-07 09:41:45.719] [Information] Analyzing file: ContextNames.cs
+[2025-04-07 09:41:45.729] [Information] Analyzing file: EmailClient.cs
+[2025-04-07 09:41:45.743] [Information] Analyzing file: Encryption.cs
+[2025-04-07 09:41:45.802] [Information] Analyzing file: ExcelExtensions.cs
+[2025-04-07 09:41:45.824] [Information] Analyzing file: ExcelWorkbook.cs
+[2025-04-07 09:41:45.828] [Information] Analyzing file: FileUtils.cs
+[2025-04-07 09:41:45.834] [Information] Analyzing file: FiltersTransactions.cs
+[2025-04-07 09:41:45.849] [Information] Processing batch of 148 method calls
+[2025-04-07 09:41:45.960] [Information] Analyzing file: IEmailClient.cs
+[2025-04-07 09:41:45.970] [Information] Analyzing file: IServiceProvider.cs
+[2025-04-07 09:41:45.984] [Information] Analyzing file: TransactionModuleAPI.GlobalUsings.g.cs
+[2025-04-07 09:41:45.988] [Information] Analyzing file: .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+[2025-04-07 09:41:45.993] [Information] Analyzing file: TransactionModuleAPI.AssemblyInfo.cs
+[2025-04-07 09:41:45.997] [Information] Analyzing project: Entities
+[2025-04-07 09:41:46.000] [Information] Found 187 documents in project Entities
+[2025-04-07 09:41:46.003] [Information] Analyzing file: AcamIndustry.cs
+[2025-04-07 09:41:46.006] [Information] Analyzing file: AcamIndustryTypeMapping.cs
+[2025-04-07 09:41:46.009] [Information] Analyzing file: Adjustment.cs
+[2025-04-07 09:41:46.012] [Information] Analyzing file: AdjustmentMovement.cs
+[2025-04-07 09:41:46.015] [Information] Analyzing file: AdjustmentType.cs
+[2025-04-07 09:41:46.018] [Information] Analyzing file: Agency.cs
+[2025-04-07 09:41:46.020] [Information] Analyzing file: BalanceType.cs
+[2025-04-07 09:41:46.024] [Information] Analyzing file: BankingInformation.cs
+[2025-04-07 09:41:46.027] [Information] Analyzing file: BanklyNotification.cs
+[2025-04-07 09:41:46.031] [Information] Analyzing file: BanklyNotificationStatusType.cs
+[2025-04-07 09:41:46.033] [Information] Analyzing file: Campaign.cs
+[2025-04-07 09:41:46.036] [Information] Analyzing file: Claim.cs
+[2025-04-07 09:41:46.039] [Information] Analyzing file: ClaimReasonType.cs
+[2025-04-07 09:41:46.042] [Information] Analyzing file: ClaimTransaction.cs
+[2025-04-07 09:41:46.044] [Information] Analyzing file: ClosingLikelihoodType.cs
+[2025-04-07 09:41:46.046] [Information] Analyzing file: CompanyInformation.cs
+[2025-04-07 09:41:46.049] [Information] Analyzing file: CompanyRisk.cs
+[2025-04-07 09:41:46.053] [Information] Analyzing file: Converter.cs
+[2025-04-07 09:41:46.069] [Information] Analyzing file: ConverterConfig.cs
+[2025-04-07 09:41:46.071] [Information] Analyzing file: Country.cs
+[2025-04-07 09:41:46.078] [Information] Analyzing file: CountryRegion.cs
+[2025-04-07 09:41:46.080] [Information] Analyzing file: Currency.cs
+[2025-04-07 09:41:46.094] [Information] Analyzing file: CurrencyConversion.cs
+[2025-04-07 09:41:46.095] [Information] Analyzing file: CustomerPayout.cs
+[2025-04-07 09:41:46.097] [Information] Analyzing file: CustomerReason.cs
+[2025-04-07 09:41:46.099] [Information] Analyzing file: DailyBalanceReportTask.cs
+[2025-04-07 09:41:46.100] [Information] Analyzing file: EntityInformation.cs
+[2025-04-07 09:41:46.102] [Information] Analyzing file: ExportAcamManual.cs
+[2025-04-07 09:41:46.103] [Information] Analyzing file: FinancialStatusType.cs
+[2025-04-07 09:41:46.104] [Information] Analyzing file: GeneralRate.cs
+[2025-04-07 09:41:46.106] [Information] Analyzing file: IndustrySubType.cs
+[2025-04-07 09:41:46.107] [Information] Analyzing file: IndustryType.cs
+[2025-04-07 09:41:46.109] [Information] Analyzing file: Merchant.cs
+[2025-04-07 09:41:46.111] [Information] Analyzing file: MerchantAddress.cs
+[2025-04-07 09:41:46.113] [Information] Analyzing file: MerchantAlert.cs
+[2025-04-07 09:41:46.114] [Information] Analyzing file: MerchantBusinessCountry.cs
+[2025-04-07 09:41:46.116] [Information] Analyzing file: MerchantCustomerBlacklist.cs
+[2025-04-07 09:41:46.118] [Information] Analyzing file: MerchantCustomerBlacklistPaymentMethod.cs
+[2025-04-07 09:41:46.120] [Information] Analyzing file: MerchantHierarchyType.cs
+[2025-04-07 09:41:46.122] [Information] Analyzing file: MerchantLowRiskTransactionalProfile.cs
+[2025-04-07 09:41:46.124] [Information] Analyzing file: MerchantPaymentType.cs
+[2025-04-07 09:41:46.125] [Information] Analyzing file: MerchantRiskEvaluation.cs
+[2025-04-07 09:41:46.139] [Information] Analyzing file: MerchantStatusType.cs
+[2025-04-07 09:41:46.141] [Information] Analyzing file: MonthlyMoneyFlow.cs
+[2025-04-07 09:41:46.142] [Information] Analyzing file: Note.cs
+[2025-04-07 09:41:46.144] [Information] Analyzing file: Partner.cs
+[2025-04-07 09:41:46.146] [Information] Analyzing file: PartnerConfig.cs
+[2025-04-07 09:41:46.147] [Information] Analyzing file: PaymentChannelType.cs
+[2025-04-07 09:41:46.149] [Information] Analyzing file: PaymentMethod.cs
+[2025-04-07 09:41:46.151] [Information] Analyzing file: PaymentMethodChild.cs
+[2025-04-07 09:41:46.152] [Information] Analyzing file: PaymentMethodTag.cs
+[2025-04-07 09:41:46.154] [Information] Analyzing file: PaymentModeType.cs
+[2025-04-07 09:41:46.156] [Information] Analyzing file: PaymentOrder.cs
+[2025-04-07 09:41:46.158] [Information] Analyzing file: PaymentOrderItem.cs
+[2025-04-07 09:41:46.159] [Information] Analyzing file: PaymentOrderStatusType.cs
+[2025-04-07 09:41:46.161] [Information] Analyzing file: Payout.cs
+[2025-04-07 09:41:46.162] [Information] Analyzing file: PayoutAccountType.cs
+[2025-04-07 09:41:46.164] [Information] Analyzing file: PayoutBatch.cs
+[2025-04-07 09:41:46.167] [Information] Analyzing file: PayoutProcessor.cs
+[2025-04-07 09:41:46.169] [Information] Analyzing file: PayoutPspReference.cs
+[2025-04-07 09:41:46.171] [Information] Analyzing file: PayoutStatusType.cs
+[2025-04-07 09:41:46.173] [Information] Analyzing file: PayRetailersConverter.cs
+[2025-04-07 09:41:46.183] [Information] Analyzing file: RateType.cs
+[2025-04-07 09:41:46.185] [Information] Analyzing file: Referral.cs
+[2025-04-07 09:41:46.187] [Information] Analyzing file: RefundRequest.cs
+[2025-04-07 09:41:46.188] [Information] Analyzing file: Region.cs
+[2025-04-07 09:41:46.190] [Information] Analyzing file: ReportFile.cs
+[2025-04-07 09:41:46.192] [Information] Analyzing file: ReportFileConfig.cs
+[2025-04-07 09:41:46.193] [Information] Analyzing file: ReportTask.cs
+[2025-04-07 09:41:46.195] [Information] Analyzing file: ReportTaskParms.cs
+[2025-04-07 09:41:46.196] [Information] Analyzing file: ReportTaskType.cs
+[2025-04-07 09:41:46.198] [Information] Analyzing file: SettledTransaction.cs
+[2025-04-07 09:41:46.200] [Information] Analyzing file: Settlement.cs
+[2025-04-07 09:41:46.203] [Information] Analyzing file: SettlementExtraItem.cs
+[2025-04-07 09:41:46.205] [Information] Analyzing file: SettlementRollingReserve.cs
+[2025-04-07 09:41:46.206] [Information] Analyzing file: Shop.cs
+[2025-04-07 09:41:46.208] [Information] Analyzing file: ShopBalance.cs
+[2025-04-07 09:41:46.210] [Information] Analyzing file: ShopBankingInformation.cs
+[2025-04-07 09:41:46.212] [Information] Analyzing file: ShopCurrentBalance.cs
+[2025-04-07 09:41:46.213] [Information] Analyzing file: ShopDailyBalance.cs
+[2025-04-07 09:41:46.216] [Information] Analyzing file: ShopGeneralRate.cs
+[2025-04-07 09:41:46.218] [Information] Analyzing file: ShopRate.cs
+[2025-04-07 09:41:46.228] [Information] Analyzing file: ShopRateCountry.cs
+[2025-04-07 09:41:46.230] [Information] Analyzing file: ShopRatePaymentMethod.cs
+[2025-04-07 09:41:46.232] [Information] Analyzing file: SSOUserMerchant.cs
+[2025-04-07 09:41:46.233] [Information] Analyzing file: SSOUserReferral.cs
+[2025-04-07 09:41:46.235] [Information] Analyzing file: Subsidiary.cs
+[2025-04-07 09:41:46.236] [Information] Analyzing file: Transaction.cs
+[2025-04-07 09:41:46.238] [Information] Analyzing file: TransactionConversion.cs
+[2025-04-07 09:41:46.240] [Information] Analyzing file: TransactionDashboardData.cs
+[2025-04-07 09:41:46.242] [Information] Analyzing file: TransactionNotificationLog.cs
+[2025-04-07 09:41:46.244] [Information] Analyzing file: TransactionPayerInfo.cs
+[2025-04-07 09:41:46.245] [Information] Analyzing file: TransactionPspReference.cs
+[2025-04-07 09:41:46.247] [Information] Analyzing file: TransactionReportData.cs
+[2025-04-07 09:41:46.250] [Information] Analyzing file: TransactionSettlement.cs
+[2025-04-07 09:41:46.251] [Information] Analyzing file: Withdrawal.cs
+[2025-04-07 09:41:46.253] [Information] Analyzing file: WithdrawalAdjustment.cs
+[2025-04-07 09:41:46.255] [Information] Analyzing file: WithdrawalTransaction.cs
+[2025-04-07 09:41:46.257] [Information] Analyzing file: AuditableAddOnlyEntity.cs
+[2025-04-07 09:41:46.258] [Information] Analyzing file: AuditableEntity.cs
+[2025-04-07 09:41:46.259] [Information] Analyzing file: AuditableEntityNotDeletion.cs
+[2025-04-07 09:41:46.261] [Information] Analyzing file: AdjustmentPagerParameters.cs
+[2025-04-07 09:41:46.281] [Information] Analyzing file: BancoPluralPagerParameters.cs
+[2025-04-07 09:41:46.283] [Information] Analyzing file: BanklyEventPagerParameters.cs
+[2025-04-07 09:41:46.285] [Information] Analyzing file: BanklyPagerParameters.cs
+[2025-04-07 09:41:46.286] [Information] Analyzing file: ClaimPagerParameters.cs
+[2025-04-07 09:41:46.288] [Information] Analyzing file: CustomerPayoutPagerParameters.cs
+[2025-04-07 09:41:46.289] [Information] Analyzing file: MerchantBalanceFilters.cs
+[2025-04-07 09:41:46.291] [Information] Analyzing file: MerchantRiskPagerParameters.cs
+[2025-04-07 09:41:46.293] [Information] Analyzing file: NotePagerParameters.cs
+[2025-04-07 09:41:46.295] [Information] Analyzing file: OnlineNotificationPagerParameters.cs
+[2025-04-07 09:41:46.296] [Information] Analyzing file: PagerParameters.cs
+[2025-04-07 09:41:46.299] [Information] Analyzing file: PaymentMethodPagerParameters.cs
+[2025-04-07 09:41:46.300] [Information] Analyzing file: PayoutFxPagerParameters.cs
+[2025-04-07 09:41:46.302] [Information] Analyzing file: PayoutPagerParameters.cs
+[2025-04-07 09:41:46.304] [Information] Analyzing file: RatePagerParameters.cs
+[2025-04-07 09:41:46.305] [Information] Analyzing file: SettledTransactionPagerParameters.cs
+[2025-04-07 09:41:46.307] [Information] Analyzing file: SettlementPagerParameters.cs
+[2025-04-07 09:41:46.309] [Information] Analyzing file: SettlementSummaryPagerParameters.cs
+[2025-04-07 09:41:46.310] [Information] Analyzing file: ShopDailyBalancePagerParameters.cs
+[2025-04-07 09:41:46.312] [Information] Analyzing file: TransactionPagerParameters.cs
+[2025-04-07 09:41:46.314] [Information] Analyzing file: TransactionUserPagerParameters.cs
+[2025-04-07 09:41:46.335] [Information] Analyzing file: TreasuryPagerParameters.cs
+[2025-04-07 09:41:46.337] [Information] Analyzing file: TreasurySettlementPagerParameters.cs
+[2025-04-07 09:41:46.338] [Information] Analyzing file: AuthPermission.cs
+[2025-04-07 09:41:46.339] [Information] Analyzing file: Patent.cs
+[2025-04-07 09:41:46.341] [Information] Analyzing file: Resource.cs
+[2025-04-07 09:41:46.343] [Information] Analyzing file: ResourcePatent.cs
+[2025-04-07 09:41:46.344] [Information] Analyzing file: Role.cs
+[2025-04-07 09:41:46.346] [Information] Analyzing file: RoleResource.cs
+[2025-04-07 09:41:46.347] [Information] Analyzing file: RoleResourcePatent.cs
+[2025-04-07 09:41:46.349] [Information] Analyzing file: Session.cs
+[2025-04-07 09:41:46.350] [Information] Analyzing file: User.cs
+[2025-04-07 09:41:46.352] [Information] Analyzing file: UserMerchant.cs
+[2025-04-07 09:41:46.353] [Information] Analyzing file: UserPartner.cs
+[2025-04-07 09:41:46.355] [Information] Analyzing file: UserPayoutProcessor.cs
+[2025-04-07 09:41:46.356] [Information] Analyzing file: IReportData.cs
+[2025-04-07 09:41:46.358] [Information] Analyzing file: AcamTransactionDto.cs
+[2025-04-07 09:41:46.359] [Information] Analyzing file: PayinAcamExportItem.cs
+[2025-04-07 09:41:46.361] [Information] Analyzing file: PayinAcamReportData.cs
+[2025-04-07 09:41:46.362] [Information] Analyzing file: TransactionExportData.cs
+[2025-04-07 09:41:46.364] [Information] Analyzing file: PayoutAcamExportItem.cs
+[2025-04-07 09:41:46.383] [Information] Analyzing file: PayoutAcamReportData.cs
+[2025-04-07 09:41:46.384] [Information] Analyzing file: PayoutExportData.cs
+[2025-04-07 09:41:46.386] [Information] Analyzing file: AppConfiguration.cs
+[2025-04-07 09:41:46.388] [Information] Analyzing file: BancoPluralNotificationGrid.cs
+[2025-04-07 09:41:46.389] [Information] Analyzing file: BanklyEventGridDTO.cs
+[2025-04-07 09:41:46.391] [Information] Analyzing file: BanklyNotificationGridDTO.cs
+[2025-04-07 09:41:46.393] [Information] Analyzing file: ClaimReportGridData.cs
+[2025-04-07 09:41:46.394] [Information] Analyzing file: ConvertApiResponse.cs
+[2025-04-07 09:41:46.395] [Information] Analyzing file: CRMZohoLeadDTO.cs
+[2025-04-07 09:41:46.397] [Information] Analyzing file: CurrencyConversionParams.cs
+[2025-04-07 09:41:46.398] [Information] Analyzing file: DashboardShop.cs
+[2025-04-07 09:41:46.399] [Information] Analyzing file: DefaultCurrencyDTO.cs
+[2025-04-07 09:41:46.400] [Information] Analyzing file: ExportBRMerchantInfo.cs
+[2025-04-07 09:41:46.402] [Information] Analyzing file: FxDTO.cs
+[2025-04-07 09:41:46.403] [Information] Analyzing file: NotificationGrid.cs
+[2025-04-07 09:41:46.405] [Information] Analyzing file: OnlineNotificationGridDTO.cs
+[2025-04-07 09:41:46.407] [Information] Analyzing file: PayoutBatchGridDTO.cs
+[2025-04-07 09:41:46.409] [Information] Analyzing file: PayoutDTO.cs
+[2025-04-07 09:41:46.410] [Information] Analyzing file: PayoutFxGrid.cs
+[2025-04-07 09:41:46.412] [Information] Analyzing file: PayoutGrid.cs
+[2025-04-07 09:41:46.432] [Information] Analyzing file: PayoutNotificationGrid.cs
+[2025-04-07 09:41:46.434] [Information] Analyzing file: RollingPayIn.cs
+[2025-04-07 09:41:46.435] [Information] Analyzing file: SettlementTransactionDTO.cs
+[2025-04-07 09:41:46.437] [Information] Analyzing file: ShopDailyBalanceDTO.cs
+[2025-04-07 09:41:46.439] [Information] Analyzing file: TransactionApprovedDTO.cs
+[2025-04-07 09:41:46.440] [Information] Analyzing file: TransactionGrid.cs
+[2025-04-07 09:41:46.442] [Information] Analyzing file: TransactionGridV2.cs
+[2025-04-07 09:41:46.444] [Information] Analyzing file: TransactionGridV2WithPspRefs.cs
+[2025-04-07 09:41:46.447] [Information] Analyzing file: TransactionRateDTO.cs
+[2025-04-07 09:41:46.449] [Information] Analyzing file: TransactionUser.cs
+[2025-04-07 09:41:46.451] [Information] Analyzing file: TreasuryGridDTO.cs
+[2025-04-07 09:41:46.452] [Information] Analyzing file: Auth.cs
+[2025-04-07 09:41:46.454] [Information] Analyzing file: ConfigurationGroup.cs
+[2025-04-07 09:41:46.456] [Information] Analyzing file: ConfigurationSetting.cs
+[2025-04-07 09:41:46.458] [Information] Analyzing file: DbAmount.cs
+[2025-04-07 09:41:46.459] [Information] Analyzing file: DbCount.cs
+[2025-04-07 09:41:46.461] [Information] Analyzing file: Email.cs
+[2025-04-07 09:41:46.463] [Information] Analyzing file: EmailAttachment.cs
+[2025-04-07 09:41:46.465] [Information] Analyzing file: EmailTemplate.cs
+[2025-04-07 09:41:46.466] [Information] Analyzing file: EventLog.cs
+[2025-04-07 09:41:46.483] [Information] Analyzing file: File.cs
+[2025-04-07 09:41:46.485] [Information] Analyzing file: FileContent.cs
+[2025-04-07 09:41:46.486] [Information] Analyzing file: Entities.GlobalUsings.g.cs
+[2025-04-07 09:41:46.488] [Information] Analyzing file: .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+[2025-04-07 09:41:46.489] [Information] Analyzing file: Entities.AssemblyInfo.cs
+[2025-04-07 09:41:46.491] [Information] Analyzing project: TransactionModuleAPI.UnitTests
+[2025-04-07 09:41:46.500] [Information] Found 12 documents in project TransactionModuleAPI.UnitTests
+[2025-04-07 09:41:46.502] [Information] Analyzing file: TransactionsControllerTests.cs
+[2025-04-07 09:41:46.523] [Information] Processing batch of 109 relationships
+[2025-04-07 09:41:46.555] [Information] Processing batch of 130 method calls
+[2025-04-07 09:41:46.640] [Information] Analyzing file: HttpClientWrapperTests.cs
+[2025-04-07 09:41:46.645] [Information] Analyzing file: ExportProcessorServiceTests.cs
+[2025-04-07 09:41:46.658] [Information] Analyzing file: ExportServiceTests.cs
+[2025-04-07 09:41:46.666] [Information] Processing batch of 120 method calls
+[2025-04-07 09:41:46.743] [Information] Analyzing file: LogToDbDaemonTests.cs
+[2025-04-07 09:41:46.751] [Information] Analyzing file: PermissionServiceTests.cs
+[2025-04-07 09:41:46.759] [Information] Analyzing file: SessionServiceTests.cs
+[2025-04-07 09:41:46.767] [Information] Analyzing file: TransactionServiceTests.cs
+[2025-04-07 09:41:46.817] [Information] Processing batch of 34 classes and 105 methods
+[2025-04-07 09:41:46.885] [Information] Processing batch of 187 method calls
+[2025-04-07 09:41:47.015] [Information] Analyzing file: CancelledTransactionHomologationErrorReasonTests.cs
+[2025-04-07 09:41:47.027] [Information] Analyzing file: TransactionModuleAPI.UnitTests.GlobalUsings.g.cs
+[2025-04-07 09:41:47.035] [Information] Analyzing file: .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+[2025-04-07 09:41:47.041] [Information] Analyzing file: TransactionModuleAPI.UnitTests.AssemblyInfo.cs
+[2025-04-07 09:41:47.046] [Information] Processing remaining 1 classes and 6 methods
+[2025-04-07 09:41:47.092] [Information] Processing remaining 36 relationships
+[2025-04-07 09:41:47.117] [Information] Processing remaining 12 method calls
+[2025-04-07 09:41:47.132] [Information] Analysis complete
+[2025-04-07 09:41:47.138] [Information] Analyzed 1816 method calls
+[2025-04-07 09:41:47.156] [Information] Analysis completed successfully

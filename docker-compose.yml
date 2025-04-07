@@ -1,0 +1,13 @@
+services:
+
+  neo4j:
+    image: neo4j:2025.03
+    container_name: neo4j
+    ports:
+      - 7474:7474
+      - 7687:7687
+    volumes:
+      - neo4j_data:/data
+
+volumes:
+  neo4j_data:
